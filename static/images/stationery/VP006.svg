@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" role="img" aria-label="Giấy note pastel nhiều màu">
+  <defs><filter id="s"><feDropShadow dx="0" dy="14" stdDeviation="11" flood-opacity=".15"/></filter></defs>
+  <g filter="url(#s)"><rect x="86" y="78" width="170" height="170" rx="8" fill="#f6d95d" transform="rotate(-9 171 163)"/><rect x="251" y="68" width="170" height="170" rx="8" fill="#f3a7b1" transform="rotate(8 336 153)"/><rect x="106" y="207" width="170" height="150" rx="8" fill="#a7d9c1" transform="rotate(5 191 282)"/><rect x="270" y="203" width="164" height="154" rx="8" fill="#9fc9ee" transform="rotate(-7 352 280)"/><path d="M126 121h87M126 145h65" stroke="#b39123" stroke-width="5" stroke-linecap="round" opacity=".45"/><path d="M290 113h87M290 137h62" stroke="#b3606a" stroke-width="5" stroke-linecap="round" opacity=".4"/></g>
+</svg>

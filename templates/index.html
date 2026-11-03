@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c91620">
+  <meta name="description" content="MOSA Stationery — tìm văn phòng phẩm bằng văn bản, giọng nói và hình ảnh.">
+  <title>MOSA Stationery · Văn phòng phẩm thông minh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='a11y.css') }}">
+</head>
+<body data-currency="{{ currency }}">
+  <a class="skip-link" href="#catalog">Đi tới danh sách sản phẩm</a>
+  <div class="top-strip">
+    <div class="shell top-strip__inner">
+      <span>Miễn phí giao hàng từ 199.000 ₫</span>
+      <div><a href="#benefits">Chính sách đổi trả</a><a href="#footer">Hỗ trợ</a></div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="shell header-main">
+      <a class="brand" href="/" aria-label="MOSA Store — trang chủ">
+        <span class="brand__mark" aria-hidden="true">M</span>
+        <span><b>MOSA</b><small>stationery &amp; paper</small></span>
+      </a>
+      <nav class="quick-links" aria-label="Tiện ích">
+        <a href="#catalog"><span>◷</span>Sản phẩm đã xem</a>
+        <a href="#offers"><span>⚡</span>Ưu đãi hôm nay</a>
+        <button id="cartButton" type="button"><span>🛍</span>Giỏ hàng <b id="cartCount">0</b></button>
+      </nav>
+    </div>
+
+    <div class="search-stage">
+      <div class="shell search-layout">
+        <button class="category-menu" type="button" id="categoryMenuButton" aria-expanded="false">
+          <span aria-hidden="true">☰</span> Danh mục sản phẩm
+        </button>
+        <section class="search-console" aria-labelledby="searchTitle">
+          <h1 id="searchTitle">Bạn đang tìm văn phòng phẩm nào?</h1>
+          <div class="mode-tabs" role="tablist" aria-label="Chọn cách tìm kiếm">
+            <button class="mode-tab is-active" role="tab" aria-selected="true" data-mode="text">⌕ Văn bản</button>
+            <button class="mode-tab" role="tab" aria-selected="false" data-mode="voice">◉ Giọng nói</button>
+            <button class="mode-tab" role="tab" aria-selected="false" data-mode="image">▧ Hình ảnh</button>
+          </div>
+
+          <form id="textForm" class="search-form search-panel is-active" data-panel="text">
+            <label class="sr-only" for="textQuery">Từ khóa sản phẩm</label>
+            <input id="textQuery" name="query" type="search" autocomplete="off" placeholder="Ví dụ: sổ tay A5 màu nâu…">
+            <button type="submit">Tìm kiếm</button>
+          </form>
+
+          <div id="voicePanel" class="search-panel voice-panel" data-panel="voice">
+            <button id="voiceButton" class="voice-button" type="button" aria-label="Bắt đầu thu giọng nói"><span>●</span></button>
+            <div><b id="voiceStatus">Chạm micro và nói điều bạn cần tìm</b><p id="voiceTranscript">Hỗ trợ nhận dạng tiếng Việt trên Chrome/Edge.</p></div>
+          </div>
+
+          <form id="imageForm" class="search-panel image-panel" data-panel="image">
+            <label class="drop-zone" id="dropZone" for="imageInput">
+              <img id="imagePreview" alt="Ảnh xem trước" hidden>
+              <span id="dropIcon">＋</span>
+              <b>Chọn hoặc thả ảnh vào đây</b>
+              <small>JPG, PNG, WebP · tối đa 8&nbsp;MB</small>
+            </label>
+            <input id="imageInput" name="image" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+            <label class="sr-only" for="imageQuery">Mô tả bổ sung cho ảnh</label>
+            <input id="imageQuery" name="query" type="text" autocomplete="off" placeholder="Mô tả thêm (không bắt buộc)…">
+            <button type="submit">Tìm bằng ảnh</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <nav class="category-bar" aria-label="Danh mục chính">
+      <div class="shell" id="categoryNav"></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell" aria-label="Khuyến mãi nổi bật">
+      <div class="hero__main">
+        <div class="hero__copy">
+          <span class="eyebrow">TÌM ĐÚNG · CHỌN NHANH</span>
+          <h2>Gọn góc học tập.<br><em>Sáng ngày làm việc.</em></h2>
+          <p>Tìm đúng cây bút, cuốn sổ hay dụng cụ bàn làm việc bằng từ khóa, giọng nói hoặc một tấm ảnh.</p>
+          <a href="#catalog">Khám phá ngay <span>→</span></a>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="orbit orbit--one"></div><div class="orbit orbit--two"></div>
+          <div class="floating-card card--text"><b>Aa</b><span>Text</span></div>
+          <div class="floating-card card--voice"><b>◉</b><span>Voice</span></div>
+          <div class="floating-card card--image"><b>▧</b><span>Image</span></div>
+          <div class="hero-product">M</div>
+        </div>
+      </div>
+      <div class="hero__side" id="offers">
+        <article><span>-20%</span><div><b>Back to school</b><small>Ưu đãi bút &amp; sổ học tập</small></div></article>
+        <article><span>AI</span><div><b>Tìm món đồ tương tự</b><small>Tải ảnh từ góc bàn của bạn</small></div></article>
+      </div>
+    </section>
+
+    <section class="benefits shell" id="benefits" aria-label="Lợi ích mua sắm">
+      <article><span>🚚</span><div><b>Giao hàng linh hoạt</b><small>Miễn phí từ 199.000 ₫</small></div></article>
+      <article><span>↻</span><div><b>Đổi trả dễ dàng</b><small>Quy trình minh bạch</small></div></article>
+      <article><span>⌕</span><div><b>Tìm kiếm đa phương thức</b><small>Text · Voice · Image</small></div></article>
+      <article><span>♢</span><div><b>Hàng chính hãng</b><small>Thương hiệu văn phòng phẩm uy tín</small></div></article>
+    </section>
+
+    <section class="catalog shell" id="catalog">
+      <div class="section-heading">
+        <div><span class="eyebrow">ẢNH SẢN PHẨM THẬT · NGUỒN ADCBOOK</span><h2 id="resultTitle">Văn phòng phẩm tiếng Việt</h2><p id="resultMeta">Đang kết nối database…</p></div>
+        <label>Sắp xếp
+          <select id="sortSelect"><option value="relevance">Phù hợp nhất</option><option value="price-asc">Giá tăng dần</option><option value="price-desc">Giá giảm dần</option></select>
+        </label>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>Chưa tìm thấy sản phẩm phù hợp</h3><p>Thử từ khóa ngắn hơn, một ảnh khác hoặc bỏ bộ lọc danh mục.</p></div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="shell footer-grid"><div class="brand brand--footer"><span class="brand__mark">M</span><span><b>MOSA</b><small>stationery &amp; paper</small></span></div><p>Văn phòng phẩm cho học tập, sáng tạo và những ngày làm việc thật gọn gàng.</p><div><b>Danh mục</b><span>Bút viết</span><span>Sổ &amp; giấy</span><span>Dụng cụ</span></div><div><b>Tìm kiếm thông minh</b><span>Văn bản</span><span>Giọng nói</span><span>Hình ảnh</span></div></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</body>
+</html>
+
