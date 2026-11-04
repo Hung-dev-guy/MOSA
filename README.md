@@ -1,214 +1,128 @@
-# MOSA Stationery — Multimodal Product Search
+# Mosa Stationery
 
-Website văn phòng phẩm chạy cục bộ, lấy cảm hứng từ nhịp bố cục của ADCBook nhưng dùng nhận diện, nội dung và mã nguồn riêng. Ứng dụng hỗ trợ tìm sản phẩm bằng văn bản, giọng nói hoặc hình ảnh và có thể chạy trọn bộ bằng Docker Compose.
+Web thương mại điện tử văn phòng phẩm theo chương 1–4 của `E-commerce-pttkht.docx` và các sơ đồ trong `VPP-diagrams`. Backend Python Flask, frontend React + Vite, SQLite. Giao diện tham khảo bố cục [ADCBook](https://adcbook.net.vn/), sử dụng thương hiệu Mosa của tài liệu và minh hoạ sản phẩm local. Cấu trúc cũ cùng toàn bộ cấu hình/script Docker đã được thay thế; lịch sử Git được giữ.
 
-## Tính năng
+## Chạy nhanh trên Windows
 
-- Tìm kiếm tiếng Việt bằng text và xếp hạng theo tên, mô tả, thương hiệu, danh mục, màu sắc.
-- Tìm kiếm bằng giọng nói `vi-VN` qua Web Speech API.
-- Tìm kiếm bằng ảnh dựa trên màu chủ đạo, có thể thay encoder bằng CLIP sau này.
-- Giao diện responsive cho máy tính và điện thoại.
-- Catalog có 101 sản phẩm, trong đó 89 sản phẩm đang hoạt động và 50 sản phẩm còn hàng.
-- 89 ảnh catalog thật được đóng gói cùng source.
-- Ghi lịch sử truy vấn vào `dbo.SearchEvents`.
-- Không sử dụng bảng `ProductSize`.
-
-## Kiến trúc
-
-```text
-Presentation (Flask routes + responsive web UI)
-                    │
-Application (SearchOrchestrator + RankingService + ImageEncoder)
-                    │
-Infrastructure (ProductRepository + pyodbc + SQL Server)
-```
-
-- Text: chuẩn hóa tiếng Việt, khớp tên/mô tả/brand/category/color và xếp hạng.
-- Voice: Web Speech API (`vi-VN`) chuyển giọng nói thành text rồi dùng cùng pipeline.
-- Image: encoder local lấy màu chủ đạo từ ảnh, kết hợp mô tả tùy chọn và xếp hạng catalog. `DominantColorImageEncoder` là điểm thay thế trực tiếp bằng CLIP + vector index sau này.
-- Mỗi lần tìm được ghi vào `dbo.SearchEvents` bằng truy vấn tham số hóa.
-- Không sử dụng bảng `ProductSize`. Migration `database/001_remove_product_size.sql` chỉ xóa nếu bảng tồn tại.
-- Catalog văn phòng phẩm và giá VND ban đầu được thiết lập bởi `database/002_stationery_catalog.sql`.
-- Trước khi đổi catalog, migration local lưu bản ghi cũ trong schema `archive` để có thể khôi phục.
-- Dữ liệu nguồn được đưa vào `dbo.ExternalProductStaging`, tách khỏi catalog đang bán để không biến trạng thái “hết hàng” thành tồn kho giả.
-- Catalog Docker hiện có 101 bản ghi `Products`, 89 bản ghi staging và 89 sản phẩm active.
-- SKU hết hàng giữ `Stock=0`; hệ thống không tự tạo tồn kho giả.
-
-## Hướng dẫn nhanh cho người nhận dự án
-
-### 1. Yêu cầu
-
-- Windows 10/11, macOS hoặc Linux có Docker Desktop/Docker Engine.
-- Docker Compose v2.
-- Tối thiểu khoảng 4 GB RAM trống cho SQL Server và website.
-
-Bạn không cần cài Python, SQL Server hoặc ODBC Driver riêng nếu chạy bằng Docker.
-
-### 2. Clone repository
-
-Sao chép URL tại nút **Code** trên GitHub, sau đó chạy:
+Cần Python 3.12+ và Node.js 20.19+ hoặc 22.12+.
 
 ```powershell
-git clone <URL-repository>
-cd multimodal-store
-```
-
-Nếu repository đang private, chủ repository phải thêm tài khoản GitHub của bạn vào danh sách collaborator trước.
-
-### 3. Khởi động
-
-Mở Docker Desktop, chờ engine báo đang chạy rồi thực hiện:
-
-```powershell
-.\start-docker.ps1
-```
-
-Lần đầu Docker sẽ tải image SQL Server và build image Flask nên có thể mất vài phút. Script tự:
-
-1. Tạo mật khẩu SQL Server riêng trong `.env.docker`.
-2. Khởi động SQL Server 2022.
-3. Tạo database `ECommerceMultimodalV1`.
-4. Nạp 101 sản phẩm và 89 bản ghi staging.
-5. Khởi động website bằng Gunicorn.
-
-Khi hoàn tất, mở:
-
-```text
-http://localhost:5050
-```
-
-Kiểm tra database và website:
-
-```powershell
-docker compose --env-file .env.docker ps
-```
-
-Các service `db` và `web` phải có trạng thái `healthy`; `db-init` kết thúc với mã `0` là bình thường.
-
-### 4. Dừng và chạy lại
-
-Dừng container nhưng giữ database:
-
-```powershell
-.\stop-docker.ps1
-```
-
-Chạy lại:
-
-```powershell
-.\start-docker.ps1
-```
-
-Database nằm trong Docker Volume nên không bị mất khi chỉ chạy `down`.
-
-### 5. Xử lý lỗi thường gặp
-
-Nếu cổng 5050 hoặc 14330 đang được sử dụng, sửa `.env.docker`:
-
-```env
-APP_PORT=5051
-SQL_PORT=14331
-```
-
-Sau đó mở website tại cổng `APP_PORT` mới.
-
-Nếu Docker báo `overlayfs ... read-only file system`, hãy khởi động lại Docker Desktop hoặc khởi động lại máy rồi thử lại. Đây là lỗi storage của Docker Desktop, không phải lỗi SQL seed.
-
-Xem log khi cần:
-
-```powershell
-docker compose --env-file .env.docker logs --tail 100 db
-docker compose --env-file .env.docker logs --tail 100 db-init
-docker compose --env-file .env.docker logs --tail 100 web
-```
-
-Xóa toàn bộ database Docker và tạo lại từ seed:
-
-```powershell
-docker compose --env-file .env.docker down --volumes
-.\start-docker.ps1
-```
-
-## Chạy trực tiếp không dùng Docker
-
-Yêu cầu: SQL Server đang chạy, Windows Authentication truy cập được `localhost/ECommerceMultimodalV1`, Python 3.11+ và ODBC Driver 18.
-
-```powershell
-cd C:\Users\lekim\OneDrive\Documents\ChatGPT\PTTKHTTT\multimodal-store
 .\run.ps1
 ```
 
-Mở <http://127.0.0.1:5050>. Lần chạy đầu script tạo `.venv` và cài các dependency trong `requirements.txt`.
+Mở [Mosa local](http://127.0.0.1:5000). Script tạo virtualenv nếu thiếu, cài thư viện Python, cài Node dependencies nếu thiếu, build React và chạy Flask. Dừng bằng Ctrl+C. Lần đầu cần mạng để cài dependencies; font web có fallback Segoe UI khi offline.
 
-Các biến cấu hình tùy chọn có trong `.env.example`; đặt chúng ở môi trường PowerShell trước khi chạy nếu instance/database khác mặc định.
+Đã cài và build trong workspace hiện tại, nên có thể chạy ngay:
 
-## Cấu trúc Docker
+```powershell
+.\.venv\Scripts\python run.py
+```
+
+DB tự tạo tại `instance/mosa.sqlite`; không cần cài database server. Các lần chạy sau giữ dữ liệu.
+
+## Tài khoản demo
+
+Mật khẩu chung: `Mosa@12345`. Tài khoản chỉ seed khi DB chưa có user và `DEMO_MODE=1` (mặc định).
+
+| Email | Quyền |
+|---|---|
+| customer@mosa.local | Mua hàng và đơn riêng |
+| admin@mosa.local | Catalogue, danh mục, khách hàng, ưu đãi và toàn bộ vận hành |
+| warehouse@mosa.local | Kho, bổ sung hàng và fulfilment |
+| sales@mosa.local | Đơn hàng, giao hàng và hỗ trợ |
+| manager@mosa.local | Báo cáo và CSV |
+
+Đăng nhập admin rồi vào **Quản trị**. Mã `MOSA10` giảm 10% cho đơn từ 50.000đ, không cộng dồn. Phí giao hàng 25.000đ; miễn khi giá trị hàng sau ưu đãi từ 300.000đ.
+
+## Chức năng
+
+- Đăng ký, đăng nhập, profile, đổi mật khẩu, recovery token một lần và vô hiệu hoá tài khoản.
+- Browse, keyword không dấu, bộ lọc kết hợp, sort, phân trang, detail, thông số, đơn vị bán và review.
+- Tìm giọng nói bằng dịch vụ trình duyệt, có thông báo quyền và fallback; tìm ảnh PNG/JPEG/WebP qua so khớp màu và bố cục local.
+- Giỏ khách vãng lai, gộp giỏ khi login, quantity, checkout quote, promotion, order snapshot và idempotency.
+- Giữ kho trong transaction trước thanh toán; pending/failed/success tách biệt; retry trên cùng order, cancel đủ điều kiện, in-app notifications.
+- Catalogue/category/promotion/customer administration; lịch sử kho, receipt/adjustment, replenishment, picking/packing/dispatch/delivery.
+- Vận đơn và tracking nhập tay có chống event trùng; support cases, ngoại lệ vận hành và audit.
+- Review sau giao hàng; báo cáo kỳ UTC, doanh thu payment đã thu, tồn thực tế/đã giữ/khả dụng và CSV.
+
+## Tài liệu thiết kế
+
+Bốn tài liệu này được tạo trước khi code, theo cách tổ chức docs DueMate:
+
+1. [Architecture](docs/architecture.md)
+2. [UI design](docs/ui-design.md)
+3. [API definition](docs/api-definition.md)
+4. [Testing](docs/testing.md)
+
+[Biên bản kiểm thử](docs/test-evidence.md), [kết quả pytest XML](docs/pytest-results.xml), [kết quả Playwright JSON](docs/playwright-results.json), [inventory sơ đồ VPP](docs/vpp-inventory.json). `source-document.txt` giữ bản trích xuất đọc nguồn; chương 5 không được dùng làm đặc tả.
 
 ```text
-docker-compose.yml
-├── db       — SQL Server 2022 Developer + persistent volume
-├── db-init  — tạo schema và seed dữ liệu
-└── web      — Flask + Gunicorn + ODBC Driver 18
+backend/
+  presentation/          Sáu controller HTTP theo sơ đồ 3-layer
+  application/           Các service và SearchOrchestrator
+  data_infrastructure/   Database, indexes, adapters và image storage
+  shared/                Validation, lỗi và project paths
+  app.py                 Composition root
+frontend/src/
+  presentation/          CustomerUI, AdminStaffUI và UI dùng chung
+  data_infrastructure/   HTTP client và SpeechRecognitionAdapter
+  main.jsx               React entry point
+frontend/e2e/            Playwright desktop/mobile tests
+tests/         Python API/integration/concurrency/backup tests
+scripts/       Test server riêng, backup và tạo ảnh minh hoạ
+docs/          Thiết kế, nguồn đối chiếu và test evidence
+instance/      Database runtime tự tạo, Git ignored
+run.py         Entry point backend + production React bundle
+run.ps1        Setup, build và chạy local
+test.ps1       Chạy toàn bộ kiểm thử
 ```
 
-- `database/docker/001_schema.sql`: schema có thể chạy lặp lại.
-- `database/docker/002_seed_data.sql`: dữ liệu demo có thể chạy lặp lại mà không nhân đôi.
-- `tools/init_database.py`: chờ SQL Server, chạy schema/seed và kiểm tra số bản ghi.
-- `tools/export_docker_database.py`: xuất lại seed từ SQL Server local.
-- `start-docker.ps1`: tự sinh secret và khởi động hệ thống.
-- `package-docker.ps1`: tạo gói ZIP sạch để gửi.
-
-## Bảo mật và bản quyền dữ liệu
-
-Không commit `.env`, `.env.docker`, mật khẩu SQL Server hoặc access token. Khi triển khai thật, sử dụng secret manager, HTTPS và xác thực người dùng.
-
-Ảnh sản phẩm ADCBook/Bizweb trong repository chỉ phục vụ prototype/đồ án nội bộ. Cần xin phép chủ sở hữu trước khi phân phối lại hoặc sử dụng thương mại.
-
-## Chi tiết vận hành Docker
-
-Gói Docker gồm ba service:
-
-- `db`: SQL Server 2022 Developer với volume lưu dữ liệu.
-- `db-init`: tạo schema và nạp 101 sản phẩm cùng 89 bản ghi nguồn staging.
-- `web`: Flask chạy bằng Gunicorn tại cổng 5050.
-
-Trong PowerShell tại thư mục dự án:
+## Kiểm thử
 
 ```powershell
-.\start-docker.ps1
+.\test.ps1
 ```
 
-Script tự sinh mật khẩu SQL Server mạnh trong `.env.docker`. File này đã được `.gitignore` và không được đưa vào gói ZIP. Khi các container đã healthy, mở <http://localhost:5050>.
-
-Dừng hệ thống nhưng giữ database:
+Hoặc chạy riêng:
 
 ```powershell
-.\stop-docker.ps1
+.\.venv\Scripts\python -m pytest -q --junitxml=docs/pytest-results.xml
+npm --prefix frontend run build
+npm --prefix frontend run test:e2e
 ```
 
-Xóa cả container và database Docker để làm lại từ đầu:
+Playwright dùng Microsoft Edge đã cài. Hai project là desktop Edge 1440×1000 và mobile viewport/touch 390×664 bằng Chromium/Edge; không phải thử Safari hoặc điện thoại vật lý. Server test port 5099 và SQLite tạm độc lập với DB runtime. Screenshots sau test nằm tại `docs/evidence/` (Git ignored). `docs/playwright-results.json` chứa thông tin môi trường tại thời điểm chạy; không có password hay token.
+
+Kết quả sau khi chia cấu trúc theo sơ đồ 3 lớp ngày 05/11/2026: **31 pytest passed** (gồm 4 kiểm tra kiến trúc), **10 Playwright passed**, **0 failed/skipped**; frontend production build passed. Xem biên bản để biết giới hạn.
+
+## Phát triển frontend
+
+Terminal 1 chạy backend, terminal 2 chạy Vite:
 
 ```powershell
-docker compose --env-file .env.docker down --volumes
+.\.venv\Scripts\python run.py
 ```
-
-Nếu cổng 5050 hoặc 14330 đã được dùng, sửa `APP_PORT` hoặc `SQL_PORT` trong `.env.docker` rồi khởi động lại.
-
-### Tạo file ZIP để gửi
 
 ```powershell
-.\package-docker.ps1
+npm --prefix frontend run dev
 ```
 
-File `output/MOSA-Stationery-Docker.zip` chứa source, ảnh catalog thật, Docker Compose và dữ liệu demo. Nó không chứa `.venv`, mật khẩu, lịch sử tìm kiếm, thư mục dataset thô hoặc file debug.
+Vite proxy `/api` tới port 5000. Sau khi chỉnh React, `npm --prefix frontend run build` để bản được Flask phục vụ cập nhật.
 
-### Làm mới dữ liệu seed
-
-Sau khi chỉnh catalog trong SQL Server local, xuất lại schema và dữ liệu Docker bằng:
+## Backup và restore
 
 ```powershell
-.\.venv\Scripts\python.exe tools\export_docker_database.py
+.\.venv\Scripts\python scripts/backup.py instance/mosa.sqlite backups/mosa-2026-11-05.sqlite
 ```
 
-Sau đó chạy lại `package-docker.ps1`.
+Destination phải chưa tồn tại. Script dùng SQLite backup API và integrity/FK check. Restore bằng cách dừng app, sao lưu DB backup sang một đường dẫn mới bằng cùng script, đặt `$env:DATABASE` trỏ tới file vừa restore rồi khởi động. Không ghi đè DB đang mở. Test đã kiểm tra dữ liệu đơn và reservation sau backup/restore; chưa chốt RPO/RTO production.
 
+## Giới hạn tích hợp
+
+Đây là bản local để chạy và kiểm thử đồ án. Online payment không thu tiền thật; màn hình demo cho chọn pending/success/failed. Vận chuyển và supplier là ghi nhận nội bộ/nhập tay. Recovery demo hiển thị link local, chưa gửi email. Không có hoàn tiền tự động.
+
+Image search dùng descriptor màu/bố cục, **chưa có AI embedding/model nhận diện sản phẩm**. Kết quả tương tự không chứng minh cùng loại hoặc đơn vị bán. Voice phụ thuộc hỗ trợ và quyền micro của trình duyệt; một số browser gửi âm thanh tới dịch vụ nhận dạng của họ. Backend không giữ audio hoặc ảnh truy vấn. Test voice dùng stub để kiểm tra UI; chưa kiểm thử micro/dịch vụ thật.
+
+Chưa chứng nhận uptime, tải production, TLS, mã hoá ổ đĩa, mail/provider thật hoặc mức độ liên quan AI. Secret mặc định random theo lần boot nên session sẽ hết hạn khi restart; đặt biến môi trường `SECRET_KEY` ổn định nếu muốn giữ session. `COOKIE_SECURE=1` dành cho HTTPS. Không public bản demo với seed credentials hoặc recovery demo. `DEMO_MODE=0` tắt các demo endpoint và seed demo, nhưng chưa thay thế các tích hợp production.
+
+Tham khảo kỹ thuật: [Flask testing](https://flask.palletsprojects.com/en/stable/testing/), [Vite](https://vite.dev/guide/), [SpeechRecognition và giới hạn hỗ trợ](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition).

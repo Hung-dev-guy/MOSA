@@ -1,4 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" role="img" aria-label="Vở kẻ ngang màu xanh">
-  <defs><filter id="s"><feDropShadow dx="0" dy="16" stdDeviation="12" flood-opacity=".16"/></filter><linearGradient id="g" x1="0" x2="1" y2="1"><stop stop-color="#5595d6"/><stop offset="1" stop-color="#245b9c"/></linearGradient></defs>
-  <g filter="url(#s)" transform="rotate(5 260 200)"><rect x="126" y="46" width="280" height="312" rx="14" fill="#fff"/><rect x="112" y="42" width="278" height="312" rx="14" fill="url(#g)"/><path d="M112 124h278" stroke="#f4c91d" stroke-width="12"/><rect x="157" y="153" width="190" height="106" rx="10" fill="#fff" opacity=".94"/><path d="M183 184h138M183 209h108M183 234h126" stroke="#9db9d5" stroke-width="5" stroke-linecap="round"/><g fill="#f7f1e8"><circle cx="121" cy="78" r="6"/><circle cx="121" cy="112" r="6"/><circle cx="121" cy="300" r="6"/><circle cx="121" cy="334" r="6"/></g></g>
-</svg>

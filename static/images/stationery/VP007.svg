@@ -1,4 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" role="img" aria-label="Thước kẻ trong suốt">
-  <defs><filter id="s"><feDropShadow dx="0" dy="13" stdDeviation="10" flood-opacity=".16"/></filter><linearGradient id="g" x1="0" x2="1"><stop stop-color="#ffffff" stop-opacity=".88"/><stop offset="1" stop-color="#b8dce9" stop-opacity=".72"/></linearGradient></defs>
-  <g filter="url(#s)" transform="rotate(-15 260 200)"><rect x="54" y="151" width="412" height="98" rx="12" fill="url(#g)" stroke="#6ea7bd" stroke-width="3"/><path d="M78 151v34m20-34v20m20-20v20m20-20v34m20-34v20m20-20v20m20-20v34m20-34v20m20-20v20m20-20v34m20-34v20m20-20v20m20-20v34m20-34v20m20-20v20m20-20v34m20-34v20m20-20v20m20-20v34m20-34v20" stroke="#376a7c" stroke-width="3"/><path d="M82 218h352" stroke="#fff" stroke-width="4" opacity=".8"/></g>
-</svg>

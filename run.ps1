@@ -1,11 +1,12 @@
-$ErrorActionPreference = 'Stop'
-$projectRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
-$venvPython = Join-Path $projectRoot '.venv\Scripts\python.exe'
-
-if (-not (Test-Path -LiteralPath $venvPython)) {
-    python -m venv (Join-Path $projectRoot '.venv')
+$ErrorActionPreference='Stop'
+Set-Location -LiteralPath $PSScriptRoot
+if (-not (Test-Path '.venv\Scripts\python.exe')) { python -m venv .venv }
+& .\.venv\Scripts\python -m pip install -r requirements.txt
+if ($LASTEXITCODE -ne 0) { throw 'Python dependency installation failed' }
+if (-not (Test-Path 'frontend\node_modules')) {
+    & npm ci --prefix frontend
+    if ($LASTEXITCODE -ne 0) { throw 'Node dependency installation failed' }
 }
-
-& $venvPython -m pip install -r (Join-Path $projectRoot 'requirements.txt')
-& $venvPython (Join-Path $projectRoot 'app.py')
-
+& npm --prefix frontend run build
+if ($LASTEXITCODE -ne 0) { throw 'Frontend build failed' }
+& .\.venv\Scripts\python run.py

@@ -1,4 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" role="img" aria-label="Kéo văn phòng">
-  <defs><filter id="s"><feDropShadow dx="0" dy="15" stdDeviation="12" flood-opacity=".18"/></filter><linearGradient id="m" x1="0" x2="1"><stop stop-color="#eef1f3"/><stop offset=".5" stop-color="#919aa4"/><stop offset="1" stop-color="#e5e9eb"/></linearGradient></defs>
-  <g filter="url(#s)" transform="rotate(-12 260 200)"><path d="M245 204L450 76c14-9 25 9 13 18L280 235z" fill="url(#m)"/><path d="M251 211L455 318c15 8 5 27-10 20L276 245z" fill="url(#m)"/><circle cx="260" cy="223" r="24" fill="#c91620"/><circle cx="260" cy="223" r="8" fill="#f4c91d"/><path d="M247 226c-18 6-53 22-78 57-20 28-63 16-71-18-9-38 32-72 72-67 35 4 61 15 77 28z" fill="none" stroke="#30343b" stroke-width="26"/><path d="M246 217c-18-7-51-25-74-61-19-29-62-19-72 14-11 38 29 74 69 71 35-2 62-12 77-24z" fill="none" stroke="#30343b" stroke-width="26"/></g>
-</svg>

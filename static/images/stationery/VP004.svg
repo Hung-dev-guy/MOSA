@@ -1,4 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" role="img" aria-label="Sổ tay bìa da nâu">
-  <defs><filter id="s"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-opacity=".2"/></filter><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9b6a47"/><stop offset="1" stop-color="#5d3828"/></linearGradient></defs>
-  <g filter="url(#s)" transform="rotate(-7 260 200)"><rect x="132" y="48" width="258" height="306" rx="22" fill="#f2e8d8"/><rect x="118" y="42" width="258" height="306" rx="22" fill="url(#g)"/><path d="M143 83h208M143 305h208" stroke="#c59a73" stroke-width="3" opacity=".45"/><rect x="326" y="42" width="13" height="306" fill="#3c261d" opacity=".7"/><path d="M276 42v151l17-15 17 15V42z" fill="#c91620"/><circle cx="246" cy="194" r="34" fill="none" stroke="#d8ae86" stroke-width="3" opacity=".75"/><path d="M230 194h32" stroke="#d8ae86" stroke-width="3"/></g>
-</svg>
