@@ -2,7 +2,7 @@
     "rewrites": [
         {
             "source": "/api/:path*",
-            "destination": "https://mosa-backend-6iqi.onrender.com"
+            "destination": "https://mosa-backend-6iqi.onrender.com/api/:path*"
         },
         {
             "source": "/:path*",
