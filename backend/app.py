@@ -4,7 +4,7 @@ import secrets
 
 from flask import Flask
 
-from backend.data_infrastructure.database.connection import init_db
+from backend.data_infrastructure.database.connection import init_db, is_postgres
 from backend.presentation.http import register_http
 from backend.presentation.controllers import (
     account_controller, administration_controller, cart_controller,
@@ -18,7 +18,7 @@ def create_app(config=None):
     app=Flask(__name__,static_folder=None)
     app.config.update(
         SECRET_KEY=os.environ.get('SECRET_KEY') or secrets.token_hex(32),
-        DATABASE=os.environ.get('DATABASE',str(PROJECT_ROOT/'instance/mosa.sqlite')),
+        DATABASE=os.environ.get('DATABASE_URL') or os.environ.get('DATABASE',str(PROJECT_ROOT/'instance/mosa.sqlite')),
         DEMO_MODE=os.environ.get('DEMO_MODE','1')=='1',
         MAX_CONTENT_LENGTH=5*1024*1024+65536,
         SESSION_COOKIE_HTTPONLY=True,
@@ -27,7 +27,8 @@ def create_app(config=None):
     )
     app.config.update(config or {})
     from pathlib import Path
-    app.config.setdefault('QUERY_MEDIA_DIRECTORY', str(Path(app.config['DATABASE']).parent/'query-media'))
+    media_root = PROJECT_ROOT/'instance' if is_postgres(app.config['DATABASE']) else Path(app.config['DATABASE']).parent
+    app.config.setdefault('QUERY_MEDIA_DIRECTORY', os.environ.get('QUERY_MEDIA_DIRECTORY', str(media_root/'query-media')))
     init_db(app.config['DATABASE'],app.config['DEMO_MODE'])
     register_http(app)
     for controller in (

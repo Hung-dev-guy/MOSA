@@ -2,6 +2,7 @@
 import secrets
 import sqlite3
 import time
+from psycopg import IntegrityError as PostgresIntegrityError
 from functools import wraps
 
 from flask import g, jsonify, request, session
@@ -82,6 +83,7 @@ def register_http(app):
         return jsonify(error=error.description,code=error.code),error.code
 
     @app.errorhandler(sqlite3.IntegrityError)
+    @app.errorhandler(PostgresIntegrityError)
     def integrity_error(error):
         get_db().rollback()
         return jsonify(error='Dữ liệu trùng hoặc vi phạm ràng buộc.',code=409),409

@@ -5,6 +5,7 @@ __pycache__/
 .test-runtime/
 *.pyc
 *.sqlite*
+instance/*.sql
 .env
 instance/text-search-model/
 frontend/node_modules/

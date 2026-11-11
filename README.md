@@ -8,7 +8,7 @@ Xem [hướng dẫn Docker](docs/docker.md) để chuẩn bị `.env`, bản sao
 docker compose up -d --build
 ```
 
-Mở http://127.0.0.1:8080. Database Docker nằm riêng tại `instance/docker/mosa.sqlite`; các thay đổi không ghi vào database Flask local. Dừng bằng `docker compose down`.
+Mở http://127.0.0.1:8080. Backend Docker dùng PostgreSQL trong volume `postgres_data`; các thay đổi không ghi vào SQLite Flask local. Dừng bằng `docker compose down` (không thêm `-v` nếu muốn giữ dữ liệu).
 
 
 ## Chạy nhanh trên Windows

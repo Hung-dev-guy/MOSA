@@ -15,11 +15,18 @@ def now():
 
 
 def connect(path):
+    if is_postgres(path):
+        from .postgres import PostgresConnection
+        return PostgresConnection(str(path))
     db = sqlite3.connect(path, timeout=15)
     db.row_factory = sqlite3.Row
     db.create_function('uuid', 0, lambda: str(uuid4()))
     db.execute('PRAGMA foreign_keys=ON')
     return db
+
+
+def is_postgres(path):
+    return str(path).startswith(('postgresql://', 'postgres://'))
 
 
 def get_db():
@@ -38,9 +45,26 @@ def one(sql, args=()):
 
 
 def init_db(path, demo=True):
-    Path(path).parent.mkdir(parents=True, exist_ok=True)
+    if not is_postgres(path):
+        Path(path).parent.mkdir(parents=True, exist_ok=True)
     db = connect(path)
-    upgrade(db, path, Path(__file__).with_name('schema.sql').read_text(encoding='utf-8'))
+    try:
+        if is_postgres(path):
+            db.begin_write()
+            schema = Path(__file__).with_name('schema_postgres.sql').read_text(encoding='utf-8')
+            db.raw.execute(schema.replace('\nBEGIN;\n', '\n').removesuffix('COMMIT;\n'), prepare=False)
+        else:
+            upgrade(db, path, Path(__file__).with_name('schema.sql').read_text(encoding='utf-8'))
+        seed(db, demo)
+        db.commit()
+    except Exception:
+        db.rollback()
+        raise
+    finally:
+        db.close()
+
+
+def seed(db, demo):
     if not db.execute('SELECT 1 FROM products').fetchone():
         catalogue = [
             ('pen','Bút gel Thiên Long FlexOffice 0.5mm','Thiên Long',12000,'Cây',1,{'ngòi':'0.5mm'},'pen-blue.png',90,{'color':'xanh','type':'Gel'}),
@@ -67,6 +91,4 @@ def init_db(path, demo=True):
         password = generate_password_hash('Mosa@12345')
         for index,role in enumerate(['customer','admin','warehouse','sales','manager'],1):
             db.execute('INSERT INTO users(id,name,email,password,role) VALUES(?,?,?,?,?)',(legacy_id('users', index),f'Mosa {role}',f'{role}@mosa.local',password,role))
-    db.execute("INSERT OR IGNORE INTO carts(owner,customer_id) SELECT 'u:'||id,id FROM users")
-    db.commit()
-    db.close()
+    db.execute("INSERT INTO carts(owner,customer_id) SELECT 'u:'||id,id FROM users WHERE 1=1 ON CONFLICT DO NOTHING")
