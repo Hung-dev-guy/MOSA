@@ -15,7 +15,7 @@ def add_cart():
     return respond(cart_service.add_cart(data=body(), owner=owner()))
 
 
-@bp.route('/api/cart/items/<int:pid>', methods=['PATCH', 'DELETE'])
+@bp.route('/api/cart/items/<pid>', methods=['PATCH', 'DELETE'])
 def update_cart(pid):
     if request.method=='DELETE':
         return respond(cart_service.remove_cart(pid,owner=owner()))

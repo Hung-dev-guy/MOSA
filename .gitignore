@@ -6,6 +6,7 @@ __pycache__/
 *.pyc
 *.sqlite*
 .env
+instance/text-search-model/
 frontend/node_modules/
 frontend/dist/
 frontend/test-results/

@@ -1,5 +1,6 @@
+from backend.shared.validation import identifier
 from .audit_service import audit
-from .catalogue_service import product
+from .catalog_service import product
 from backend.data_infrastructure.database.connection import get_db
 from backend.data_infrastructure.database.connection import now
 from backend.data_infrastructure.database.connection import one
@@ -17,21 +18,22 @@ def reserve(order_id, actor):
     db = get_db()
     for line in rows('SELECT * FROM order_items WHERE order_id=?', (order_id,)):
         p = one('SELECT * FROM products WHERE id=?', (line['product_id'],))
+        p = product(p) if p else None
         require(p and p['published'] and (p['stock'] - p['reserved'] >= line['quantity']), f"{line['name']}: không đủ tồn kho.", 409)
-        db.execute('UPDATE products SET reserved=reserved+? WHERE id=?', (line['quantity'], p['id']))
+        db.execute('INSERT INTO inventory_reservations(order_id,product_id,quantity) VALUES(?,?,?)', (order_id,p['id'],line['quantity']))
         movement(p['id'], line['quantity'], 'reserve', actor, order_id)
 
 
 def release(order_id, actor):
     db = get_db()
     for line in rows('SELECT * FROM order_items WHERE order_id=?', (order_id,)):
-        db.execute('UPDATE products SET reserved=reserved-? WHERE id=?', (line['quantity'], line['product_id']))
+        db.execute('DELETE FROM inventory_reservations WHERE order_id=? AND product_id=?', (order_id,line['product_id']))
         movement(line['product_id'], -line['quantity'], 'release', actor, order_id)
 
 
 def inventory(*, data, user):
     d = data
-    pid = integer(d.get('product_id'), 'Sản phẩm')
+    pid = identifier(d.get('product_id'), 'Sản phẩm')
     kind = d.get('kind')
     require(kind in ['receipt', 'adjustment'], 'Loại biến động không hợp lệ.')
     qty = integer(d.get('quantity'), 'Số lượng', -100000, 100000)
@@ -41,7 +43,7 @@ def inventory(*, data, user):
     db.execute('BEGIN IMMEDIATE')
     p = one('SELECT * FROM products WHERE id=?', (pid,))
     require(p, 'Không có sản phẩm.', 404)
-    require(p['stock'] + qty >= p['reserved'], 'Tồn kho mới nhỏ hơn lượng đã giữ cho đơn.', 409)
+    require(p['stock'] + qty >= product(p)['reserved'], 'Tồn kho mới nhỏ hơn lượng đã giữ cho đơn.', 409)
     db.execute('UPDATE products SET stock=stock+? WHERE id=?', (qty, pid))
     movement(pid, qty, kind, user['id'], reason=reason)
     audit(user['id'], 'inventory.' + kind, pid)
@@ -51,10 +53,10 @@ def inventory(*, data, user):
 
 def supply(*, data, user):
     d = data
-    pid = integer(d.get('product_id'), 'Sản phẩm')
+    pid = identifier(d.get('product_id'), 'Sản phẩm')
     require(one('SELECT id FROM products WHERE id=?', (pid,)), 'Không có sản phẩm.', 404)
     db = get_db()
-    rid = db.execute('INSERT INTO replenishments(supplier,product_id,quantity,created_at) VALUES(?,?,?,?)', (text(d.get('supplier'), 'Nhà cung cấp', 2, 100), pid, integer(d.get('quantity'), 'Số lượng', 1, 100000), now())).lastrowid
+    rid = db.execute('INSERT INTO replenishments(supplier,product_id,quantity,created_at) VALUES(?,?,?,?) RETURNING id', (text(d.get('supplier'), 'Nhà cung cấp', 2, 100), pid, integer(d.get('quantity'), 'Số lượng', 1, 100000), now())).fetchone()['id']
     audit(user['id'], 'supply.request', rid)
     db.commit()
     return one('SELECT * FROM replenishments WHERE id=?', (rid,))

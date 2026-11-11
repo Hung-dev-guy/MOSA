@@ -2,6 +2,9 @@ import json
 import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
+from uuid import uuid4
+
+from .migrations import upgrade, legacy_id
 
 from flask import g, current_app
 from werkzeug.security import generate_password_hash
@@ -14,6 +17,7 @@ def now():
 def connect(path):
     db = sqlite3.connect(path, timeout=15)
     db.row_factory = sqlite3.Row
+    db.create_function('uuid', 0, lambda: str(uuid4()))
     db.execute('PRAGMA foreign_keys=ON')
     return db
 
@@ -36,31 +40,33 @@ def one(sql, args=()):
 def init_db(path, demo=True):
     Path(path).parent.mkdir(parents=True, exist_ok=True)
     db = connect(path)
-    db.executescript(Path(__file__).with_name('schema.sql').read_text(encoding='utf-8'))
-    if not db.execute('SELECT 1 FROM categories').fetchone():
-        names = ['Bút viết', 'Sổ & tập vở', 'Giấy in', 'Dụng cụ học tập', 'Hồ sơ văn phòng', 'Màu & mỹ thuật']
-        db.executemany('INSERT INTO categories(name) VALUES(?)', [(n,) for n in names])
+    upgrade(db, path, Path(__file__).with_name('schema.sql').read_text(encoding='utf-8'))
+    if not db.execute('SELECT 1 FROM products').fetchone():
         catalogue = [
-            (1,'Bút gel Thiên Long FlexOffice 0.5mm', 'Thiên Long',12000,'Cây',1, {'màu':'xanh','ngòi':'0.5mm'},'pen-blue',90),
-            (2,'Sổ tay lò xo Pastel A5 120 trang','Mosa',45000,'Quyển',1,{'khổ':'A5','trang':'120'},'notebook',55),
-            (3,'Giấy in Double A A4 80gsm','Double A',89000,'Ram',500,{'khổ':'A4','định lượng':'80gsm'},'paper',80),
-            (4,'Bộ thước học sinh 4 món','Deli',25000,'Bộ',4,{'màu':'xanh'},'ruler',65),
-            (5,'Bìa còng văn phòng A4 7cm','Deli',58000,'Chiếc',1,{'khổ':'A4','màu':'xanh'},'folder',40),
-            (6,'Bút chì màu Colokit 24 màu','Thiên Long',69000,'Hộp',24,{'màu':'24 màu'},'colors',35),
-            (1,'Hộp 12 bút gel xanh 0.5mm','Thiên Long',125000,'Hộp',12,{'màu':'xanh','ngòi':'0.5mm'},'pen-box',20),
-            (2,'Tập học sinh 96 trang ô ly','Hồng Hà',15000,'Quyển',1,{'trang':'96','khổ':'B5'},'exercise',120),
-            (4,'Kéo thủ công an toàn 135mm','Deli',22000,'Chiếc',1,{'màu':'hồng'},'scissors',28),
-            (4,'Băng keo giấy trang trí Pastel','Mosa',18000,'Cuộn',1,{'màu':'hồng'},'tape',45),
-            (5,'Kẹp giấy màu hộp 50 chiếc','Deli',16000,'Hộp',50,{'màu':'nhiều màu'},'clips',70),
-            (6,'Màu nước sáng tạo 12 màu','Colokit',72000,'Hộp',12,{'màu':'12 màu'},'paint',30),
+            ('pen','Bút gel Thiên Long FlexOffice 0.5mm','Thiên Long',12000,'Cây',1,{'ngòi':'0.5mm'},'pen-blue.png',90,{'color':'xanh','type':'Gel'}),
+            ('notebook','Sổ tay lò xo Pastel A5 120 trang','Mosa',45000,'Quyển',1,{},'notebook.png',55,{'page_num':120,'size':'A5','type':'Lò xo'}),
+            ('book','Sách khám phá khoa học','Kim Đồng',89000,'Cuốn',1,{},'book.png',80,{'category':'Khoa học','minimum_age':6,'publisher':'Kim Đồng'}),
+            ('bag','Túi đựng dụng cụ học tập','Deli',25000,'Chiếc',1,{},'bag.png',65,{'size':'25 x 15 cm','pattern':'Trơn'}),
+            ('toy','Bộ xếp hình sáng tạo','Deli',58000,'Bộ',1,{},'toy.png',40,{'type':'Xếp hình','minimum_age':6}),
+            ('pen','Bút chì màu Colokit 24 màu','Thiên Long',69000,'Hộp',24,{},'colors.png',35,{'color':'24 màu','type':'Bút chì màu'}),
+            ('pen','Hộp 12 bút gel xanh 0.5mm','Thiên Long',125000,'Hộp',12,{'ngòi':'0.5mm'},'pen-box.png',20,{'color':'xanh','type':'Gel'}),
+            ('notebook','Tập học sinh 96 trang ô ly','Hồng Hà',15000,'Quyển',1,{},'exercise.png',120,{'page_num':96,'size':'B5','type':'Ô ly'}),
+            ('book','Sách tô màu sáng tạo','Kim Đồng',22000,'Cuốn',1,{},'book.png',28,{'category':'Mỹ thuật','minimum_age':3,'publisher':'Kim Đồng'}),
+            ('bag','Túi đeo chéo Pastel','Mosa',18000,'Chiếc',1,{},'bag.png',45,{'size':'20 x 15 cm','pattern':'Pastel'}),
+            ('toy','Bộ ghép hình 50 miếng','Deli',16000,'Bộ',1,{},'toy.png',70,{'type':'Ghép hình','minimum_age':5}),
+            ('electric_device','Đèn bàn học LED','Deli',72000,'Chiếc',1,{},'electric-device.png',30,{'minimum_age':None,'weight':300}),
         ]
-        for cat,name,brand,price,unit,pack,attrs,image,stock in catalogue:
-            db.execute('INSERT INTO products(category_id,name,description,brand,price,selling_unit,pack_quantity,attributes,image,published,stock) VALUES(?,?,?,?,?,?,?,?,?,1,?)',
-                       (cat,name,f'{name}. Dụng cụ chất lượng cho học tập và công việc. Kiểm tra đơn vị bán và thông số trước khi chọn mua.',brand,price,unit,pack,json.dumps(attrs,ensure_ascii=False),f'/assets/{image}.png',stock))
-        db.execute("INSERT INTO promotions(code,percent,minimum,starts_at,ends_at) VALUES('MOSA10',10,50000,'2020-01-01T00:00:00+00:00','2035-12-31T23:59:59+00:00')")
+        for index,(kind,name,brand,price,unit,pack,attrs,image,stock,details) in enumerate(catalogue,1):
+            attrs['pack_quantity'] = pack
+            pid = legacy_id('products', index)
+            db.execute("INSERT INTO products(id,name,description,brand,price,selling_unit,attributes,image,status,stock,product_type) VALUES(?,?,?,?,?,?,?,?,'ACTIVE',?,?)",
+                       (pid,name,f'{name}. Kiểm tra đơn vị bán và thông số trước khi chọn mua.',brand,price,unit,json.dumps(attrs,ensure_ascii=False),f'/assets/{image}',stock,kind))
+            db.execute('INSERT INTO product_image(product_id,image_url,is_primary) VALUES(?,?,1)', (pid,f'/assets/{image}'))
+            db.execute('INSERT INTO '+kind+'(product_id,'+','.join(details)+') VALUES('+','.join('?' for _ in range(len(details)+1))+')',(pid,*details.values()))
     if demo and not db.execute('SELECT 1 FROM users').fetchone():
         password = generate_password_hash('Mosa@12345')
-        for role in ['customer','admin','warehouse','sales','manager']:
-            db.execute('INSERT INTO users(name,email,password,role) VALUES(?,?,?,?)',(f'Mosa {role}',f'{role}@mosa.local',password,role))
+        for index,role in enumerate(['customer','admin','warehouse','sales','manager'],1):
+            db.execute('INSERT INTO users(id,name,email,password,role) VALUES(?,?,?,?,?)',(legacy_id('users', index),f'Mosa {role}',f'{role}@mosa.local',password,role))
+    db.execute("INSERT OR IGNORE INTO carts(owner,customer_id) SELECT 'u:'||id,id FROM users")
     db.commit()
     db.close()

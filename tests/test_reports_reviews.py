@@ -5,15 +5,15 @@ from test_orders import checkout
 def test_reviews_delivered_only_bounds_duplicate(app,client):
     oid=checkout(client,'cod').json['id']
     d={'rating':5,'comment':'Bút viết rất tốt'}
-    assert call(client,'POST','/products/1/reviews',d).status_code==403
+    assert call(client,'POST','/products/6d6cec0d-03a6-5c54-bd6b-aeeefdfa5086/reviews',d).status_code==403
     admin=app.test_client()
     sign_in(admin,'admin')
     for status in ['picking','packed','shipped','delivered']:
         assert call(admin,'POST',f'/staff/orders/{oid}/status',{'status':status}).status_code==200
-    assert call(client,'POST','/products/1/reviews',{**d,'rating':6}).status_code==400
-    assert call(client,'POST','/products/1/reviews',d).status_code==201
-    assert call(client,'POST','/products/1/reviews',d).status_code==409
-    assert client.get('/api/products/1').json['reviews'][0]['rating']==5
+    assert call(client,'POST','/products/6d6cec0d-03a6-5c54-bd6b-aeeefdfa5086/reviews',{**d,'rating':6}).status_code==400
+    assert call(client,'POST','/products/6d6cec0d-03a6-5c54-bd6b-aeeefdfa5086/reviews',d).status_code==201
+    assert call(client,'POST','/products/6d6cec0d-03a6-5c54-bd6b-aeeefdfa5086/reviews',d).status_code==409
+    assert client.get('/api/products/6d6cec0d-03a6-5c54-bd6b-aeeefdfa5086').json['reviews'][0]['rating']==5
 
 
 def test_period_reports_paid_scope_and_csv(app,client):

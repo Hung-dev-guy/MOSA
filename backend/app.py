@@ -26,6 +26,8 @@ def create_app(config=None):
         SESSION_COOKIE_SECURE=os.environ.get('COOKIE_SECURE')=='1',
     )
     app.config.update(config or {})
+    from pathlib import Path
+    app.config.setdefault('QUERY_MEDIA_DIRECTORY', str(Path(app.config['DATABASE']).parent/'query-media'))
     init_db(app.config['DATABASE'],app.config['DEMO_MODE'])
     register_http(app)
     for controller in (

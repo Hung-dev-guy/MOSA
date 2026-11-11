@@ -2,4 +2,4 @@
 
 
 def initial_payment(order_id,method,amount):
-    return (order_id,method,'awaiting_collection' if method=='cod' else 'pending',f'MOSA-PAY-{order_id}',amount)
+    return (order_id,method,'PENDING',f'MOSA-PAY-{order_id}',amount)

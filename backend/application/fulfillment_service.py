@@ -13,10 +13,11 @@ def transition(order_id, status, actor):
     require(transitions.get(o['status']) == status, 'Không thể chuyển trạng thái đơn hàng theo thứ tự này.', 409)
     if status == 'shipped':
         for line in o['items']:
-            db.execute('UPDATE products SET stock=stock-?,reserved=reserved-? WHERE id=?', (line['quantity'], line['quantity'], line['product_id']))
+            db.execute('DELETE FROM inventory_reservations WHERE order_id=? AND product_id=?', (order_id,line['product_id']))
+            db.execute('UPDATE products SET stock=stock-? WHERE id=?', (line['quantity'],line['product_id']))
             movement(line['product_id'], -line['quantity'], 'dispatch', actor, order_id)
-    if status == 'delivered' and o['payment']['method'] == 'cod':
-        db.execute("UPDATE payments SET status='collected' WHERE order_id=?", (order_id,))
+    if status == 'delivered' and o['payment']['method'] == 'COD':
+        db.execute("UPDATE payments SET status='PAID' WHERE order_id=?", (order_id,))
     db.execute('UPDATE orders SET status=? WHERE id=?', (status, order_id))
     history(order_id, status, actor)
 

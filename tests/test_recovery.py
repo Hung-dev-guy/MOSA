@@ -11,11 +11,11 @@ def test_durability_backup_restore(app,client,tmp_path):
     dest=tmp_path/'backup.sqlite'
     backup(app.config['DATABASE'],dest)
     with connect(dest) as db:
-        assert db.execute('SELECT reserved FROM products WHERE id=1').fetchone()[0]==2
+        assert db.execute("SELECT COALESCE(SUM(quantity),0) FROM inventory_reservations WHERE product_id='6d6cec0d-03a6-5c54-bd6b-aeeefdfa5086'").fetchone()[0]==2
         assert db.execute('SELECT status FROM orders WHERE id=?',(oid,)).fetchone()[0]=='confirmed'
         assert not db.execute('PRAGMA foreign_key_check').fetchall()
         with pytest.raises(sqlite3.IntegrityError):
-            db.execute('UPDATE products SET stock=0 WHERE id=1')
+            db.execute("UPDATE products SET stock=0 WHERE id='6d6cec0d-03a6-5c54-bd6b-aeeefdfa5086'")
     restored=tmp_path/'restored.sqlite'
     backup(dest,restored)
     with connect(restored) as db:

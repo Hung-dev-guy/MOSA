@@ -1,7 +1,6 @@
 from flask import g, request
 from ..http import body, protected, respond
-from backend.application import catalogue_service
-from backend.application import review_promotion_service
+from backend.application import catalog_service
 from backend.application import account_service
 from backend.application import inventory_service
 from backend.application import fulfillment_service
@@ -18,30 +17,16 @@ bp = Blueprint('administration_controller', __name__)
 @bp.post('/api/staff/products')
 @protected('admin')
 def create_product():
-    return respond(catalogue_service.create_product(data=body(), user=g.user))
+    return respond(catalog_service.create_product(data=body(), user=g.user))
 
 
-@bp.patch('/api/staff/products/<int:pid>')
+@bp.patch('/api/staff/products/<pid>')
 @protected('admin')
 def edit_product(pid):
-    return respond(catalogue_service.edit_product(pid, data=body(), user=g.user))
+    return respond(catalog_service.edit_product(pid, data=body(), user=g.user))
 
 
-@bp.route('/api/staff/categories', methods=['POST'])
-@bp.route('/api/staff/categories/<int:cid>', methods=['PATCH'])
-@protected('admin')
-def save_category(cid=None):
-    return respond(catalogue_service.save_category(cid, data=body(), user=g.user))
-
-
-@bp.post('/api/staff/promotions')
-@bp.patch('/api/staff/promotions/<int:pid>')
-@protected('admin')
-def save_promotion(pid=None):
-    return respond(review_promotion_service.save_promotion(pid, data=body(), user=g.user))
-
-
-@bp.patch('/api/staff/customers/<int:uid>')
+@bp.patch('/api/staff/customers/<uid>')
 @protected('admin')
 def customer_status(uid):
     return respond(account_service.customer_status(uid, data=body(), user=g.user))
@@ -53,19 +38,19 @@ def inventory():
     return respond(inventory_service.inventory(data=body(), user=g.user))
 
 
-@bp.post('/api/staff/orders/<int:oid>/status')
+@bp.post('/api/staff/orders/<oid>/status')
 @protected('warehouse')
 def fulfil(oid):
     return respond(fulfillment_service.fulfil(oid, data=body(), user=g.user))
 
 
-@bp.post('/api/staff/orders/<int:oid>/shipment')
+@bp.post('/api/staff/orders/<oid>/shipment')
 @protected('sales')
 def shipment(oid):
     return respond(shipping_service.shipment(oid, data=body(), user=g.user))
 
 
-@bp.post('/api/staff/orders/<int:oid>/tracking')
+@bp.post('/api/staff/orders/<oid>/tracking')
 @protected('sales')
 def tracking(oid):
     return respond(shipping_service.tracking(oid, data=body(), user=g.user))
@@ -77,7 +62,7 @@ def supply():
     return respond(inventory_service.supply(data=body(), user=g.user))
 
 
-@bp.post('/api/staff/supply/<int:rid>/receive')
+@bp.post('/api/staff/supply/<rid>/receive')
 @protected('warehouse')
 def receive(rid):
     return respond(inventory_service.receive(rid, user=g.user))
@@ -85,7 +70,7 @@ def receive(rid):
 
 
 
-@bp.patch('/api/staff/support/<int:cid>')
+@bp.patch('/api/staff/support/<cid>')
 @protected('sales')
 def resolve_case(cid):
     return respond(order_service.resolve_case(cid, data=body(), user=g.user))
@@ -101,12 +86,6 @@ def exception():
 @protected('admin', 'warehouse', 'sales', 'manager')
 def overview():
     return respond(order_service.overview(user=g.user))
-
-
-@bp.post('/api/products/<int:pid>/reviews')
-@protected()
-def review(pid):
-    return respond(review_promotion_service.review(pid, data=body(), user=g.user))
 
 
 @bp.get('/api/staff/reports')

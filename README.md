@@ -1,6 +1,15 @@
 # Mosa Stationery
 
-Web thương mại điện tử văn phòng phẩm theo chương 1–4 của `E-commerce-pttkht.docx` và các sơ đồ trong `VPP-diagrams`. Backend Python Flask, frontend React + Vite, SQLite. Giao diện tham khảo bố cục [ADCBook](https://adcbook.net.vn/), sử dụng thương hiệu Mosa của tài liệu và minh hoạ sản phẩm local. Cấu trúc cũ cùng toàn bộ cấu hình/script Docker đã được thay thế; lịch sử Git được giữ.
+## Chạy bằng Docker
+
+Xem [hướng dẫn Docker](docs/docker.md) để chuẩn bị `.env`, bản sao database và model local. Sau đó chạy từ thư mục project:
+
+```powershell
+docker compose up -d --build
+```
+
+Mở http://127.0.0.1:8080. Database Docker nằm riêng tại `instance/docker/mosa.sqlite`; các thay đổi không ghi vào database Flask local. Dừng bằng `docker compose down`.
+
 
 ## Chạy nhanh trên Windows
 
@@ -27,7 +36,7 @@ Mật khẩu chung: `Mosa@12345`. Tài khoản chỉ seed khi DB chưa có user 
 | Email | Quyền |
 |---|---|
 | customer@mosa.local | Mua hàng và đơn riêng |
-| admin@mosa.local | Catalogue, danh mục, khách hàng, ưu đãi và toàn bộ vận hành |
+| admin@mosa.local | Catalogue, loại sản phẩm, khách hàng, ưu đãi và toàn bộ vận hành |
 | warehouse@mosa.local | Kho, bổ sung hàng và fulfilment |
 | sales@mosa.local | Đơn hàng, giao hàng và hỗ trợ |
 | manager@mosa.local | Báo cáo và CSV |
@@ -41,7 +50,7 @@ Mật khẩu chung: `Mosa@12345`. Tài khoản chỉ seed khi DB chưa có user 
 - Tìm giọng nói bằng dịch vụ trình duyệt, có thông báo quyền và fallback; tìm ảnh PNG/JPEG/WebP qua so khớp màu và bố cục local.
 - Giỏ khách vãng lai, gộp giỏ khi login, quantity, checkout quote, promotion, order snapshot và idempotency.
 - Giữ kho trong transaction trước thanh toán; pending/failed/success tách biệt; retry trên cùng order, cancel đủ điều kiện, in-app notifications.
-- Catalogue/category/promotion/customer administration; lịch sử kho, receipt/adjustment, replenishment, picking/packing/dispatch/delivery.
+- Catalogue theo sáu loại Product, promotion/customer administration; lịch sử kho, receipt/adjustment, replenishment, picking/packing/dispatch/delivery.
 - Vận đơn và tracking nhập tay có chống event trùng; support cases, ngoại lệ vận hành và audit.
 - Review sau giao hàng; báo cáo kỳ UTC, doanh thu payment đã thu, tồn thực tế/đã giữ/khả dụng và CSV.
 
@@ -54,7 +63,7 @@ Bốn tài liệu này được tạo trước khi code, theo cách tổ chức 
 3. [API definition](docs/api-definition.md)
 4. [Testing](docs/testing.md)
 
-[Biên bản kiểm thử](docs/test-evidence.md), [kết quả pytest XML](docs/pytest-results.xml), [kết quả Playwright JSON](docs/playwright-results.json), [inventory sơ đồ VPP](docs/vpp-inventory.json). `source-document.txt` giữ bản trích xuất đọc nguồn; chương 5 không được dùng làm đặc tả.
+[Biên bản kiểm thử](docs/test-evidence.md), [kết quả pytest XML](docs/pytest-results.xml), [kết quả Playwright JSON](docs/playwright-results.json), [inventory sơ đồ VPP](docs/vpp-inventory.json). `source-document.txt` giữ bản trích xuất PDF hiện tại; `design-alignment.md` ghi các quyết định dung hòa chương 2, 4, 5 và sơ đồ mới.
 
 ```text
 backend/
@@ -93,7 +102,7 @@ npm --prefix frontend run test:e2e
 
 Playwright dùng Microsoft Edge đã cài. Hai project là desktop Edge 1440×1000 và mobile viewport/touch 390×664 bằng Chromium/Edge; không phải thử Safari hoặc điện thoại vật lý. Server test port 5099 và SQLite tạm độc lập với DB runtime. Screenshots sau test nằm tại `docs/evidence/` (Git ignored). `docs/playwright-results.json` chứa thông tin môi trường tại thời điểm chạy; không có password hay token.
 
-Kết quả sau khi chia cấu trúc theo sơ đồ 3 lớp ngày 05/11/2026: **31 pytest passed** (gồm 4 kiểm tra kiến trúc), **10 Playwright passed**, **0 failed/skipped**; frontend production build passed. Xem biên bản để biết giới hạn.
+Kết quả sau khi chia cấu trúc theo sơ đồ 3 lớp ngày 10/11/2026: **55 pytest passed** (gồm 4 kiểm tra kiến trúc), **14 Playwright passed**, **0 failed/skipped**; frontend production build passed. Xem biên bản để biết giới hạn.
 
 ## Phát triển frontend
 
@@ -111,6 +120,16 @@ Vite proxy `/api` tới port 5000. Sau khi chỉnh React, `npm --prefix frontend
 
 ## Backup và restore
 
+### Dữ liệu ADCBook
+
+Database local đã được bổ sung 120 SKU từ [ADCBook](https://adcbook.net.vn/): mỗi loại `pen`, `notebook`, `bag`, `toy`, `book`, `electric_device` có 20 SKU. Ảnh được lưu trong `frontend/public/assets/adcbook/`; chi tiết nguồn và các bản ghi bị bỏ qua nằm trong `docs/adcbook-import.json`. Chỉ nhập thông tin sản phẩm, không nhập nội dung quảng cáo. Các thiết bị điện thiếu đơn vị bán được chuẩn hóa thành `Chiếc` và ghi rõ `source_selling_unit: null` trong báo cáo.
+
+```powershell
+.\.venv\Scripts\python scripts/import_adcbook.py --per-type 20 --stock 100 --apply
+```
+
+Bỏ `--apply` để chỉ tải và kiểm tra dữ liệu. Khi áp dụng, script sao lưu database trước, dùng UUID cố định theo biến thể để không tạo trùng, giữ nguyên sản phẩm khác và đơn hàng. **100 là tồn khả dụng demo/SKU**, không phải tồn kho thực tế của ADCBook. Chạy lại sẽ đặt tồn khả dụng của các SKU nhập về 100, cộng thêm lượng đang giữ chỗ vào tồn kho tổng. Giá và dữ liệu nguồn trong cache là ảnh chụp lúc tải; script không đồng bộ theo thời gian thực.
+
 ```powershell
 .\.venv\Scripts\python scripts/backup.py instance/mosa.sqlite backups/mosa-2026-11-05.sqlite
 ```
@@ -121,8 +140,28 @@ Destination phải chưa tồn tại. Script dùng SQLite backup API và integri
 
 Đây là bản local để chạy và kiểm thử đồ án. Online payment không thu tiền thật; màn hình demo cho chọn pending/success/failed. Vận chuyển và supplier là ghi nhận nội bộ/nhập tay. Recovery demo hiển thị link local, chưa gửi email. Không có hoàn tiền tự động.
 
-Image search dùng descriptor màu/bố cục, **chưa có AI embedding/model nhận diện sản phẩm**. Kết quả tương tự không chứng minh cùng loại hoặc đơn vị bán. Voice phụ thuộc hỗ trợ và quyền micro của trình duyệt; một số browser gửi âm thanh tới dịch vụ nhận dạng của họ. Backend không giữ audio hoặc ảnh truy vấn. Test voice dùng stub để kiểm tra UI; chưa kiểm thử micro/dịch vụ thật.
+Image search dùng descriptor màu/bố cục, **chưa có AI embedding/model nhận diện sản phẩm**. Kết quả tương tự không chứng minh cùng loại hoặc đơn vị bán. Voice phụ thuộc hỗ trợ và quyền micro của trình duyệt; một số browser gửi âm thanh tới dịch vụ nhận dạng của họ. Backend không giữ audio; ảnh truy vấn lưu riêng có hạn 24 giờ và dọn ảnh hết hạn khi có tìm ảnh tiếp theo. Test voice dùng stub để kiểm tra UI; chưa kiểm thử micro/dịch vụ thật.
 
 Chưa chứng nhận uptime, tải production, TLS, mã hoá ổ đĩa, mail/provider thật hoặc mức độ liên quan AI. Secret mặc định random theo lần boot nên session sẽ hết hạn khi restart; đặt biến môi trường `SECRET_KEY` ổn định nếu muốn giữ session. `COOKIE_SECURE=1` dành cho HTTPS. Không public bản demo với seed credentials hoặc recovery demo. `DEMO_MODE=0` tắt các demo endpoint và seed demo, nhưng chưa thay thế các tích hợp production.
 
 Tham khảo kỹ thuật: [Flask testing](https://flask.palletsprojects.com/en/stable/testing/), [Vite](https://vite.dev/guide/), [SpeechRecognition và giới hạn hỗ trợ](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition).
+
+## Text search: từ khóa hoặc ngữ nghĩa
+
+Thanh tìm kiếm có lựa chọn **Từ khóa / Ngữ nghĩa**, áp dụng cho văn bản nhập trực tiếp và transcript giọng nói đã xác nhận. Ngữ nghĩa chạy mô hình multilingual MiniLM local qua FastEmbed, không cần API key. Bộ lọc sản phẩm vẫn bắt buộc.
+
+`run.ps1` cài dependencies và chuẩn bị model. Nếu chạy bằng Python trực tiếp, chuẩn bị một lần trước:
+
+```powershell
+.\.venv\Scripts\python -m pip install -r requirements.txt
+.\.venv\Scripts\python scripts/prepare_text_search.py
+```
+
+Lần chuẩn bị đầu cần mạng tải model (khoảng 220 MB). Các yêu cầu tìm kiếm sau chỉ dùng cache local trong `instance/text-search-model/`. Thiếu model trả thông báo và có nút chuyển sang từ khóa. Xem [semantic-text-search.md](docs/semantic-text-search.md) về API, kiểm thử và giới hạn chất lượng.
+
+
+# Account
+## Admin
+- **Email**: quantri@mosa.local
+- **Mật khẩu mới**: Mosa@12345
+

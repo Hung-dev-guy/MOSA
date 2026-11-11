@@ -1,6 +1,6 @@
 from flask import current_app, g, request
 from ..http import body, owner, protected, respond
-from backend.application import review_promotion_service
+from backend.application import checkout_service
 from backend.application import order_service
 from backend.application import payment_service
 from flask import Blueprint
@@ -9,7 +9,7 @@ bp = Blueprint('order_controller', __name__)
 
 @bp.post('/api/checkout/quote')
 def checkout_quote():
-    return respond(review_promotion_service.checkout_quote(data=body(), owner=owner()))
+    return respond(checkout_service.checkout_quote(data=body(), owner=owner()))
 
 
 @bp.post('/api/orders')
@@ -24,25 +24,25 @@ def orders():
     return respond(order_service.orders(user=g.user))
 
 
-@bp.get('/api/orders/<int:oid>')
+@bp.get('/api/orders/<oid>')
 @protected()
 def get_order(oid):
     return respond(order_service.get_order(oid, user=g.user))
 
 
-@bp.post('/api/orders/<int:oid>/cancel')
+@bp.post('/api/orders/<oid>/cancel')
 @protected()
 def cancel_order(oid):
     return respond(order_service.cancel_order(oid, user=g.user))
 
 
-@bp.post('/api/orders/<int:oid>/payment/retry')
+@bp.post('/api/orders/<oid>/payment/retry')
 @protected()
 def retry_payment(oid):
     return respond(payment_service.retry_payment(oid, user=g.user, config=current_app.config))
 
 
-@bp.post('/api/demo/payments/<int:oid>')
+@bp.post('/api/demo/payments/<oid>')
 @protected()
 def demo_payment(oid):
     return respond(payment_service.demo_payment(oid, data=body(), user=g.user, config=current_app.config))

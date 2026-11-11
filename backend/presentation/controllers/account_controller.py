@@ -12,7 +12,7 @@ def finish_login(result):
     status=200
     if isinstance(result,tuple):
         result,status=result
-    session.update(user_id=result['user']['id'],version=result.pop('session_version'),csrf=secrets.token_hex(24))
+    session.update(user_id=result['user']['id'],auth_token=result.pop('auth_token'),csrf=secrets.token_hex(24))
     result['csrf_token']=session['csrf']
     return jsonify(result),status
 
@@ -37,6 +37,7 @@ def sign_in():
 
 @bp.post('/api/auth/logout')
 def logout():
+    account_service.logout(session.get('auth_token'))
     session.clear()
     return jsonify(ok=True)
 
@@ -51,7 +52,7 @@ def account():
 @protected()
 def change_password():
     result = account_service.change_password(data=body(), user=g.user)
-    session['version'] = g.user['session_version'] + 1
+    session['auth_token'] = result.pop('auth_token')
     return respond(result)
 
 

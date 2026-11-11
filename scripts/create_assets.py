@@ -29,6 +29,30 @@ def make(name):
             d.ellipse((109,y,132,y+11),outline='#5c6576',width=3)
         for y in range(244,300,12):
             d.line((180,y,304,y),fill='#d2dbeb',width=2)
+    elif name=='book':
+        d.rounded_rectangle((112,65,355,328),radius=12,fill='#6f94a9')
+        d.rectangle((112,75,132,318),fill='#426a84')
+        d.rectangle((138,316,347,330),fill='#f4efdf')
+        d.text((160,105),'SCIENCE',font=FONT,fill='#ffffff')
+        d.ellipse((174,171,299,284),fill='#d9ba77')
+        d.arc((150,190,326,261),0,360,fill='#f6efd9',width=5)
+    elif name=='bag':
+        d.arc((163,60,310,230),180,360,fill='#8c789b',width=20)
+        d.rounded_rectangle((100,140,375,328),radius=32,fill='#c5b2ce',outline='#8c789b',width=4)
+        d.rounded_rectangle((157,220,320,300),radius=12,outline='#8c789b',width=4)
+        d.line((124,164,350,164),fill='#fbf5fb',width=5)
+        d.text((189,184),'MOSA',font=FONT,fill='#66566e')
+    elif name=='toy':
+        for x,y,color in [(100,225,'#da9a89'),(245,225,'#8db7b4'),(172,120,'#d7bf7f')]:
+            d.rounded_rectangle((x,y,x+130,y+102),radius=10,fill=color,outline='#647580',width=3)
+            for dx in [20,78]:
+                d.ellipse((x+dx,y-18,x+dx+34,y+17),fill=color,outline='#647580',width=2)
+    elif name=='electric-device':
+        d.ellipse((133,311,350,340),fill='#6a9297')
+        d.line((237,314,275,193,201,135),fill='#6a9297',width=16)
+        d.ellipse((264,183,287,206),fill='#3e666b')
+        d.polygon([(157,82),(229,100),(262,164),(119,128)],fill='#8fb9bd',outline='#527f86')
+        d.line((125,128,256,163),fill='#ebd69a',width=9)
     elif name=='paper':
         for i in range(8):
             d.rectangle((105+i,84-i*2,372+i,324-i*2),fill='#ffffff',outline='#c9cfd7',width=2)
@@ -80,5 +104,5 @@ def make(name):
 
 
 if __name__=='__main__':
-    for name in ['pen-blue','pen-box','notebook','exercise','paper','ruler','folder','colors','paint','scissors','tape','clips']:
+    for name in ['pen-blue','pen-box','notebook','exercise','book','bag','toy','electric-device','paper','ruler','folder','colors','paint','scissors','tape','clips']:
         make(name)

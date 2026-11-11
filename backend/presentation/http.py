@@ -55,7 +55,7 @@ def register_http(app):
             return
         session.setdefault('guest',secrets.token_hex(24))
         session.setdefault('csrf',secrets.token_hex(24))
-        g.user=get_session_user(session.get('user_id'),session.get('version'))
+        g.user=get_session_user(session.get('user_id'),session.get('auth_token'))
         if not g.user:
             session.pop('user_id',None)
         if request.method not in ('GET','HEAD','OPTIONS'):

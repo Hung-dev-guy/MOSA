@@ -13,7 +13,7 @@ from backend.data_infrastructure.adapters.payment_gateway_adapter import initial
 
 def create_payment(order_id,method,amount):
     # The order and reservation already exist in the caller's transaction.
-    get_db().execute('INSERT INTO payments VALUES(?,?,?,?,?)',initial_payment(order_id,method,amount))
+    get_db().execute('INSERT INTO payments(order_id,method,status,reference,amount,idempotency_key) VALUES(?,?,?,?,?,?)',initial_payment(order_id,method,amount)+(order_id,))
 
 
 def retry_payment(oid, *, user, config):
@@ -21,12 +21,12 @@ def retry_payment(oid, *, user, config):
     db.execute('BEGIN IMMEDIATE')
     o = own_order(oid, user=user)
     p = one('SELECT * FROM payments WHERE order_id=?', (oid,))
-    require(p['method'] == 'demo' and config['DEMO_MODE'], 'Không hỗ trợ yêu cầu này.', 409)
+    require(p['method'] == 'ONLINE' and config['DEMO_MODE'], 'Không hỗ trợ yêu cầu này.', 409)
     require(o['status'] in ['pending', 'payment_failed'], 'Đơn không thể thanh toán lại.', 409)
     if o['status'] == 'payment_failed':
         reserve(oid, user['id'])
     db.execute("UPDATE orders SET status='pending' WHERE id=?", (oid,))
-    db.execute("UPDATE payments SET status='pending' WHERE order_id=?", (oid,))
+    db.execute("UPDATE payments SET status='PENDING',failure_reason=NULL WHERE order_id=?", (oid,))
     history(oid, 'pending', user['id'])
     db.commit()
     return order_detail(oid)
@@ -47,13 +47,13 @@ def demo_payment(oid, *, data, user, config):
         db.commit()
         return order_detail(oid)
     p = one('SELECT * FROM payments WHERE order_id=?', (oid,))
-    require(p['method'] == 'demo', 'Đơn này không dùng thanh toán demo.', 409)
-    require(p['status'] == 'pending', 'Kết quả cuối đã được ghi nhận; không thể ghi đè.', 409)
+    require(p['method'] == 'ONLINE', 'Đơn này không dùng thanh toán demo.', 409)
+    require(p['status'] == 'PENDING', 'Kết quả cuối đã được ghi nhận; không thể ghi đè.', 409)
     db.execute('INSERT INTO payment_events VALUES(?,?,?,?)', (event, oid, result, now()))
     if result == 'failed':
         release(oid, user['id'])
     status = {'success': 'confirmed', 'failed': 'payment_failed', 'pending': 'pending'}[result]
-    db.execute('UPDATE payments SET status=? WHERE order_id=?', (result, oid))
+    db.execute('UPDATE payments SET status=?,failure_reason=?,updated_at=? WHERE order_id=?', ({'success':'PAID','failed':'FAILED','pending':'PENDING'}[result], 'Demo payment failed' if result == 'failed' else None,now(),oid))
     db.execute('UPDATE orders SET status=? WHERE id=?', (status, oid))
     history(oid, status, 'demo:' + str(user['id']))
     db.commit()

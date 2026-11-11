@@ -35,3 +35,14 @@ def timestamp(value):
         return dt.astimezone(timezone.utc).isoformat(timespec='seconds')
     except ValueError:
         require(False, 'Thời gian không hợp lệ.')
+
+
+def identifier(value, label='ID'):
+    from uuid import UUID
+    require(isinstance(value, str), f'{label}: cần UUID dạng chuỗi.')
+    try:
+        parsed = UUID(value)
+    except ValueError:
+        require(False, f'{label}: UUID không hợp lệ.')
+    require(str(parsed) == value, f'{label}: UUID không hợp lệ.')
+    return value

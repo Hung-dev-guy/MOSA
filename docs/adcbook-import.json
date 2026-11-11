@@ -1,0 +1,5369 @@
+{
+  "source": "https://adcbook.net.vn/",
+  "imported_at": "2026-11-10T09:40:07+00:00",
+  "applied": true,
+  "database": "C:\\Users\\ADMIN\\Documents\\NT02-ISAD\\pttkht-e-commerce\\PTTKHTTT-APP\\instance\\mosa.sqlite",
+  "backup": "C:\\Users\\ADMIN\\Documents\\NT02-ISAD\\pttkht-e-commerce\\PTTKHTTT-APP\\instance\\mosa.sqlite.pre-adcbook-20261110T094007055732Z.sqlite",
+  "counts": {
+    "pen": 20,
+    "notebook": 20,
+    "bag": 20,
+    "toy": 20,
+    "book": 20,
+    "electric_device": 20
+  },
+  "available_per_sku": 100,
+  "availability_is_demo": true,
+  "skipped": [
+    {
+      "kind": "pen",
+      "product_id": 86646017,
+      "variant_id": 216887913,
+      "reason": "Subtype field too long: type"
+    },
+    {
+      "kind": "pen",
+      "product_id": 86422847,
+      "variant_id": 216434806,
+      "reason": "Subtype field too long: type"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 55280498,
+      "variant_id": 161899967,
+      "reason": "Notebook missing explicit page count/size"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 55277679,
+      "variant_id": 161880115,
+      "reason": "Notebook missing explicit page count/size"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 55277656,
+      "variant_id": 161880073,
+      "reason": "Notebook missing explicit page count/size"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341041,
+      "variant_id": 147106444,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341040,
+      "variant_id": 147106443,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341039,
+      "variant_id": 147106442,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341038,
+      "variant_id": 147106441,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341037,
+      "variant_id": 147106440,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341035,
+      "variant_id": 147106438,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341034,
+      "variant_id": 147106437,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341033,
+      "variant_id": 147106436,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341032,
+      "variant_id": 147106435,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341031,
+      "variant_id": 147106434,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341030,
+      "variant_id": 147106433,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341029,
+      "variant_id": 147106432,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341028,
+      "variant_id": 147106431,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341027,
+      "variant_id": 147106430,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341026,
+      "variant_id": 147106429,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341025,
+      "variant_id": 147106428,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341024,
+      "variant_id": 147106427,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341023,
+      "variant_id": 147106426,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341021,
+      "variant_id": 147106424,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341020,
+      "variant_id": 147106423,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341018,
+      "variant_id": 147106421,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341017,
+      "variant_id": 147106420,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341016,
+      "variant_id": 147106419,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341015,
+      "variant_id": 147106418,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341014,
+      "variant_id": 147106417,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341013,
+      "variant_id": 147106416,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341012,
+      "variant_id": 147106415,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341011,
+      "variant_id": 147106414,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341010,
+      "variant_id": 147106413,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341009,
+      "variant_id": 147106412,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341008,
+      "variant_id": 147106411,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341007,
+      "variant_id": 147106410,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341006,
+      "variant_id": 147106409,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341005,
+      "variant_id": 147106408,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341004,
+      "variant_id": 147106407,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341003,
+      "variant_id": 147106406,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341002,
+      "variant_id": 147106405,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46341001,
+      "variant_id": 147106404,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340999,
+      "variant_id": 147106402,
+      "reason": "Notebook missing explicit page count/size"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340998,
+      "variant_id": 147106401,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340997,
+      "variant_id": 147106400,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340996,
+      "variant_id": 147106399,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340995,
+      "variant_id": 147106398,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340993,
+      "variant_id": 147106395,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340992,
+      "variant_id": 147106394,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340991,
+      "variant_id": 147106393,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340990,
+      "variant_id": 147106392,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340987,
+      "variant_id": 147106389,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340986,
+      "variant_id": 147106388,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340984,
+      "variant_id": 147106386,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340983,
+      "variant_id": 147106385,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340982,
+      "variant_id": 147106384,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340981,
+      "variant_id": 147106383,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340978,
+      "variant_id": 147106380,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340977,
+      "variant_id": 147106379,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340976,
+      "variant_id": 147106378,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340975,
+      "variant_id": 147106377,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340974,
+      "variant_id": 147106376,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340972,
+      "variant_id": 147106374,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340971,
+      "variant_id": 147106373,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340970,
+      "variant_id": 147106372,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340968,
+      "variant_id": 147106370,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340967,
+      "variant_id": 147106369,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340966,
+      "variant_id": 147106368,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340965,
+      "variant_id": 147106367,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340964,
+      "variant_id": 147106366,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340963,
+      "variant_id": 147106365,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340962,
+      "variant_id": 147106364,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340961,
+      "variant_id": 147106363,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340960,
+      "variant_id": 147106362,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340959,
+      "variant_id": 147106361,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340958,
+      "variant_id": 147106360,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340957,
+      "variant_id": 147106359,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340955,
+      "variant_id": 147106357,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340954,
+      "variant_id": 147106356,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340953,
+      "variant_id": 147106355,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340952,
+      "variant_id": 147106354,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340951,
+      "variant_id": 147106353,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340950,
+      "variant_id": 147106352,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340949,
+      "variant_id": 147106351,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340948,
+      "variant_id": 147106350,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340946,
+      "variant_id": 147106348,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340945,
+      "variant_id": 147106347,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340944,
+      "variant_id": 147106346,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340943,
+      "variant_id": 147106345,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340942,
+      "variant_id": 147106344,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340941,
+      "variant_id": 147106343,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340940,
+      "variant_id": 147106342,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340939,
+      "variant_id": 147106341,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340938,
+      "variant_id": 147106340,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340937,
+      "variant_id": 147106339,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340936,
+      "variant_id": 147106338,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340935,
+      "variant_id": 147106337,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340934,
+      "variant_id": 147106336,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340933,
+      "variant_id": 147106335,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340932,
+      "variant_id": 147106334,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340931,
+      "variant_id": 147106333,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340930,
+      "variant_id": 147106332,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340929,
+      "variant_id": 147106331,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340928,
+      "variant_id": 147106330,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340927,
+      "variant_id": 147106329,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340926,
+      "variant_id": 147106328,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340925,
+      "variant_id": 147106327,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340924,
+      "variant_id": 147106326,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340923,
+      "variant_id": 147106325,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340922,
+      "variant_id": 147106324,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340921,
+      "variant_id": 147106323,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340920,
+      "variant_id": 147106322,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340919,
+      "variant_id": 147106321,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340918,
+      "variant_id": 147106320,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340917,
+      "variant_id": 147106319,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340916,
+      "variant_id": 147106318,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340915,
+      "variant_id": 147106317,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340914,
+      "variant_id": 147106316,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340913,
+      "variant_id": 147106315,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340912,
+      "variant_id": 147106314,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340911,
+      "variant_id": 147106313,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340910,
+      "variant_id": 147106312,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340909,
+      "variant_id": 147106311,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340908,
+      "variant_id": 147106310,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340907,
+      "variant_id": 147106309,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340906,
+      "variant_id": 147106308,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340905,
+      "variant_id": 147106307,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340904,
+      "variant_id": 147106306,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340902,
+      "variant_id": 147106304,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340901,
+      "variant_id": 147106303,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340900,
+      "variant_id": 147106302,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340899,
+      "variant_id": 147106301,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340898,
+      "variant_id": 147106300,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340897,
+      "variant_id": 147106299,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340895,
+      "variant_id": 147106297,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340894,
+      "variant_id": 147106296,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340893,
+      "variant_id": 147106295,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340892,
+      "variant_id": 147106294,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340891,
+      "variant_id": 147106293,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340890,
+      "variant_id": 147106292,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340889,
+      "variant_id": 147106291,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340888,
+      "variant_id": 147106290,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340887,
+      "variant_id": 147106289,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340885,
+      "variant_id": 147106287,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340884,
+      "variant_id": 147106286,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340883,
+      "variant_id": 147106285,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340882,
+      "variant_id": 147106284,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340881,
+      "variant_id": 147106283,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340880,
+      "variant_id": 147106282,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340879,
+      "variant_id": 147106281,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340878,
+      "variant_id": 147106280,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340877,
+      "variant_id": 147106279,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340876,
+      "variant_id": 147106278,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340875,
+      "variant_id": 147106277,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340873,
+      "variant_id": 147106275,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340872,
+      "variant_id": 147106274,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340871,
+      "variant_id": 147106273,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340870,
+      "variant_id": 147106272,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340869,
+      "variant_id": 147106271,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340868,
+      "variant_id": 147106270,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340867,
+      "variant_id": 147106269,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340866,
+      "variant_id": 147106268,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340865,
+      "variant_id": 147106267,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340864,
+      "variant_id": 147106266,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340863,
+      "variant_id": 147106265,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340862,
+      "variant_id": 147106264,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340861,
+      "variant_id": 147106263,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340860,
+      "variant_id": 147106262,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340858,
+      "variant_id": 147106260,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340857,
+      "variant_id": 147106259,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340856,
+      "variant_id": 147106258,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340855,
+      "variant_id": 147106257,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340854,
+      "variant_id": 147106256,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340853,
+      "variant_id": 147106255,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340852,
+      "variant_id": 147106254,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340851,
+      "variant_id": 147106253,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340850,
+      "variant_id": 147106252,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340849,
+      "variant_id": 147106251,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340848,
+      "variant_id": 147106250,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340847,
+      "variant_id": 147106249,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340846,
+      "variant_id": 147106248,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340845,
+      "variant_id": 147106247,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340843,
+      "variant_id": 147106245,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340842,
+      "variant_id": 147106244,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340841,
+      "variant_id": 147106243,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340840,
+      "variant_id": 147106242,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340839,
+      "variant_id": 147106241,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340838,
+      "variant_id": 147106240,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340837,
+      "variant_id": 147106239,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340836,
+      "variant_id": 147106238,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340835,
+      "variant_id": 147106237,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340834,
+      "variant_id": 147106236,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340833,
+      "variant_id": 147106235,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340832,
+      "variant_id": 147106234,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340831,
+      "variant_id": 147106233,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340829,
+      "variant_id": 147106228,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340828,
+      "variant_id": 147106227,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340827,
+      "variant_id": 147106226,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340826,
+      "variant_id": 147106225,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340825,
+      "variant_id": 147106224,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340823,
+      "variant_id": 147106222,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340822,
+      "variant_id": 147106221,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340821,
+      "variant_id": 147106220,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340820,
+      "variant_id": 147106219,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340819,
+      "variant_id": 147106218,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340818,
+      "variant_id": 147106217,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340816,
+      "variant_id": 147106215,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340815,
+      "variant_id": 147106214,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340814,
+      "variant_id": 147106213,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340813,
+      "variant_id": 147106212,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340812,
+      "variant_id": 147106211,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340811,
+      "variant_id": 147106210,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340810,
+      "variant_id": 147106209,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340809,
+      "variant_id": 147106208,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340808,
+      "variant_id": 147106207,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340807,
+      "variant_id": 147106206,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340806,
+      "variant_id": 147106205,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340805,
+      "variant_id": 147106204,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340804,
+      "variant_id": 147106203,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340803,
+      "variant_id": 147106202,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340802,
+      "variant_id": 147106201,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340801,
+      "variant_id": 147106200,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340799,
+      "variant_id": 147106198,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340798,
+      "variant_id": 147106197,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340797,
+      "variant_id": 147106196,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340795,
+      "variant_id": 147106194,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340794,
+      "variant_id": 147106193,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340793,
+      "variant_id": 147106192,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340792,
+      "variant_id": 147106191,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340791,
+      "variant_id": 147106190,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340790,
+      "variant_id": 147106189,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340788,
+      "variant_id": 147106187,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340787,
+      "variant_id": 147106186,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340786,
+      "variant_id": 147106185,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340785,
+      "variant_id": 147106184,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340784,
+      "variant_id": 147106183,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340783,
+      "variant_id": 147106182,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340782,
+      "variant_id": 147106181,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340781,
+      "variant_id": 147106180,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340780,
+      "variant_id": 147106179,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340779,
+      "variant_id": 147106178,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340778,
+      "variant_id": 147106177,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340777,
+      "variant_id": 147106176,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340776,
+      "variant_id": 147106175,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340775,
+      "variant_id": 147106174,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340774,
+      "variant_id": 147106173,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340773,
+      "variant_id": 147106172,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340772,
+      "variant_id": 147106171,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340771,
+      "variant_id": 147106170,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340770,
+      "variant_id": 147106169,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340768,
+      "variant_id": 147106167,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340767,
+      "variant_id": 147106166,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340766,
+      "variant_id": 147106165,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340765,
+      "variant_id": 147106164,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340764,
+      "variant_id": 147106163,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340763,
+      "variant_id": 147106162,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340762,
+      "variant_id": 147106161,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340761,
+      "variant_id": 147106160,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340759,
+      "variant_id": 147106127,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340758,
+      "variant_id": 147106126,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340757,
+      "variant_id": 147106125,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340756,
+      "variant_id": 147106124,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340755,
+      "variant_id": 147106123,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340754,
+      "variant_id": 147106122,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340752,
+      "variant_id": 147106120,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340751,
+      "variant_id": 147106119,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340750,
+      "variant_id": 147106118,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340749,
+      "variant_id": 147106117,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340748,
+      "variant_id": 147106116,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340747,
+      "variant_id": 147106115,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340746,
+      "variant_id": 147106114,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340745,
+      "variant_id": 147106113,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340744,
+      "variant_id": 147106112,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340743,
+      "variant_id": 147106111,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340742,
+      "variant_id": 147106110,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340741,
+      "variant_id": 147106109,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340740,
+      "variant_id": 147106108,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340739,
+      "variant_id": 147106107,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340737,
+      "variant_id": 147106105,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340736,
+      "variant_id": 147106104,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340735,
+      "variant_id": 147106103,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340733,
+      "variant_id": 147106101,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340732,
+      "variant_id": 147106100,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340731,
+      "variant_id": 147106099,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340730,
+      "variant_id": 147106098,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340729,
+      "variant_id": 147106097,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340728,
+      "variant_id": 147106096,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340726,
+      "variant_id": 147106094,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340725,
+      "variant_id": 147106093,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340724,
+      "variant_id": 147106092,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340723,
+      "variant_id": 147106091,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340722,
+      "variant_id": 147106090,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340721,
+      "variant_id": 147106089,
+      "reason": "Missing/invalid selling unit"
+    },
+    {
+      "kind": "notebook",
+      "product_id": 46340719,
+      "variant_id": 147106087,
+      "reason": "Missing/invalid selling unit"
+    }
+  ],
+  "items": [
+    {
+      "id": "46b307f8-baa3-566c-b24c-f569c1b8df58",
+      "name": "Bút Gel Happy Obby 0.5 mm GEL-056 - Mực Tím",
+      "source_name": "Bút Gel Happy Obby 0.5 mm GEL-056 - Mực Tím",
+      "product_type": "pen",
+      "price": 9000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Thiên Long",
+      "origin": "Việt Nam",
+      "material": "Nhựa",
+      "description": "Bút. Đơn vị bán: Chiếc. Thương hiệu: Thiên Long. Xuất xứ: Việt Nam. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "8935324036409",
+        "Mã vạch": "8935324036409",
+        "Kích thước": "14 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "CÔNG TY TNHH MTV TMDV THIÊN LONG HOÀN CẦU"
+      },
+      "details": {
+        "color": "Tím",
+        "type": "Bút Gel - Bút Nước - Ruột Bút Gel"
+      },
+      "source_product_id": "86656005",
+      "source_variant_id": "216904696",
+      "source_url": "https://adcbook.net.vn/but-gel-gel-056-tim-hop-20-tl?variant=216904696",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/8935324036409.webp?v=1785122462510",
+      "source_available": false,
+      "image": "/assets/adcbook/4f4be4aab69d091f7be7a42a.webp"
+    },
+    {
+      "id": "6e29f322-05ba-53f0-9fc0-7454cdfa8dec",
+      "name": "Bút Gel Quick Dry 0.5 mm GEL-057 Mực Tím",
+      "source_name": "Bút Gel Quick Dry 0.5 mm GEL-057 Mực Tím",
+      "product_type": "pen",
+      "price": 13000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Thiên Long",
+      "origin": "Việt Nam",
+      "material": "Nhựa",
+      "description": "Bút. Đơn vị bán: Chiếc. Thương hiệu: Thiên Long. Xuất xứ: Việt Nam. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "8935324024789",
+        "Mã vạch": "8935324024789",
+        "Kích thước": "14.2 x 1.4 x 0.9 cm",
+        "Nhà cung cấp": "CÔNG TY TNHH MTV TMDV THIÊN LONG HOÀN CẦU"
+      },
+      "details": {
+        "color": "Màu Tím",
+        "type": "Bút Gel - Bút Nước - Ruột Bút Gel"
+      },
+      "source_product_id": "86652731",
+      "source_variant_id": "216901377",
+      "source_url": "https://adcbook.net.vn/but-gel-gel-057-tim-hop-10-tl?variant=216901377",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/8935324024789.webp?v=1785122328657",
+      "source_available": false,
+      "image": "/assets/adcbook/139df814010563e707d7bd1c.webp"
+    },
+    {
+      "id": "a94c11ec-730b-56f9-bd65-e4fc142b5dd5",
+      "name": "Bút Máy Schneider 168937 Zippi - Happy Fish (Xanh Nhạt)",
+      "source_name": "Bút Máy Schneider 168937 Zippi - Happy Fish (Xanh Nhạt)",
+      "product_type": "pen",
+      "price": 108000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Schneider",
+      "origin": "Đức",
+      "material": "Nhựa",
+      "description": "Bút. Đơn vị bán: Chiếc. Thương hiệu: Schneider. Xuất xứ: Đức. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4004675179562",
+        "Mã vạch": "4004675179562",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "Công ty TNHH Thương Mại An Sinh( Thanh toán cuối tháng)"
+      },
+      "details": {
+        "color": "Màu Xanh",
+        "type": "Bút Mực - Mực"
+      },
+      "source_product_id": "86647355",
+      "source_variant_id": "216895139",
+      "source_url": "https://adcbook.net.vn/but-may-schneider-168937-zippi-happy-fish-xanh-nhat-as?variant=216895139",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/sg-11134201-7rena-m2tc2f9isrxj47-jfif.jpg?v=1785121784427",
+      "source_available": false,
+      "image": "/assets/adcbook/f82aea9fd1e34969301b1ec5.jpg"
+    },
+    {
+      "id": "626ec998-c8a1-5093-8aa7-8848733dd286",
+      "name": "Bút Bi Nước Nhanh Khô AGPJ9071 0.5mm Đen",
+      "source_name": "Bút Bi Nước Nhanh Khô AGPJ9071 0.5mm Đen",
+      "product_type": "pen",
+      "price": 21000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "M&G",
+      "origin": "Trung Quốc",
+      "material": "Nhựa",
+      "description": "Bút. Đơn vị bán: Chiếc. Thương hiệu: M&G. Xuất xứ: Trung Quốc. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "6936965491567",
+        "Mã vạch": "6936965491567",
+        "Kích thước": "15 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "Công ty TNHH TM XNK Thần Quang"
+      },
+      "details": {
+        "color": "Xanh",
+        "type": "Bút Gel - Bút Nước - Ruột Bút Gel"
+      },
+      "source_product_id": "86644597",
+      "source_variant_id": "216883950",
+      "source_url": "https://adcbook.net.vn/but-bi-nuoc-agpj9071-0-5-den-nhanh-kho-12-h-tq?variant=216883950",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/97edcedc-1b37-42a4-b23c-cfbe82cc83fb.png?v=1785119578333",
+      "source_available": false,
+      "image": "/assets/adcbook/76d3d70cee0362fa30fe2063.png"
+    },
+    {
+      "id": "0d4faa79-5715-50c6-bd76-60d7c2a6bee2",
+      "name": "Bút Chì Kim Thân Sắt 2B Ngòi 0.7mm VLM-1016",
+      "source_name": "Bút Chì Kim Thân Sắt 2B Ngòi 0.7mm VLM-1016",
+      "product_type": "pen",
+      "price": 35000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Việt Lợi",
+      "origin": "Việt Nam",
+      "material": "Hợp kim",
+      "description": "Bút. Đơn vị bán: Chiếc. Thương hiệu: Việt Lợi. Xuất xứ: Việt Nam. Chất liệu: Hợp kim.",
+      "attributes": {
+        "SKU": "9779566086131",
+        "Mã vạch": "9779566086131",
+        "Nhà cung cấp": "Công ty TNHH Đầu Tư Thương Mại Quốc Tế Việt Lợi (Ký gửi)"
+      },
+      "details": {
+        "color": "Nhiều màu",
+        "type": "Bút Chì - Ruột Bút Chì"
+      },
+      "source_product_id": "86643348",
+      "source_variant_id": "216880358",
+      "source_url": "https://adcbook.net.vn/but-chi-kim-than-sat-2b-ngoi-0-7mm-vlm-1016-36-1440-vl?variant=216880358",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/vn-11134207-81ztc-mlxioqbzfxtx34-1.webp?v=1785118566093",
+      "source_available": false,
+      "image": "/assets/adcbook/006af6f70c502cc91e7b6b5f.webp"
+    },
+    {
+      "id": "dd8084a5-21c0-5234-8262-2614e35fbcd0",
+      "name": "Bút Bi TL025 Đỏ (TL)",
+      "source_name": "Bút Bi TL025 Đỏ (TL)",
+      "product_type": "pen",
+      "price": 10000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Thiên Long",
+      "origin": "Việt Nam",
+      "material": "Nhựa",
+      "description": "Bút. Đơn vị bán: Chiếc. Thương hiệu: Thiên Long. Xuất xứ: Việt Nam. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "8935001804581",
+        "Mã vạch": "2172009018671",
+        "Kích thước": "15 cm",
+        "Nhà cung cấp": "CÔNG TY TNHH MTV TMDV THIÊN LONG HOÀN CẦU"
+      },
+      "details": {
+        "color": "Nhiều màu, Đỏ",
+        "type": "Bút Bi - Ruột Bút Bi"
+      },
+      "source_product_id": "86642755",
+      "source_variant_id": "216877258",
+      "source_url": "https://adcbook.net.vn/but-bi-tl025-20c-h-do-tl?variant=216877258",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/artboard-6-c0e5182684614c2984fc4269a7f06d5d.webp?v=1785117444937",
+      "source_available": false,
+      "image": "/assets/adcbook/2a3853d1a44a7dec37961cb7.webp"
+    },
+    {
+      "id": "5ab5d458-378b-5fc0-b890-e11e91393927",
+      "name": "Bút Gel Hồng Hà Focus HH-206 0.5 mm (Xanh, Đen, Đỏ)",
+      "source_name": "Bút Gel Hồng Hà Focus HH-206 0.5 mm (Xanh, Đen, Đỏ)",
+      "product_type": "pen",
+      "price": 9000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Hồng Hà",
+      "origin": "Việt Nam",
+      "material": "Nhựa",
+      "description": "Bút. Đơn vị bán: Chiếc. Thương hiệu: Hồng Hà. Xuất xứ: Việt Nam. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "8935044527669",
+        "Mã vạch": "8935044527669",
+        "Kích thước": "14 x 1 x 1 cm",
+        "Nhà cung cấp": "Công ty CP VPP Hồng Hà"
+      },
+      "details": {
+        "color": "Trong Suốt",
+        "type": "Bút Gel - Bút Nước - Ruột Bút Gel"
+      },
+      "source_product_id": "86642722",
+      "source_variant_id": "216877219",
+      "source_url": "https://adcbook.net.vn/but-gel-focus-hh-206-0-5mm-xanh-den-do-2766-12c-h-hh?variant=216877219",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/8935044527669-2-2-2-11zon-jpeg.jpg?v=1785318356220",
+      "source_available": false,
+      "image": "/assets/adcbook/8f76e986f9bbcbb619166c83.jpg"
+    },
+    {
+      "id": "254bb08f-28d7-53e4-80bb-32bad6bbf598",
+      "name": "Bút Chì Kim Thân Sắt 2B Ngòi 0.5mm VLM-1015",
+      "source_name": "Bút Chì Kim Thân Sắt 2B Ngòi 0.5mm VLM-1015",
+      "product_type": "pen",
+      "price": 32000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Việt Lợi",
+      "origin": "Việt Nam",
+      "material": "Hợp kim",
+      "description": "Bút. Đơn vị bán: Chiếc. Thương hiệu: Việt Lợi. Xuất xứ: Việt Nam. Chất liệu: Hợp kim.",
+      "attributes": {
+        "SKU": "9779566086117",
+        "Mã vạch": "9779566086117",
+        "Nhà cung cấp": "Công ty TNHH Đầu Tư Thương Mại Quốc Tế Việt Lợi (Ký gửi)"
+      },
+      "details": {
+        "color": "Nhiều màu",
+        "type": "Bút Chì - Ruột Bút Chì"
+      },
+      "source_product_id": "86421047",
+      "source_variant_id": "216432484",
+      "source_url": "https://adcbook.net.vn/but-chi-kim-than-sat-2b-ngoi-0-5mm-vlm-1015-36-1440-vl?variant=216432484",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/vn-11134207-820l4-mjjlamzq4phd4b-jfif.jpg?v=1784866746857",
+      "source_available": false,
+      "image": "/assets/adcbook/ed32291421960837599a953d.jpg"
+    },
+    {
+      "id": "896b151a-578a-5491-9e8f-f3428f338005",
+      "name": "Bút Máy Kim Tinh Cánh Diều 107",
+      "source_name": "Bút Máy Kim Tinh Cánh Diều 107",
+      "product_type": "pen",
+      "price": 55000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "",
+      "origin": "Việt Nam",
+      "material": "Kim loại",
+      "description": "Bút. Đơn vị bán: Chiếc. Xuất xứ: Việt Nam. Chất liệu: Kim loại.",
+      "attributes": {
+        "SKU": "2172009037399",
+        "Mã vạch": "2172009037399",
+        "Kích thước": "14 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "CN Công ty TNHH SX VPP TM Hán Sơn (Thúy Hưng)"
+      },
+      "details": {
+        "color": "Nhiều màu",
+        "type": "Bút viết"
+      },
+      "source_product_id": "86420626",
+      "source_variant_id": "216431713",
+      "source_url": "https://adcbook.net.vn/but-may-canh-dieu-107-kim-tinh-tron-deu-thuy?variant=216431713",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/f92e9cf7721f4830680d232c665e79ef-jfif.jpg?v=1784866692447",
+      "source_available": false,
+      "image": "/assets/adcbook/727d0ce46b7aa5a9019e8f6f.jpg"
+    },
+    {
+      "id": "e492996b-98f7-555e-ba0c-1f70434f1d5e",
+      "name": "Ruột Bút Bi Nước MG Ngòi 0.5mm AGR67T12A Đen",
+      "source_name": "Ruột Bút Bi Nước MG Ngòi 0.5mm AGR67T12A Đen",
+      "product_type": "pen",
+      "price": 7000,
+      "selling_unit": "Vỉ",
+      "source_selling_unit": "Vỉ",
+      "brand": "M&G",
+      "origin": "Trung Quốc",
+      "material": "Nhựa",
+      "description": "Bút. Đơn vị bán: Vỉ. Thương hiệu: M&G. Xuất xứ: Trung Quốc. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "9557546803776",
+        "Mã vạch": "9557546803776",
+        "Kích thước": "15 cm",
+        "Độ tuổi": "Mọi độ tuổi"
+      },
+      "details": {
+        "color": "Đen",
+        "type": "Bút viết"
+      },
+      "source_product_id": "86419807",
+      "source_variant_id": "216430003",
+      "source_url": "https://adcbook.net.vn/ruot-but-bi-nuoc-den-0-5-agr67t12a-g-5-20v-h?variant=216430003",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/vn-11134207-7r98o-lp5ywb9yjwbf30-1.webp?v=1784865571153",
+      "source_available": false,
+      "image": "/assets/adcbook/09c450b760acb7d3a308c703.webp"
+    },
+    {
+      "id": "c18a9980-769c-57e7-980c-bd16a912198a",
+      "name": "Bút Bi Nước UB150-BU Xanh",
+      "source_name": "Bút Bi Nước UB150-BU Xanh",
+      "product_type": "pen",
+      "price": 41000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Uni",
+      "origin": "Trung Quốc",
+      "material": "Nhựa",
+      "description": "Bút. Đơn vị bán: Chiếc. Thương hiệu: Uni. Xuất xứ: Trung Quốc. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4902778913772",
+        "Mã vạch": "2172009059377",
+        "Nhà cung cấp": "CN Công ty TNHH TM Thái Á"
+      },
+      "details": {
+        "color": "Màu Xanh",
+        "type": "Bút Gel - Bút Nước - Ruột Bút Gel"
+      },
+      "source_product_id": "86415265",
+      "source_variant_id": "216423286",
+      "source_url": "https://adcbook.net.vn/but-bi-nuoc-ub150-bu-xanh-thai-a?variant=216423286",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/vn-11134207-7qukw-lj9rcdad9a8cfd-jfif.jpg?v=1784865144487",
+      "source_available": false,
+      "image": "/assets/adcbook/ccf585504bdeee79fa6792b5.jpg"
+    },
+    {
+      "id": "57833352-0631-5785-b5bb-b4c7383784a2",
+      "name": "Bút Gel Eras 0.5mm E128 (Đỏ, Đen, Xanh, Tím)",
+      "source_name": "Bút Gel Eras 0.5mm E128 (Đỏ, Đen, Xanh, Tím)",
+      "product_type": "pen",
+      "price": 9000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Eras",
+      "origin": "Việt Nam",
+      "material": "Nhựa",
+      "description": "Bút. Đơn vị bán: Chiếc. Thương hiệu: Eras. Xuất xứ: Việt Nam. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "8936138641285",
+        "Mã vạch": "8936138641285",
+        "Kích thước": "14 x 1 x 1 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "Công ty TNHH Thanh Chương"
+      },
+      "details": {
+        "color": "Nhiều màu",
+        "type": "Bút Gel - Bút Nước - Ruột Bút Gel"
+      },
+      "source_product_id": "86411479",
+      "source_variant_id": "216419309",
+      "source_url": "https://adcbook.net.vn/but-gel-0-5mm-e128-do-den-xanh-tim-1-12-144-1440?variant=216419309",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/sg-11134201-81ztk-mmmlewcrb01y7d-11zon-jpeg.jpg?v=1784864360380",
+      "source_available": false,
+      "image": "/assets/adcbook/b9bdc112d2d5c3d86a1a7d86.jpg"
+    },
+    {
+      "id": "58a3caa2-9cd5-5cdd-a4f0-d5a768dab8dd",
+      "name": "Bút Gel Mực Lỏng 0.5mm VL-058 (Xanh, Đen, Đỏ)",
+      "source_name": "Bút Gel Mực Lỏng 0.5mm VL-058 (Xanh, Đen, Đỏ)",
+      "product_type": "pen",
+      "price": 8000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "",
+      "origin": "Việt Nam",
+      "material": "Nhựa",
+      "description": "Bút. Đơn vị bán: Chiếc. Xuất xứ: Việt Nam. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "9774113542320",
+        "Mã vạch": "9774113542320",
+        "Kích thước": "12 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "Công ty TNHH Đầu Tư Thương Mại Quốc Tế Việt Lợi (Ký gửi)"
+      },
+      "details": {
+        "color": "Nhiều màu",
+        "type": "Bút Gel - Bút Nước - Ruột Bút Gel"
+      },
+      "source_product_id": "86411138",
+      "source_variant_id": "216418929",
+      "source_url": "https://adcbook.net.vn/but-gel-muc-long-0-5-vl-058-xanh-den-do-12c-h-vl?variant=216418929",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/vl0581-2977c3d62a3e4cd68a28c7946a1517ae-0be982eb-b7dc-4714-b69b-e560ab1c0e51.jpg?v=1785312206853",
+      "source_available": false,
+      "image": "/assets/adcbook/1275675e92ed048cbdb806a4.jpg"
+    },
+    {
+      "id": "86ff26f5-de7c-519a-a568-271ce7e113cb",
+      "name": "Băng Xoá Kéo Học Sinh 30m x 5mm VLT-1061",
+      "source_name": "Băng Xoá Kéo Học Sinh 30m x 5mm VLT-1061",
+      "product_type": "pen",
+      "price": 27000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Việt Lợi",
+      "origin": "Việt Nam",
+      "material": "Nhựa",
+      "description": "Bút. Đơn vị bán: Chiếc. Thương hiệu: Việt Lợi. Xuất xứ: Việt Nam. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "9779093101239",
+        "Mã vạch": "9779093101239",
+        "Nhà cung cấp": "Công ty TNHH Đầu Tư Thương Mại Quốc Tế Việt Lợi (Ký gửi)"
+      },
+      "details": {
+        "color": "Nhiều màu",
+        "type": "Bút Xóa - Băng Xóa"
+      },
+      "source_product_id": "86363143",
+      "source_variant_id": "216293007",
+      "source_url": "https://adcbook.net.vn/xoa-keo-hoc-sinh-30mx5mm-vlt-1061-vl?variant=216293007",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/vn-11134207-7ras8-mc575sq394glec.webp?v=1785213080127",
+      "source_available": false,
+      "image": "/assets/adcbook/5fd5041000589bc6c069d58d.webp"
+    },
+    {
+      "id": "7177e308-d19f-54fe-b892-1fbd7d2211b3",
+      "name": "Ruột chì ASLQ5202A HB 0.7 Thân Dẹt Trong Bản To",
+      "source_name": "Ruột chì ASLQ5202A HB 0.7 Thân Dẹt Trong Bản To",
+      "product_type": "pen",
+      "price": 50000,
+      "selling_unit": "Ống",
+      "source_selling_unit": "Ống",
+      "brand": "M&G",
+      "origin": "Trung Quốc",
+      "material": "Nhựa",
+      "description": "Bút. Đơn vị bán: Ống. Thương hiệu: M&G. Xuất xứ: Trung Quốc. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "6936965433673",
+        "Mã vạch": "6936965433673",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "M&G"
+      },
+      "details": {
+        "color": "Nhiều màu",
+        "type": "Bút Chì - Ruột Bút Chì"
+      },
+      "source_product_id": "86362395",
+      "source_variant_id": "216292127",
+      "source_url": "https://adcbook.net.vn/ruot-chi-aslq5202a-hb-0-7-than-det-trong-ban-to-9mm-200-ngoi-1pcs-1-36-648?variant=216292127",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/screenshot-2.png?v=1785211452223",
+      "source_available": false,
+      "image": "/assets/adcbook/6a5fd6ee8243d1ae0d79caab.png"
+    },
+    {
+      "id": "e77b00ac-e5d6-5b55-9d06-ec783b3d12d7",
+      "name": "Băng Xoá Kéo SILENCE Định Vị Tay Cầm 30Mx5mm VLT-1063",
+      "source_name": "Băng Xoá Kéo SILENCE Định Vị Tay Cầm 30Mx5mm VLT-1063",
+      "product_type": "pen",
+      "price": 36000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "",
+      "origin": null,
+      "material": "Nhựa",
+      "description": "Bút. Đơn vị bán: Chiếc. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "9779117301379",
+        "Mã vạch": "9779117301379",
+        "Nhà cung cấp": "Công ty TNHH Đầu Tư Thương Mại Quốc Tế Việt Lợi (Ký gửi)"
+      },
+      "details": {
+        "color": "Nhiều màu",
+        "type": "Bút Xóa - Băng Xóa"
+      },
+      "source_product_id": "86361687",
+      "source_variant_id": "216291266",
+      "source_url": "https://adcbook.net.vn/xoa-keo-silence-dinh-vi-tay-cam-30mx5mm-vlt-1063-vl?variant=216291266",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/vn-11134207-7ras8-mc58b0h1ysidf0-1.webp?v=1785210567147",
+      "source_available": false,
+      "image": "/assets/adcbook/db3a4b756664850ed46afa0a.webp"
+    },
+    {
+      "id": "586c012c-f0ca-5361-88f0-699571fc2e25",
+      "name": "Mực Viết Máy Queen - Màu Tím",
+      "source_name": "Mực Viết Máy Queen - Màu Tím",
+      "product_type": "pen",
+      "price": 24000,
+      "selling_unit": "Hộp",
+      "source_selling_unit": "Hộp",
+      "brand": "Queen",
+      "origin": "Việt Nam",
+      "material": null,
+      "description": "Bút. Đơn vị bán: Hộp. Thương hiệu: Queen. Xuất xứ: Việt Nam.",
+      "attributes": {
+        "SKU": "8935015812367",
+        "Mã vạch": "8935015812367",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "CN Công ty TNHH SX VPP TM Hán Sơn (Thúy Hưng)"
+      },
+      "details": {
+        "color": "Tím",
+        "type": "Bút Mực - Mực"
+      },
+      "source_product_id": "86356847",
+      "source_variant_id": "216282814",
+      "source_url": "https://adcbook.net.vn/muc-tim-queen-72h-t-thuy-hung-1?variant=216282814",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/vn-11134207-7ra0g-m8ps9bierq7i5c-1.webp?v=1785207219873",
+      "source_available": false,
+      "image": "/assets/adcbook/f0ee17fd8e5b39fe970c9112.webp"
+    },
+    {
+      "id": "eb1eff15-4b73-5e62-9d2c-dffcf559804f",
+      "name": "Bút Gel C6600S-TI 0.5mm Màu Tím 12c/Hộp (Deli)",
+      "source_name": "Bút Gel C6600S-TI 0.5mm Màu Tím 12c/Hộp (Deli)",
+      "product_type": "pen",
+      "price": 75000,
+      "selling_unit": "Hộp",
+      "source_selling_unit": "Hộp",
+      "brand": "Deli",
+      "origin": "Trung Quốc",
+      "material": "Nhựa",
+      "description": "Bút. Đơn vị bán: Hộp. Thương hiệu: Deli. Xuất xứ: Trung Quốc. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "6921734955746",
+        "Mã vạch": "6921734955746",
+        "Nhà cung cấp": "CÔNG TY TNHH PHÁT TRIỂN DELI VIỆT NAM (mã mới)"
+      },
+      "details": {
+        "color": "Tím",
+        "type": "Bút Gel - Bút Nước - Ruột Bút Gel"
+      },
+      "source_product_id": "85359253",
+      "source_variant_id": "214070195",
+      "source_url": "https://adcbook.net.vn/but-gel-c6600s-ti-0-5mm-mau-tim-12c-h-deli?variant=214070195",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/6921734954725-244c29ce-defa-43e6-abef-4fe9148adcc8.webp?v=1784705955677",
+      "source_available": true,
+      "image": "/assets/adcbook/bcf8bd03f4f22d75b98b759b.webp"
+    },
+    {
+      "id": "1517414a-7ff4-5acc-a562-4f37866b7c53",
+      "name": "Bút Gel Bấm EG575-BL Siêu Trơn 0.5-Xanh 12c/Hộp (Deli)",
+      "source_name": "Bút Gel Bấm EG575-BL Siêu Trơn 0.5-Xanh 12c/Hộp (Deli)",
+      "product_type": "pen",
+      "price": 170000,
+      "selling_unit": "Hộp",
+      "source_selling_unit": "Hộp",
+      "brand": "Deli",
+      "origin": "Trung Quốc",
+      "material": "Nhựa",
+      "description": "Bút. Đơn vị bán: Hộp. Thương hiệu: Deli. Xuất xứ: Trung Quốc. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "6942233674198",
+        "Mã vạch": "6942233674198",
+        "Nhà cung cấp": "CÔNG TY TNHH PHÁT TRIỂN DELI VIỆT NAM (mã mới)"
+      },
+      "details": {
+        "color": "Xanh",
+        "type": "Bút Gel - Bút Nước - Ruột Bút Gel"
+      },
+      "source_product_id": "85359252",
+      "source_variant_id": "214070194",
+      "source_url": "https://adcbook.net.vn/but-gel-bam-eg575-bl-sieu-tron-0-5-xanh-12c-h-12h-l-deli?variant=214070194",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/6942233674181-11zon-1-jpeg.jpg?v=1784711478027",
+      "source_available": true,
+      "image": "/assets/adcbook/ca83f3e792150ba0b8dfebad.jpg"
+    },
+    {
+      "id": "34bd4e3c-e317-5495-89e9-c92793d56841",
+      "name": "Bút Gel Bấm 0.5mm EG118-RD - Đỏ 12c/Hộp (Deli)",
+      "source_name": "Bút Gel Bấm 0.5mm EG118-RD - Đỏ 12c/Hộp (Deli)",
+      "product_type": "pen",
+      "price": 120000,
+      "selling_unit": "Hộp",
+      "source_selling_unit": "Hộp",
+      "brand": "Deli",
+      "origin": "Trung Quốc",
+      "material": "Nhựa",
+      "description": "Bút. Đơn vị bán: Hộp. Thương hiệu: Deli. Xuất xứ: Trung Quốc. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "6921734977601",
+        "Mã vạch": "6921734977601",
+        "Kích thước": "14 cm",
+        "Nhà cung cấp": "CÔNG TY TNHH PHÁT TRIỂN DELI VIỆT NAM (mã mới)"
+      },
+      "details": {
+        "color": "Màu Đỏ",
+        "type": "Bút Gel - Bút Nước - Ruột Bút Gel"
+      },
+      "source_product_id": "85359251",
+      "source_variant_id": "214070193",
+      "source_url": "https://adcbook.net.vn/but-gel-bam-0-5mm-eg118-rd-mau-do-12c-h-deli?variant=214070193",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/do-1-b2df39c2-13df-446d-91e8-66112cdb186d.jpg?v=1784702104500",
+      "source_available": true,
+      "image": "/assets/adcbook/ba3f5e8ff4b61cfdb9de8720.jpg"
+    },
+    {
+      "id": "26a8ed9e-1286-5587-bcc8-98c3558eaac7",
+      "name": "Sổ Bìa Da Cao Cấp Hải Tiến DAILY 8 8793 240Tr",
+      "source_name": "Sổ Bìa Da Cao Cấp Hải Tiến DAILY 8 8793 240Tr",
+      "product_type": "notebook",
+      "price": 46000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "Hải Tiến",
+      "origin": "Việt Nam",
+      "material": "Da và Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: Hải Tiến. Xuất xứ: Việt Nam. Chất liệu: Da và Giấy.",
+      "attributes": {
+        "SKU": "8936014828793",
+        "Mã vạch": "8936014828793",
+        "Kích thước": "17.5 x 25 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "Công ty CP giấy Hải Tiến"
+      },
+      "details": {
+        "page_num": 240,
+        "size": "17.5 x 25 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "88886739",
+      "source_variant_id": "222383698",
+      "source_url": "https://adcbook.net.vn/so-da-cao-cap-daily-8-8792-8793-ht?variant=222383698",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/vn-11134207-7ras8-m3nqw9kizkcc1d.webp?v=1787039340420",
+      "source_available": false,
+      "image": "/assets/adcbook/b41c57976ba6302984af9263.webp"
+    },
+    {
+      "id": "807f9e3d-22ce-57d0-a9a1-362595901225",
+      "name": "Sổ Bìa Da Cao Cấp Hải Tiến DAILY 6 8779 240Tr",
+      "source_name": "Sổ Bìa Da Cao Cấp Hải Tiến DAILY 6 8779 240Tr",
+      "product_type": "notebook",
+      "price": 32000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "Hải Tiến",
+      "origin": "Việt Nam",
+      "material": "Da và Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: Hải Tiến. Xuất xứ: Việt Nam. Chất liệu: Da và Giấy.",
+      "attributes": {
+        "SKU": "8936014828779",
+        "Mã vạch": "8936014828779",
+        "Kích thước": "15 x 21 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "Công ty CP giấy Hải Tiến"
+      },
+      "details": {
+        "page_num": 240,
+        "size": "15 x 21 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "88886647",
+      "source_variant_id": "222383605",
+      "source_url": "https://adcbook.net.vn/so-da-cao-cap-daily-6-8779-ht?variant=222383605",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/vn-11134207-7ras8-m3lnke9cqg1o5d.webp?v=1787038274327",
+      "source_available": false,
+      "image": "/assets/adcbook/d2a09ee3cb7ec1f70b9b61f7.webp"
+    },
+    {
+      "id": "e14221d0-ff98-555a-9e99-a2b0e65afa15",
+      "name": "Sổ Bìa Da Cao Cấp Hải Tiến DAILY A4 8809 240Tr",
+      "source_name": "Sổ Bìa Da Cao Cấp Hải Tiến DAILY A4 8809 240Tr",
+      "product_type": "notebook",
+      "price": 65000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "Hải Tiến",
+      "origin": "Việt Nam",
+      "material": "Da và Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: Hải Tiến. Xuất xứ: Việt Nam. Chất liệu: Da và Giấy.",
+      "attributes": {
+        "SKU": "8936014828809",
+        "Mã vạch": "8936014828809",
+        "Kích thước": "21 x 29.7 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "Công ty CP giấy Hải Tiến"
+      },
+      "details": {
+        "page_num": 240,
+        "size": "21 x 29.7 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "88886646",
+      "source_variant_id": "222383604",
+      "source_url": "https://adcbook.net.vn/so-da-cao-cap-daily-a4-8809-ht?variant=222383604",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/vn-11134207-7ras8-m3nraown042we6.webp?v=1787038778697",
+      "source_available": false,
+      "image": "/assets/adcbook/ed356ff25519a30155473666.webp"
+    },
+    {
+      "id": "3de8b3da-b6aa-53e5-89a5-27fa1262feed",
+      "name": "Sổ Bìa Da Hải Tiến Memo 6 8731 200Tr",
+      "source_name": "Sổ Bìa Da Hải Tiến Memo 6 8731 200Tr",
+      "product_type": "notebook",
+      "price": 34000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "Hải Tiến",
+      "origin": "Việt Nam",
+      "material": "Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: Hải Tiến. Xuất xứ: Việt Nam. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "8936014828731",
+        "Mã vạch": "8936014828731",
+        "Kích thước": "15 x 21 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "Công ty CP giấy Hải Tiến"
+      },
+      "details": {
+        "page_num": 200,
+        "size": "15 x 21 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "88886302",
+      "source_variant_id": "222383252",
+      "source_url": "https://adcbook.net.vn/so-da-memo-6-8731-200tr-ht?variant=222383252",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/vn-11134207-7ras8-m3hj3igdypq47d.webp?v=1787040281910",
+      "source_available": false,
+      "image": "/assets/adcbook/766d1faa5bc922e533aa5cef.webp"
+    },
+    {
+      "id": "50871f6d-96a0-5a65-b7bd-87d88e4e7ca4",
+      "name": "Sổ bìa Bồi Hồng Hà Status Kẻ Ngang A4 4654 200Tr",
+      "source_name": "Sổ bìa Bồi Hồng Hà Status Kẻ Ngang A4 4654 200Tr",
+      "product_type": "notebook",
+      "price": 36000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "Hồng Hà",
+      "origin": "Việt Nam",
+      "material": "Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: Hồng Hà. Xuất xứ: Việt Nam. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "8935044546547",
+        "Mã vạch": "8935044546547",
+        "Kích thước": "21 x 29.7 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "Công ty CP VPP Hồng Hà"
+      },
+      "details": {
+        "page_num": 200,
+        "size": "21 x 29.7 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "88855286",
+      "source_variant_id": "222339794",
+      "source_url": "https://adcbook.net.vn/so-bia-boi-status-kn-a4-4654-200tr-dl-58-95-hh?variant=222339794",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/so-status-a4-hong-ha-4654-4.jpg?v=1787022620463",
+      "source_available": false,
+      "image": "/assets/adcbook/bd4063e520f02b9b0fbb24d0.jpg"
+    },
+    {
+      "id": "35f1a4ba-3063-51c4-a53d-0a91487f1bf0",
+      "name": "Sổ Còng Bìa Nhựa Hải Tiến Caro Marine A5 8847 200Tr",
+      "source_name": "Sổ Còng Bìa Nhựa Hải Tiến Caro Marine A5 8847 200Tr",
+      "product_type": "notebook",
+      "price": 47000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "Hải Tiến",
+      "origin": "Việt Nam",
+      "material": "Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: Hải Tiến. Xuất xứ: Việt Nam. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "8936014828847",
+        "Mã vạch": "8936014828847",
+        "Kích thước": "15 x 21 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "Công ty CP giấy Hải Tiến"
+      },
+      "details": {
+        "page_num": 200,
+        "size": "15 x 21 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "88855249",
+      "source_variant_id": "222339743",
+      "source_url": "https://adcbook.net.vn/so-cong-bia-nhua-caro-marine-a5-8847-200tr-ht?variant=222339743",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/vn-11134207-7ras8-m3p5y7gv8w58e6.webp?v=1787022048113",
+      "source_available": false,
+      "image": "/assets/adcbook/81746c34821eec1c94130df1.webp"
+    },
+    {
+      "id": "d72912de-677c-5f04-a13d-34f8e728b700",
+      "name": "Sổ Bìa Bồi Hồng Hà Status Kẻ Ngang A4 4655 300Tr",
+      "source_name": "Sổ Bìa Bồi Hồng Hà Status Kẻ Ngang A4 4655 300Tr",
+      "product_type": "notebook",
+      "price": 50000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "Hồng Hà",
+      "origin": "Việt Nam",
+      "material": "Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: Hồng Hà. Xuất xứ: Việt Nam. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "8935044546554",
+        "Mã vạch": "8935044546554",
+        "Kích thước": "29.7 x 21 x 1.3 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "Công ty CP VPP Hồng Hà"
+      },
+      "details": {
+        "page_num": 300,
+        "size": "29.7 x 21 x 1.3 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "88851741",
+      "source_variant_id": "222325929",
+      "source_url": "https://adcbook.net.vn/so-bia-boi-status-kn-a4-4655-300tr-dl-58-95-hh?variant=222325929",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/8935044546554-1-1.jpg?v=1787020901303",
+      "source_available": false,
+      "image": "/assets/adcbook/b7714dbce84d2d36bb30806a.jpg"
+    },
+    {
+      "id": "a55e44d9-230f-51fc-bebe-a8cadeeb99a7",
+      "name": "Sổ Bìa Bồi Hồng Hà Status Kẻ Ngang A4 4657 420Tr",
+      "source_name": "Sổ Bìa Bồi Hồng Hà Status Kẻ Ngang A4 4657 420Tr",
+      "product_type": "notebook",
+      "price": 64000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "Hồng Hà",
+      "origin": "Việt Nam",
+      "material": "Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: Hồng Hà. Xuất xứ: Việt Nam. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "8935044546578",
+        "Mã vạch": "8935044546578",
+        "Kích thước": "21 x 29.7 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "Công ty CP VPP Hồng Hà"
+      },
+      "details": {
+        "page_num": 420,
+        "size": "21 x 29.7 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "88851614",
+      "source_variant_id": "222325636",
+      "source_url": "https://adcbook.net.vn/so-bia-boi-status-kn-a4-4657-420tr-dl-58-95-hh?variant=222325636",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/so-status-a4-hong-ha-4657-3.jpg?v=1787020560277",
+      "source_available": false,
+      "image": "/assets/adcbook/2f2ad88e174d8d19680d0ec3.jpg"
+    },
+    {
+      "id": "c32d4761-8631-5590-a7ce-dd9072f56ef7",
+      "name": "Sổ Còng Bìa Nhựa Marine B5 Hải Tiến 8878 200Tr",
+      "source_name": "Sổ Còng Bìa Nhựa Marine B5 Hải Tiến 8878 200Tr",
+      "product_type": "notebook",
+      "price": 67000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "Hải Tiến",
+      "origin": "Việt Nam",
+      "material": "Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: Hải Tiến. Xuất xứ: Việt Nam. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "8936014828878",
+        "Mã vạch": "8936014828878",
+        "Kích thước": "27.3 x 20 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "Công ty CP giấy Hải Tiến"
+      },
+      "details": {
+        "page_num": 200,
+        "size": "27.3 x 20 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "88849345",
+      "source_variant_id": "222318640",
+      "source_url": "https://adcbook.net.vn/so-cong-bia-nhua-marine-b5-8878-200tr-ht?variant=222318640",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/8936014828861-1.jpg?v=1787018530243",
+      "source_available": false,
+      "image": "/assets/adcbook/e8596b0047597e6010123643.jpg"
+    },
+    {
+      "id": "4272a8c0-1de0-5421-bca2-7e0e23dfbc30",
+      "name": "Sổ B5 Lite Binder Dash Line Bìa PP Còng Nhựa 2 Đầu K.Long TB807 120Tr",
+      "source_name": "Sổ B5 Lite Binder Dash Line Bìa PP Còng Nhựa 2 Đầu K.Long TB807 120Tr",
+      "product_type": "notebook",
+      "price": 41000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "K.Long",
+      "origin": "Việt Nam",
+      "material": "Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: K.Long. Xuất xứ: Việt Nam. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "8936036828078",
+        "Mã vạch": "8936036828078",
+        "Kích thước": "17.5 x 25 cm",
+        "Nhà cung cấp": "Công ty  K.Long - (TNHH)"
+      },
+      "details": {
+        "page_num": 120,
+        "size": "17.5 x 25 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "61065714",
+      "source_variant_id": "172340165",
+      "source_url": "https://adcbook.net.vn/so-dash-line-bia-pp-cong-nhua-2-dau-dong-mo-b5-lite-binder-tb807-120tr-k-long?variant=172340165",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/807-percentage-20com-percentage-20bo-800x800.jpg?v=1786955144657",
+      "source_available": false,
+      "image": "/assets/adcbook/0250e80fa19bb38d83b2d24e.jpg"
+    },
+    {
+      "id": "2b5bf963-0db2-51f8-bc63-9214617e96c4",
+      "name": "Sổ May Gáy Hồng Hà S: Collection B5 160Tr",
+      "source_name": "Sổ May Gáy Hồng Hà S: Collection B5 160Tr",
+      "product_type": "notebook",
+      "price": 27000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "Hồng Hà",
+      "origin": "Việt Nam",
+      "material": "Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: Hồng Hà. Xuất xứ: Việt Nam. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "8935044546738",
+        "Mã vạch": "8935044546738",
+        "Kích thước": "12.5 x 17.6 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "Công ty CP VPP Hồng Hà"
+      },
+      "details": {
+        "page_num": 160,
+        "size": "12.5 x 17.6 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "55733951",
+      "source_variant_id": "162830976",
+      "source_url": "https://adcbook.net.vn/so-may-gay-s-collection-b5-160tr-dl-70-76-79-hh?variant=162830976",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/so-may-gay-b5-hong-ha-4673-4.jpg?v=1786955750910",
+      "source_available": false,
+      "image": "/assets/adcbook/343dcf666d567ad7d29c5e93.jpg"
+    },
+    {
+      "id": "93b403ff-9a76-5891-ad2a-d67a31cf92b9",
+      "name": "Ruột Sổ Kẻ Ngang K.Long B5 Còng Nhựa 548",
+      "source_name": "Ruột Sổ Kẻ Ngang K.Long B5 Còng Nhựa 548",
+      "product_type": "notebook",
+      "price": 44000,
+      "selling_unit": "Tập",
+      "source_selling_unit": "Tập",
+      "brand": "K.Long",
+      "origin": "Việt Nam",
+      "material": "Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Tập. Thương hiệu: K.Long. Xuất xứ: Việt Nam. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "8936036825480",
+        "Mã vạch": "8936036825480",
+        "Kích thước": "17.5 x 25 cm",
+        "Nhà cung cấp": "K.Long"
+      },
+      "details": {
+        "page_num": 100,
+        "size": "17.5 x 25 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "55280261",
+      "source_variant_id": "161899672",
+      "source_url": "https://adcbook.net.vn/ruot-so-ke-ngang-cong-nhua-548-k-long?variant=161899672",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/548-800x800.jpg?v=1786954475297",
+      "source_available": false,
+      "image": "/assets/adcbook/2dd67a0717035a87db47c038.jpg"
+    },
+    {
+      "id": "9d70d77e-b231-5926-9cdb-aee0e6934a07",
+      "name": "Ruột Sổ K.Long Kẹp Còng Dash Line  A4 100Tr TP527",
+      "source_name": "Ruột Sổ K.Long Kẹp Còng Dash Line  A4 100Tr TP527",
+      "product_type": "notebook",
+      "price": 51000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "K.Long",
+      "origin": "Việt Nam",
+      "material": "Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: K.Long. Xuất xứ: Việt Nam. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "8936036825275",
+        "Mã vạch": "2172016043789",
+        "Kích thước": "21 x 29.7 cm",
+        "Nhà cung cấp": "Công ty  K.Long - (TNHH)"
+      },
+      "details": {
+        "page_num": 100,
+        "size": "21 x 29.7 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "55280242",
+      "source_variant_id": "161899650",
+      "source_url": "https://adcbook.net.vn/ruot-so-kep-cong-dash-line-a4-100-to-tp527-k-long?variant=161899650",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/527-percentage-20-800x800.jpg?v=1786957004203",
+      "source_available": false,
+      "image": "/assets/adcbook/5725f3ce98f633973e389e7e.jpg"
+    },
+    {
+      "id": "0c65ff21-0039-5a67-bfa3-40b430767e2b",
+      "name": "Sổ May Gáy A4 Minimal 8830 300 Trang",
+      "source_name": "Sổ May Gáy A4 Minimal 8830 300 Trang",
+      "product_type": "notebook",
+      "price": 42000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "Hải Tiến",
+      "origin": "Việt Nam",
+      "material": "Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: Hải Tiến. Xuất xứ: Việt Nam. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "8936014828830",
+        "Mã vạch": "8936014828830",
+        "Kích thước": "21 x 29.7 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "Công ty CP giấy Hải Tiến"
+      },
+      "details": {
+        "page_num": 300,
+        "size": "21 x 29.7 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "55277631",
+      "source_variant_id": "161880039",
+      "source_url": "https://adcbook.net.vn/so-may-gay-a4-minimal-8830-300tr-ht?variant=161880039",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/77cc2b63-9623-4acd-9fa9-c0ea93e787fc.webp?v=1786956585570",
+      "source_available": false,
+      "image": "/assets/adcbook/c00dfbf19d92dddabd59c202.webp"
+    },
+    {
+      "id": "e26e54e8-7310-5a9d-b4f5-f13eed50be8a",
+      "name": "Sổ Bìa Da Hải Tiến Memo 5 8724 200Tr",
+      "source_name": "Sổ Bìa Da Hải Tiến Memo 5 8724 200Tr",
+      "product_type": "notebook",
+      "price": 29000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "Hải Tiến",
+      "origin": "Việt Nam",
+      "material": "Da và Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: Hải Tiến. Xuất xứ: Việt Nam. Chất liệu: Da và Giấy.",
+      "attributes": {
+        "SKU": "8936014828724",
+        "Mã vạch": "8936014828724",
+        "Kích thước": "13.5 x 19.5 cm",
+        "Nhà cung cấp": "Công ty CP giấy Hải Tiến"
+      },
+      "details": {
+        "page_num": 200,
+        "size": "13.5 x 19.5 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "55275896",
+      "source_variant_id": "161845984",
+      "source_url": "https://adcbook.net.vn/so-da-memo-5-8724-200tr-ht?variant=161845984",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/vn-11134207-7ras8-m3hiq9sli0mt95.webp?v=1787018044353",
+      "source_available": false,
+      "image": "/assets/adcbook/bfe0f0d0db1e86d774614009.webp"
+    },
+    {
+      "id": "9e2e89e0-196d-5f4f-a067-86c8d2232c28",
+      "name": "Sổ Còng Bìa Nhựa Marine A5 8854 200Tr",
+      "source_name": "Sổ Còng Bìa Nhựa Marine A5 8854 200Tr",
+      "product_type": "notebook",
+      "price": 47000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "K.Long",
+      "origin": "Việt Nam",
+      "material": "Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: K.Long. Xuất xứ: Việt Nam. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "8936014828854",
+        "Mã vạch": "8936014828854",
+        "Kích thước": "14.8 x 21 cm",
+        "Nhà cung cấp": "Công ty CP giấy Hải Tiến"
+      },
+      "details": {
+        "page_num": 200,
+        "size": "14.8 x 21 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "55275831",
+      "source_variant_id": "161845903",
+      "source_url": "https://adcbook.net.vn/so-cong-bia-nhua-marine-a5-8854-200tr-ht?variant=161845903",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/8936014828847-2.jpg?v=1786956456287",
+      "source_available": false,
+      "image": "/assets/adcbook/df6579feab80795e01b269f6.jpg"
+    },
+    {
+      "id": "30056438-0ba7-59c6-8518-0b6bd9044044",
+      "name": "Sổ Lò Xo K.Long Dash Line A6 TP961 120Tr",
+      "source_name": "Sổ Lò Xo K.Long Dash Line A6 TP961 120Tr",
+      "product_type": "notebook",
+      "price": 18000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "K.Long",
+      "origin": "Việt Nam",
+      "material": "Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: K.Long. Xuất xứ: Việt Nam. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "8936036829617",
+        "Mã vạch": "8936036829617",
+        "Kích thước": "10.5 x 14.8 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "K.Long"
+      },
+      "details": {
+        "page_num": 120,
+        "size": "10.5 x 14.8 cm",
+        "type": "Sổ Bìa Còng - Lò Xo"
+      },
+      "source_product_id": "55060825",
+      "source_variant_id": "161375627",
+      "source_url": "https://adcbook.net.vn/so-dash-line-lo-xo-kep-cheo-a6-tp961-120tr-k-long?variant=161375627",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/img-0960-copy-800x800.jpg?v=1753952031027",
+      "source_available": false,
+      "image": "/assets/adcbook/e56e578fab1a8bfeefcf1a96.jpg"
+    },
+    {
+      "id": "ab270e9e-e6ea-5292-b66d-a239b67d4130",
+      "name": "Vở May Dán Gáy K.Long Dash Caro Tili Seasonal Playgound B5 TB210 120tr",
+      "source_name": "Vở May Dán Gáy K.Long Dash Caro Tili Seasonal Playgound B5 TB210 120tr",
+      "product_type": "notebook",
+      "price": 27000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "K.Long",
+      "origin": null,
+      "material": null,
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: K.Long.",
+      "attributes": {
+        "SKU": "8936036822106",
+        "Mã vạch": "2179902064446",
+        "Kích thước": "25 x 17.5 cm",
+        "Nhà cung cấp": "K.Long"
+      },
+      "details": {
+        "page_num": 120,
+        "size": "25 x 17.5 cm",
+        "type": "Sổ May Gáy"
+      },
+      "source_product_id": "52564247",
+      "source_variant_id": "156520986",
+      "source_url": "https://adcbook.net.vn/vo-dash-caro-may-dan-gay-tili-seasonal-playgound-b5-tb210-120tr-80c-th-k-long?variant=156520986",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/8936036822106.jpg?v=1753867835330",
+      "source_available": false,
+      "image": "/assets/adcbook/7b31571794e95b3ce86706a0.jpg"
+    },
+    {
+      "id": "ca9a24cb-12a8-5419-9b96-3ad9c7ff6a06",
+      "name": "Sổ Kế Toán Hải Tiến 3576",
+      "source_name": "Sổ Kế Toán Hải Tiến 3576",
+      "product_type": "notebook",
+      "price": 40000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "Hải Tiến",
+      "origin": "Việt Nam",
+      "material": "Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: Hải Tiến. Xuất xứ: Việt Nam. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "8936014823576",
+        "Mã vạch": "8936014823576",
+        "Kích thước": "21 x 29.7 cm",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Hải Tiến"
+      },
+      "details": {
+        "page_num": 300,
+        "size": "21 x 29.7 cm",
+        "type": "Sổ Lịch - Sổ Kế Hoạch"
+      },
+      "source_product_id": "46340738",
+      "source_variant_id": "147106106",
+      "source_url": "https://adcbook.net.vn/so-ke-toan-hai-tien-3576?variant=147106106",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/1-600x600-fbfbee2e-260e-4292-bb08-813b21fc1fb8-1aac3625-ec0a-4d67-8e1d-c90c2f3bdeda.jpg?v=1747323739743",
+      "source_available": false,
+      "image": "/assets/adcbook/5d70317b40b000975d4e1db5.jpg"
+    },
+    {
+      "id": "5cf95e8e-635c-5e3f-9a41-0cbd8321fe42",
+      "name": "Sổ Da Hải Tiến Business A4 4955 240Tr",
+      "source_name": "Sổ Da Hải Tiến Business A4 4955 240Tr",
+      "product_type": "notebook",
+      "price": 61000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "Hải Tiến",
+      "origin": "Việt Nam",
+      "material": "Giấy",
+      "description": "Sổ / vở. Đơn vị bán: Cuốn. Thương hiệu: Hải Tiến. Xuất xứ: Việt Nam. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "8936014824955",
+        "Mã vạch": "8936014824955",
+        "Kích thước": "21 x 29.7 cm",
+        "Độ tuổi": "Mọi độ tuổi",
+        "Nhà cung cấp": "Hải Tiến"
+      },
+      "details": {
+        "page_num": 240,
+        "size": "21 x 29.7 cm",
+        "type": "Sổ các loại"
+      },
+      "source_product_id": "46340718",
+      "source_variant_id": "147106086",
+      "source_url": "https://adcbook.net.vn/so-da-hai-tien-business-a4-4955-240tr?variant=147106086",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/image-244718-1-5999-1.jpg?v=1747064915333",
+      "source_available": false,
+      "image": "/assets/adcbook/9d5eed143c6a61c2aeee2165.jpg"
+    },
+    {
+      "id": "52adabee-ee81-5f39-88b0-9d6935dc1b1f",
+      "name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Mushroom Cute",
+      "source_name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Mushroom Cute",
+      "product_type": "bag",
+      "price": 615000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Sakos",
+      "origin": "Mỹ",
+      "material": "Eva, Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Sakos. Xuất xứ: Mỹ. Chất liệu: Eva, Polyester.",
+      "attributes": {
+        "SKU": "8935260629703",
+        "Kích thước": "27 x 15 x 36 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "27 x 15 x 36 cm",
+        "pattern": null
+      },
+      "source_product_id": "88225232",
+      "source_variant_id": "221271380",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-kid-jolly-danh-cho-hoc-sinh-cap-1?variant=221271380",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/mushroom-cute.jpg?v=1787739663563",
+      "source_available": false,
+      "image": "/assets/adcbook/a06f06b83e6f3c50d156c946.jpg"
+    },
+    {
+      "id": "4c8cc52f-2ad3-5b8f-a586-7536003ec18c",
+      "name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Make Your Day Better",
+      "source_name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Make Your Day Better",
+      "product_type": "bag",
+      "price": 615000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Sakos",
+      "origin": "Mỹ",
+      "material": "Eva, Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Sakos. Xuất xứ: Mỹ. Chất liệu: Eva, Polyester.",
+      "attributes": {
+        "SKU": "8935260629680",
+        "Kích thước": "27 x 15 x 36 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "27 x 15 x 36 cm",
+        "pattern": null
+      },
+      "source_product_id": "88225232",
+      "source_variant_id": "221271381",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-kid-jolly-danh-cho-hoc-sinh-cap-1?variant=221271381",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/make-your-day-better.jpg?v=1787739682307",
+      "source_available": false,
+      "image": "/assets/adcbook/654864f01f16dc31c8d36fe4.jpg"
+    },
+    {
+      "id": "cfbeb408-c34e-5024-a8df-b7038f8191f5",
+      "name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Corgi Lollipop",
+      "source_name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Corgi Lollipop",
+      "product_type": "bag",
+      "price": 615000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Sakos",
+      "origin": "Mỹ",
+      "material": "Eva, Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Sakos. Xuất xứ: Mỹ. Chất liệu: Eva, Polyester.",
+      "attributes": {
+        "SKU": "8935260629802",
+        "Kích thước": "27 x 15 x 36 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "27 x 15 x 36 cm",
+        "pattern": null
+      },
+      "source_product_id": "88225232",
+      "source_variant_id": "221271382",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-kid-jolly-danh-cho-hoc-sinh-cap-1?variant=221271382",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/corgi-lollipop.jpg?v=1787739694580",
+      "source_available": true,
+      "image": "/assets/adcbook/6919edb168702f57ec29006f.jpg"
+    },
+    {
+      "id": "d85f6e8b-d1c3-547a-b806-646b25a05e39",
+      "name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Blue Dinosaur",
+      "source_name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Blue Dinosaur",
+      "product_type": "bag",
+      "price": 615000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Sakos",
+      "origin": "Mỹ",
+      "material": "Eva, Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Sakos. Xuất xứ: Mỹ. Chất liệu: Eva, Polyester.",
+      "attributes": {
+        "SKU": "8935260629765",
+        "Kích thước": "27 x 15 x 36 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "27 x 15 x 36 cm",
+        "pattern": null
+      },
+      "source_product_id": "88225232",
+      "source_variant_id": "221271383",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-kid-jolly-danh-cho-hoc-sinh-cap-1?variant=221271383",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/blue-dinosaur.jpg?v=1787739702920",
+      "source_available": true,
+      "image": "/assets/adcbook/71c9dd9086c55ebdb4e74c92.jpg"
+    },
+    {
+      "id": "94527602-ec7b-557e-945a-3d7f68a7748d",
+      "name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Hamster Strawberry",
+      "source_name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Hamster Strawberry",
+      "product_type": "bag",
+      "price": 615000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Sakos",
+      "origin": "Mỹ",
+      "material": "Eva, Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Sakos. Xuất xứ: Mỹ. Chất liệu: Eva, Polyester.",
+      "attributes": {
+        "SKU": "8935260629789",
+        "Kích thước": "27 x 15 x 36 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "27 x 15 x 36 cm",
+        "pattern": null
+      },
+      "source_product_id": "88225232",
+      "source_variant_id": "221271384",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-kid-jolly-danh-cho-hoc-sinh-cap-1?variant=221271384",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/hamster-strawberry.jpg?v=1787739712607",
+      "source_available": true,
+      "image": "/assets/adcbook/0cae33fedbcb1649de835a0b.jpg"
+    },
+    {
+      "id": "0ca417e7-a09c-5b90-9a64-c2b69cc63bbe",
+      "name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Good Day",
+      "source_name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Good Day",
+      "product_type": "bag",
+      "price": 615000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Sakos",
+      "origin": "Mỹ",
+      "material": "Eva, Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Sakos. Xuất xứ: Mỹ. Chất liệu: Eva, Polyester.",
+      "attributes": {
+        "SKU": "8935260629819",
+        "Kích thước": "27 x 15 x 36 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "27 x 15 x 36 cm",
+        "pattern": null
+      },
+      "source_product_id": "88225232",
+      "source_variant_id": "221271385",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-kid-jolly-danh-cho-hoc-sinh-cap-1?variant=221271385",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/good-day.jpg?v=1787739721123",
+      "source_available": true,
+      "image": "/assets/adcbook/ae554675a9e634bc5bd33cb5.jpg"
+    },
+    {
+      "id": "f026b9d4-f616-516f-bb16-67149504d62a",
+      "name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Bunny Pink",
+      "source_name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Bunny Pink",
+      "product_type": "bag",
+      "price": 615000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Sakos",
+      "origin": "Mỹ",
+      "material": "Eva, Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Sakos. Xuất xứ: Mỹ. Chất liệu: Eva, Polyester.",
+      "attributes": {
+        "SKU": "8935260629796",
+        "Kích thước": "27 x 15 x 36 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "27 x 15 x 36 cm",
+        "pattern": null
+      },
+      "source_product_id": "88225232",
+      "source_variant_id": "221271386",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-kid-jolly-danh-cho-hoc-sinh-cap-1?variant=221271386",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/buney-pink.jpg?v=1787739730510",
+      "source_available": true,
+      "image": "/assets/adcbook/4dcebe09de26a0e6a7183b84.jpg"
+    },
+    {
+      "id": "c5202652-6828-52de-bd64-bb59a257169f",
+      "name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Mermaid Candy",
+      "source_name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Mermaid Candy",
+      "product_type": "bag",
+      "price": 615000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Sakos",
+      "origin": "Mỹ",
+      "material": "Eva, Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Sakos. Xuất xứ: Mỹ. Chất liệu: Eva, Polyester.",
+      "attributes": {
+        "SKU": "8935260629772",
+        "Kích thước": "27 x 15 x 36 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "27 x 15 x 36 cm",
+        "pattern": null
+      },
+      "source_product_id": "88225232",
+      "source_variant_id": "221271387",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-kid-jolly-danh-cho-hoc-sinh-cap-1?variant=221271387",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/mermaid-candy.jpg?v=1787739739373",
+      "source_available": false,
+      "image": "/assets/adcbook/3445e70c2669a1aa07e06132.jpg"
+    },
+    {
+      "id": "596992be-b73f-57dc-928c-30efe1c224e5",
+      "name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Hello Dino",
+      "source_name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Hello Dino",
+      "product_type": "bag",
+      "price": 615000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Sakos",
+      "origin": "Mỹ",
+      "material": "Eva, Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Sakos. Xuất xứ: Mỹ. Chất liệu: Eva, Polyester.",
+      "attributes": {
+        "SKU": "8935260629697",
+        "Kích thước": "27 x 15 x 36 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "27 x 15 x 36 cm",
+        "pattern": null
+      },
+      "source_product_id": "88225232",
+      "source_variant_id": "221271388",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-kid-jolly-danh-cho-hoc-sinh-cap-1?variant=221271388",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/hello-dino.jpg?v=1787739747363",
+      "source_available": false,
+      "image": "/assets/adcbook/83c7f7ddcf125422aba13f8c.jpg"
+    },
+    {
+      "id": "db9a28df-d9f4-57ae-a8ed-37ba39d95141",
+      "name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Couple Panda",
+      "source_name": "Balo Chống Gù SAKOS Tiểu Học Kid Jolly - Dành Cho Học Sinh Cấp 1 — Couple Panda",
+      "product_type": "bag",
+      "price": 615000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Sakos",
+      "origin": "Mỹ",
+      "material": "Eva, Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Sakos. Xuất xứ: Mỹ. Chất liệu: Eva, Polyester.",
+      "attributes": {
+        "SKU": "8935260629758",
+        "Kích thước": "27 x 15 x 36 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "27 x 15 x 36 cm",
+        "pattern": null
+      },
+      "source_product_id": "88225232",
+      "source_variant_id": "221271389",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-kid-jolly-danh-cho-hoc-sinh-cap-1?variant=221271389",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/couple-panda.jpg?v=1787739757563",
+      "source_available": false,
+      "image": "/assets/adcbook/63b27d70304ac2049a721801.jpg"
+    },
+    {
+      "id": "94190fbe-05e2-5645-8293-a8e7690bfe64",
+      "name": "Balo Chống Gù SAKOS Tiểu Học Stargo Wiggy - Dành Cho Học Sinh Cấp 1 — Pastel Sweets",
+      "source_name": "Balo Chống Gù SAKOS Tiểu Học Stargo Wiggy - Dành Cho Học Sinh Cấp 1 — Pastel Sweets",
+      "product_type": "bag",
+      "price": 485000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Stargo",
+      "origin": "Mỹ",
+      "material": "Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Stargo. Xuất xứ: Mỹ. Chất liệu: Polyester.",
+      "attributes": {
+        "SKU": "8935260639238",
+        "Mã vạch": "8935260639238",
+        "Kích thước": "29 x 13 x 40 cm",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "29 x 13 x 40 cm",
+        "pattern": null
+      },
+      "source_product_id": "88222636",
+      "source_variant_id": "221265986",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-stargo-wiggy-danh-cho-hoc-sinh-cap-1?variant=221265986",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/balo-hoc-sinh-stargo-wiggy-pastel-sweets-4-a78c570e-66bc-4ec9-97a4-61b650f74ef5.jpg?v=1786938723123",
+      "source_available": true,
+      "image": "/assets/adcbook/c2a93d32af396696dc72a4e7.jpg"
+    },
+    {
+      "id": "039d1a01-4ae3-5b8e-8a70-a693b53a39fc",
+      "name": "Balo Chống Gù SAKOS Tiểu Học Stargo Wiggy - Dành Cho Học Sinh Cấp 1 — Twinkle Sky",
+      "source_name": "Balo Chống Gù SAKOS Tiểu Học Stargo Wiggy - Dành Cho Học Sinh Cấp 1 — Twinkle Sky",
+      "product_type": "bag",
+      "price": 485000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Stargo",
+      "origin": "Mỹ",
+      "material": "Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Stargo. Xuất xứ: Mỹ. Chất liệu: Polyester.",
+      "attributes": {
+        "SKU": "8935260639269",
+        "Mã vạch": "8935260639269",
+        "Kích thước": "29 x 13 x 40 cm",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "29 x 13 x 40 cm",
+        "pattern": null
+      },
+      "source_product_id": "88222636",
+      "source_variant_id": "221265987",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-stargo-wiggy-danh-cho-hoc-sinh-cap-1?variant=221265987",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/balo-hoc-sinh-stargo-wiggy-twinkle-sky-4-ed50eae7-142e-4bea-a6ce-e74e928d72fc.jpg?v=1786938733183",
+      "source_available": true,
+      "image": "/assets/adcbook/fa9055bdb389c6b59414f6b3.jpg"
+    },
+    {
+      "id": "f4a651bc-33a0-5046-908c-88aae310d5c4",
+      "name": "Balo Chống Gù SAKOS Tiểu Học Stargo Wiggy - Dành Cho Học Sinh Cấp 1 — Lilac Ocean",
+      "source_name": "Balo Chống Gù SAKOS Tiểu Học Stargo Wiggy - Dành Cho Học Sinh Cấp 1 — Lilac Ocean",
+      "product_type": "bag",
+      "price": 485000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Stargo",
+      "origin": "Mỹ",
+      "material": "Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Stargo. Xuất xứ: Mỹ. Chất liệu: Polyester.",
+      "attributes": {
+        "SKU": "8935260639252",
+        "Mã vạch": "8935260639252",
+        "Kích thước": "29 x 13 x 40 cm",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "29 x 13 x 40 cm",
+        "pattern": null
+      },
+      "source_product_id": "88222636",
+      "source_variant_id": "221265988",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-stargo-wiggy-danh-cho-hoc-sinh-cap-1?variant=221265988",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/balo-hoc-sinh-stargo-wiggy-lilac-ocean-4-597ad52d-010b-4fda-ad09-a3bdd90ef7f8.jpg?v=1786938740480",
+      "source_available": true,
+      "image": "/assets/adcbook/f7b74bd15ba4509cc571614a.jpg"
+    },
+    {
+      "id": "7e739ff0-47b6-52d4-8848-1a4ab8a5d967",
+      "name": "Balo Chống Gù SAKOS Tiểu Học Stargo Wiggy - Dành Cho Học Sinh Cấp 1 — Rainbow Dreams",
+      "source_name": "Balo Chống Gù SAKOS Tiểu Học Stargo Wiggy - Dành Cho Học Sinh Cấp 1 — Rainbow Dreams",
+      "product_type": "bag",
+      "price": 485000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Stargo",
+      "origin": "Mỹ",
+      "material": "Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Stargo. Xuất xứ: Mỹ. Chất liệu: Polyester.",
+      "attributes": {
+        "SKU": "8935260639245",
+        "Mã vạch": "8935260639245",
+        "Kích thước": "29 x 13 x 40 cm",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "29 x 13 x 40 cm",
+        "pattern": null
+      },
+      "source_product_id": "88222636",
+      "source_variant_id": "221265989",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-stargo-wiggy-danh-cho-hoc-sinh-cap-1?variant=221265989",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/balo-hoc-sinh-stargo-wiggy-rainbow-dreams-4-7b24867e-f875-4833-9ab1-90b527e1d68f.jpg?v=1786938753557",
+      "source_available": true,
+      "image": "/assets/adcbook/7eb0c1142d2b31a8da5b5daa.jpg"
+    },
+    {
+      "id": "d144c8c1-52ab-57c0-b03c-e20388a5ffeb",
+      "name": "Balo Chống Gù SAKOS Tiểu Học Stargo Wiggy - Dành Cho Học Sinh Cấp 1 — Play Ball",
+      "source_name": "Balo Chống Gù SAKOS Tiểu Học Stargo Wiggy - Dành Cho Học Sinh Cấp 1 — Play Ball",
+      "product_type": "bag",
+      "price": 485000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Stargo",
+      "origin": "Mỹ",
+      "material": "Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Stargo. Xuất xứ: Mỹ. Chất liệu: Polyester.",
+      "attributes": {
+        "SKU": "8935260639283",
+        "Mã vạch": "8935260639283",
+        "Kích thước": "29 x 13 x 40 cm",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "29 x 13 x 40 cm",
+        "pattern": null
+      },
+      "source_product_id": "88222636",
+      "source_variant_id": "221265990",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-stargo-wiggy-danh-cho-hoc-sinh-cap-1?variant=221265990",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/balo-hoc-sinh-stargo-wiggy-play-ball-4-e504753d-77b3-4b8c-8ed9-927e4f843798.jpg?v=1786938765487",
+      "source_available": true,
+      "image": "/assets/adcbook/661b5b30d10acd51f1e8dd22.jpg"
+    },
+    {
+      "id": "ed2a301a-4c8c-53bf-9956-3b954a4d839f",
+      "name": "Balo Chống Gù SAKOS Tiểu Học Stargo Wiggy - Dành Cho Học Sinh Cấp 1 — Race Road",
+      "source_name": "Balo Chống Gù SAKOS Tiểu Học Stargo Wiggy - Dành Cho Học Sinh Cấp 1 — Race Road",
+      "product_type": "bag",
+      "price": 485000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Stargo",
+      "origin": "Mỹ",
+      "material": "Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Stargo. Xuất xứ: Mỹ. Chất liệu: Polyester.",
+      "attributes": {
+        "SKU": "8935260639276",
+        "Mã vạch": "8935260639276",
+        "Kích thước": "29 x 13 x 40 cm",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "29 x 13 x 40 cm",
+        "pattern": null
+      },
+      "source_product_id": "88222636",
+      "source_variant_id": "221265991",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-stargo-wiggy-danh-cho-hoc-sinh-cap-1?variant=221265991",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/balo-hoc-sinh-stargo-wiggy-race-road-4-8118ca71-9277-49b3-85e0-08df18924b3f.jpg?v=1786938772883",
+      "source_available": true,
+      "image": "/assets/adcbook/8b5fe6123377186cdbaefbce.jpg"
+    },
+    {
+      "id": "499eed21-05bd-56a1-971f-08d85ca2db84",
+      "name": "Balo chống gù SAKOS tiểu học Stargo Lolly - Dành Cho Học Sinh Cấp 1 — Shooting Star",
+      "source_name": "Balo chống gù SAKOS tiểu học Stargo Lolly - Dành Cho Học Sinh Cấp 1 — Shooting Star",
+      "product_type": "bag",
+      "price": 530000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Stargo",
+      "origin": "Mỹ",
+      "material": "Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Stargo. Xuất xứ: Mỹ. Chất liệu: Polyester.",
+      "attributes": {
+        "SKU": "8935260639320",
+        "Mã vạch": "8935260639320",
+        "Kích thước": "27 x 15 x 38 cm",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "27 x 15 x 38 cm",
+        "pattern": null
+      },
+      "source_product_id": "88217377",
+      "source_variant_id": "221251150",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-stargo-lolly-danh-cho-hoc-sinh-cap-1?variant=221251150",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/s.jpg?v=1786695656223",
+      "source_available": true,
+      "image": "/assets/adcbook/2a90f54a97914fe2913a3a7d.jpg"
+    },
+    {
+      "id": "40422211-375c-52ed-85ac-f2e0b8935abe",
+      "name": "Balo chống gù SAKOS tiểu học Stargo Lolly - Dành Cho Học Sinh Cấp 1 — Jungle Dinos",
+      "source_name": "Balo chống gù SAKOS tiểu học Stargo Lolly - Dành Cho Học Sinh Cấp 1 — Jungle Dinos",
+      "product_type": "bag",
+      "price": 530000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Stargo",
+      "origin": "Mỹ",
+      "material": "Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Stargo. Xuất xứ: Mỹ. Chất liệu: Polyester.",
+      "attributes": {
+        "SKU": "8935260639337",
+        "Mã vạch": "8935260639337",
+        "Kích thước": "27 x 15 x 38 cm",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "27 x 15 x 38 cm",
+        "pattern": null
+      },
+      "source_product_id": "88217377",
+      "source_variant_id": "221251151",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-stargo-lolly-danh-cho-hoc-sinh-cap-1?variant=221251151",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/8935260639337.jpg?v=1786695656223",
+      "source_available": true,
+      "image": "/assets/adcbook/9e75cf6e5ffc0775c1562072.jpg"
+    },
+    {
+      "id": "c03e838e-d0fb-526a-afd8-73eb7ce240ad",
+      "name": "Balo chống gù SAKOS tiểu học Stargo Lolly - Dành Cho Học Sinh Cấp 1 — Game Pop",
+      "source_name": "Balo chống gù SAKOS tiểu học Stargo Lolly - Dành Cho Học Sinh Cấp 1 — Game Pop",
+      "product_type": "bag",
+      "price": 530000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Stargo",
+      "origin": "Mỹ",
+      "material": "Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Stargo. Xuất xứ: Mỹ. Chất liệu: Polyester.",
+      "attributes": {
+        "SKU": "8935260639344",
+        "Mã vạch": "8935260639344",
+        "Kích thước": "27 x 15 x 38 cm",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "27 x 15 x 38 cm",
+        "pattern": null
+      },
+      "source_product_id": "88217377",
+      "source_variant_id": "221251152",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-stargo-lolly-danh-cho-hoc-sinh-cap-1?variant=221251152",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/8935260639344.webp?v=1786695656223",
+      "source_available": true,
+      "image": "/assets/adcbook/36a8d5fb52bcbaacc3be16a3.jpg"
+    },
+    {
+      "id": "770e566c-f5fe-5e83-87c7-9d1e09b51ae5",
+      "name": "Balo chống gù SAKOS tiểu học Stargo Lolly - Dành Cho Học Sinh Cấp 1 — Bunny Cloud",
+      "source_name": "Balo chống gù SAKOS tiểu học Stargo Lolly - Dành Cho Học Sinh Cấp 1 — Bunny Cloud",
+      "product_type": "bag",
+      "price": 530000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Stargo",
+      "origin": "Mỹ",
+      "material": "Polyester",
+      "description": "Túi. Đơn vị bán: Chiếc. Thương hiệu: Stargo. Xuất xứ: Mỹ. Chất liệu: Polyester.",
+      "attributes": {
+        "SKU": "8935260639313",
+        "Mã vạch": "8935260639313",
+        "Kích thước": "27 x 15 x 38 cm",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "Sakos"
+      },
+      "details": {
+        "size": "27 x 15 x 38 cm",
+        "pattern": null
+      },
+      "source_product_id": "88217377",
+      "source_variant_id": "221251153",
+      "source_url": "https://adcbook.net.vn/balo-chong-gu-sakos-tieu-hoc-stargo-lolly-danh-cho-hoc-sinh-cap-1?variant=221251153",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/8935260639313.jpg?v=1786695656223",
+      "source_available": true,
+      "image": "/assets/adcbook/4e2135c62ebd42b7c26840de.jpg"
+    },
+    {
+      "id": "92a8bba9-92c7-5186-b95a-f75c4be041db",
+      "name": "Bộ Cờ Chiến Thuật One Piece - Bộ Cờ Mở Rộng Royal Blood OP-10 - TCG - One Piece - Vol.10",
+      "source_name": "Bộ Cờ Chiến Thuật One Piece - Bộ Cờ Mở Rộng Royal Blood OP-10 - TCG - One Piece - Vol.10",
+      "product_type": "toy",
+      "price": 127000,
+      "selling_unit": "Túi",
+      "source_selling_unit": "Túi",
+      "brand": "Bandai",
+      "origin": "Nhật Bản",
+      "material": "Giấy",
+      "description": "Đồ chơi. Đơn vị bán: Túi. Thương hiệu: Bandai. Xuất xứ: Nhật Bản. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "4582769707100",
+        "Mã vạch": "4582769707100",
+        "Kích thước": "8.8 x 6.3 x 0.2 cm",
+        "Độ tuổi": "9+",
+        "Nhà cung cấp": "CÔNG TY TNHH SHOWA BRAIN NAVI VIỆT NAM  (KÝ GỬI)"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": 9
+      },
+      "source_product_id": "56129561",
+      "source_variant_id": "163561998",
+      "source_url": "https://adcbook.net.vn/op-10-bo-co-chien-thuat-one-piece-bo-co-mo-rong-royal-blood-op-10-tcg-one-piece-vol-10-showa?variant=163561998",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4582769707100-l.jpg?v=1755229554123",
+      "source_available": false,
+      "image": "/assets/adcbook/d7ee7acc06636436949904e2.jpg"
+    },
+    {
+      "id": "79d8c8dc-348f-5179-9ef2-ddb299af33f6",
+      "name": "Bộ Cờ Chiến Thuật One Piece - Bộ Cờ Mở Rộng Two Legends OP-08",
+      "source_name": "Bộ Cờ Chiến Thuật One Piece - Bộ Cờ Mở Rộng Two Legends OP-08",
+      "product_type": "toy",
+      "price": 127000,
+      "selling_unit": "Túi",
+      "source_selling_unit": "Túi",
+      "brand": "Bandai",
+      "origin": "Nhật Bản",
+      "material": "Giấy",
+      "description": "Đồ chơi. Đơn vị bán: Túi. Thương hiệu: Bandai. Xuất xứ: Nhật Bản. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "4570118213686",
+        "Mã vạch": "4570118213686",
+        "Kích thước": "13.8 x 6.8 x 0.3 cm",
+        "Độ tuổi": "9+",
+        "Nhà cung cấp": "CÔNG TY TNHH SHOWA BRAIN NAVI VIỆT NAM  (KÝ GỬI)"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": 9
+      },
+      "source_product_id": "56129544",
+      "source_variant_id": "163561979",
+      "source_url": "https://adcbook.net.vn/bo-co-chien-thuat-one-piece-bo-co-mo-rong-two-legends-op-08-showa?variant=163561979",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4570118213686-1.jpg?v=1755228629587",
+      "source_available": false,
+      "image": "/assets/adcbook/4c7822414d5dddb4e1bbfacd.jpg"
+    },
+    {
+      "id": "996baa43-ca59-54ae-bf8a-c19c486883c7",
+      "name": "Bộ Cờ Chiến Thuật One Piece - Bộ Cờ Mở Rộng 500 Year In The Future",
+      "source_name": "Bộ Cờ Chiến Thuật One Piece - Bộ Cờ Mở Rộng 500 Year In The Future",
+      "product_type": "toy",
+      "price": 127000,
+      "selling_unit": "Túi",
+      "source_selling_unit": "Túi",
+      "brand": "Bandai",
+      "origin": "Nhật Bản",
+      "material": "Giấy",
+      "description": "Đồ chơi. Đơn vị bán: Túi. Thương hiệu: Bandai. Xuất xứ: Nhật Bản. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "4570118145529",
+        "Mã vạch": "4570118145529",
+        "Kích thước": "8.8 x 6.3 x 0.2 cm",
+        "Độ tuổi": "9+",
+        "Nhà cung cấp": "CÔNG TY TNHH SHOWA BRAIN NAVI VIỆT NAM  (KÝ GỬI)"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": 9
+      },
+      "source_product_id": "56126336",
+      "source_variant_id": "163558290",
+      "source_url": "https://adcbook.net.vn/bo-co-chien-thuat-one-piece-bo-co-mo-rong-500-year-in-the-future-showa?variant=163558290",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4570118145529-1.jpg?v=1755227600627",
+      "source_available": false,
+      "image": "/assets/adcbook/6678ddfa0cd6fdbc067fdbbf.jpg"
+    },
+    {
+      "id": "11c27379-b2ab-5d9a-86d7-8d674666f955",
+      "name": "Card Collection Thám Tử Lừng Danh Conan Movie 2025 - Dư Ảnh Của Độc Nhãn - Character In Polaroid (5 Cards Ngẫu Nhiên/Túi)",
+      "source_name": "Card Collection Thám Tử Lừng Danh Conan Movie 2025 - Dư Ảnh Của Độc Nhãn - Character In Polaroid (5 Cards Ngẫu Nhiên/Túi)",
+      "product_type": "toy",
+      "price": 69000,
+      "selling_unit": "Túi",
+      "source_selling_unit": "Túi",
+      "brand": "",
+      "origin": "Việt Nam",
+      "material": "Nhựa",
+      "description": "Đồ chơi. Đơn vị bán: Túi. Xuất xứ: Việt Nam. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "8936130672003",
+        "Mã vạch": "8936130672003",
+        "Kích thước": "8.8 x 6.3 x 0.2 cm",
+        "Độ tuổi": "12+",
+        "Nhà cung cấp": "Board Game VN"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": 12
+      },
+      "source_product_id": "54546985",
+      "source_variant_id": "160549806",
+      "source_url": "https://adcbook.net.vn/bo-card-collection-tham-tu-lung-danh-conan-du-anh-doc-nhan-character-in-polaroid-board?variant=160549806",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/8936130672003.jpg?v=1753327084723",
+      "source_available": false,
+      "image": "/assets/adcbook/c328a1636c687025cd44a57d.jpg"
+    },
+    {
+      "id": "f2ff040c-0189-531a-9db6-6ce1a0665050",
+      "name": "Card Collection Thám Tử Lừng Danh Conan Movie 2025 - Dư Ảnh của Độc Nhãn - Character In Photo (5 Cards Ngẫu Nhiên/Túi)",
+      "source_name": "Card Collection Thám Tử Lừng Danh Conan Movie 2025 - Dư Ảnh của Độc Nhãn - Character In Photo (5 Cards Ngẫu Nhiên/Túi)",
+      "product_type": "toy",
+      "price": 69000,
+      "selling_unit": "Túi",
+      "source_selling_unit": "Túi",
+      "brand": "",
+      "origin": "Việt Nam",
+      "material": "Nhựa",
+      "description": "Đồ chơi. Đơn vị bán: Túi. Xuất xứ: Việt Nam. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "8936130671990",
+        "Mã vạch": "8936130671990",
+        "Kích thước": "8.8 x 6.3 x 0.2 cm",
+        "Độ tuổi": "12+",
+        "Nhà cung cấp": "Board Game VN"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": 12
+      },
+      "source_product_id": "54546491",
+      "source_variant_id": "160549291",
+      "source_url": "https://adcbook.net.vn/bo-card-collection-tham-tu-lung-danh-conan-du-an-doc-nhan-character-in-photo-board?variant=160549291",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/8936130671990.jpg?v=1753326897107",
+      "source_available": false,
+      "image": "/assets/adcbook/52c5bd8084868fa373dd0a12.jpg"
+    },
+    {
+      "id": "277923e1-a9bf-50e8-8746-be6690be4b43",
+      "name": "Lắp Ghép Mô Hình Knuckle Dog 3D Khớp Nối Linh Động (009)",
+      "source_name": "Lắp Ghép Mô Hình Knuckle Dog 3D Khớp Nối Linh Động (009)",
+      "product_type": "toy",
+      "price": 44000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "",
+      "origin": "Trung Quốc",
+      "material": "Nhựa",
+      "description": "Đồ chơi. Đơn vị bán: Chiếc. Xuất xứ: Trung Quốc. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "8936190513254",
+        "Mã vạch": "8936190513254",
+        "Kích thước": "20 x 18.5 x 3 cm",
+        "Nhà cung cấp": "Megatoys"
+      },
+      "details": {
+        "type": "Đồ Chơi Giáo Dục",
+        "minimum_age": null
+      },
+      "source_product_id": "54271275",
+      "source_variant_id": "160075462",
+      "source_url": "https://adcbook.net.vn/lap-ghep-mo-hinh-knuckle-dog-3d-khop-noi-linh-dong-009-mega?variant=160075462",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/8936190513254.jpg?v=1752894170427",
+      "source_available": false,
+      "image": "/assets/adcbook/8712a2ea1e4e32d0823e31a2.jpg"
+    },
+    {
+      "id": "30e91b0a-5a9d-5ea7-8fb0-638a521fe0d7",
+      "name": "Mô Hình Xe Jett Tia Chớp Biến Hình Tàu Bay - Super Wings EU636301",
+      "source_name": "Mô Hình Xe Jett Tia Chớp Biến Hình Tàu Bay - Super Wings EU636301",
+      "product_type": "toy",
+      "price": 89000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Super Wings",
+      "origin": "Việt Nam",
+      "material": "Nhựa",
+      "description": "Đồ chơi. Đơn vị bán: Chiếc. Thương hiệu: Super Wings. Xuất xứ: Việt Nam. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "6911400436082",
+        "Mã vạch": "6911400436082",
+        "Kích thước": "16 x 11.5 x 4 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "Công ty CP Việt Tinh Anh( Kí gửi)"
+      },
+      "details": {
+        "type": "Phương Tiện Các Loại",
+        "minimum_age": 3
+      },
+      "source_product_id": "54268847",
+      "source_variant_id": "160071625",
+      "source_url": "https://adcbook.net.vn/xe-jett-tia-chop-bien-hinh-tau-bay-superwings-eu636301-vta?variant=160071625",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/6911400436082.jpg?v=1752911816850",
+      "source_available": false,
+      "image": "/assets/adcbook/4d7767347a6b281469656f70.jpg"
+    },
+    {
+      "id": "7f9d7b8d-31c3-5da7-8a69-3a8e9dfa33da",
+      "name": "Gói Thẻ Hình Harry Potter Contact 2 Panini 8018190036480",
+      "source_name": "Gói Thẻ Hình Harry Potter Contact 2 Panini 8018190036480",
+      "product_type": "toy",
+      "price": 49000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Panini",
+      "origin": "Ý",
+      "material": "Giấy",
+      "description": "Đồ chơi. Đơn vị bán: Chiếc. Thương hiệu: Panini. Xuất xứ: Ý. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "8018190036480",
+        "Mã vạch": "8018190036480",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "Công ty CP Việt Tinh Anh( Kí gửi)"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": 6
+      },
+      "source_product_id": "53810279",
+      "source_variant_id": "159257915",
+      "source_url": "https://adcbook.net.vn/goi-the-hinh-harry-potter-contact-2-8018190036480-vta?variant=159257915",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/8018190036480.jpg?v=1753518004683",
+      "source_available": false,
+      "image": "/assets/adcbook/bffc40ca18c9d07a9b8e3e30.jpg"
+    },
+    {
+      "id": "01ad8f59-d126-5a71-b66d-e34162c80aaa",
+      "name": "Bộ Cờ Chiến Thuật Union Arena Bộ Cờ Mở Rộng Phiên Bản Nikke - 1 Gói 6 Quân Cờ [Ua18Bt]",
+      "source_name": "Bộ Cờ Chiến Thuật Union Arena Bộ Cờ Mở Rộng Phiên Bản Nikke - 1 Gói 6 Quân Cờ [Ua18Bt]",
+      "product_type": "toy",
+      "price": 155000,
+      "selling_unit": "Túi",
+      "source_selling_unit": "Túi",
+      "brand": "Bandai",
+      "origin": "Nhật Bản",
+      "material": "Giấy",
+      "description": "Đồ chơi. Đơn vị bán: Túi. Thương hiệu: Bandai. Xuất xứ: Nhật Bản. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "4570118145758",
+        "Mã vạch": "4570118145758",
+        "Kích thước": "14 x 6.5 x 0.5 cm",
+        "Độ tuổi": "9+",
+        "Nhà cung cấp": "CÔNG TY TNHH SHOWA BRAIN NAVI VIỆT NAM  (KÝ GỬI)"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": 9
+      },
+      "source_product_id": "53809350",
+      "source_variant_id": "159256980",
+      "source_url": "https://adcbook.net.vn/ua18bt-bo-co-chien-thuat-union-arena-bo-co-mo-rong-phien-ban-nikke-1-goi-6-quan-co-showa?variant=159256980",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4570118145758.jpg?v=1753520885787",
+      "source_available": false,
+      "image": "/assets/adcbook/a820f185d0e2934f1b8fdc82.jpg"
+    },
+    {
+      "id": "60c917b0-27a2-56fe-9437-c118bc4c6993",
+      "name": "Mô hình Transformers - DV02 - The Overthrow - Blokees - ET29",
+      "source_name": "Mô hình Transformers - DV02 - The Overthrow - Blokees - ET29",
+      "product_type": "toy",
+      "price": 49000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "",
+      "origin": "Trung Quốc",
+      "material": "Nhựa",
+      "description": "Đồ chơi. Đơn vị bán: Chiếc. Xuất xứ: Trung Quốc. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "8935339410102",
+        "Mã vạch": "8935339410102",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "Công ty TNHH TM Minh Anh Khang (ký gửi)"
+      },
+      "details": {
+        "type": "Robot - Siêu Nhân",
+        "minimum_age": 6
+      },
+      "source_product_id": "53809349",
+      "source_variant_id": "159256979",
+      "source_url": "https://adcbook.net.vn/mo-hinh-transformers-dv02-the-overthrow-blokees-et29-mak?variant=159256979",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/8935339410102.jpg?v=1753518356627",
+      "source_available": false,
+      "image": "/assets/adcbook/fc94e6b839da1f11b8e68c6f.jpg"
+    },
+    {
+      "id": "56609ea7-d723-56e0-a2a0-d56e18761480",
+      "name": "Bộ Thẻ Sưu Tập Nhân Vật Oshinoko - Thẻ Trong Suốt Vol.2 [Ok-Cc02]",
+      "source_name": "Bộ Thẻ Sưu Tập Nhân Vật Oshinoko - Thẻ Trong Suốt Vol.2 [Ok-Cc02]",
+      "product_type": "toy",
+      "price": 60000,
+      "selling_unit": "Túi",
+      "source_selling_unit": "Túi",
+      "brand": "",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Đồ chơi. Đơn vị bán: Túi. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4573592713918",
+        "Mã vạch": "4573592713918",
+        "Kích thước": "14 x 7 x 0.3 cm",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "CÔNG TY TNHH SHOWA BRAIN NAVI VIỆT NAM  (KÝ GỬI)"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": 6
+      },
+      "source_product_id": "53809348",
+      "source_variant_id": "159256978",
+      "source_url": "https://adcbook.net.vn/ok-cc02-bo-the-suu-tap-nhan-vat-oshinoko-the-trong-suot-vol-2-showa?variant=159256978",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4573592713918.jpg?v=1753521035473",
+      "source_available": false,
+      "image": "/assets/adcbook/155ef50e1b360ea8d41702ad.jpg"
+    },
+    {
+      "id": "1349b304-091a-5634-a214-509f655b0a4c",
+      "name": "Bộ Cờ Bóng Chuyền Haikyu!! Bộ Cờ Mở Rộng Đợt 11 - Trận Đấu Kinh Điển [Hv-11]",
+      "source_name": "Bộ Cờ Bóng Chuyền Haikyu!! Bộ Cờ Mở Rộng Đợt 11 - Trận Đấu Kinh Điển [Hv-11]",
+      "product_type": "toy",
+      "price": 59000,
+      "selling_unit": "Túi",
+      "source_selling_unit": "Túi",
+      "brand": "",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Đồ chơi. Đơn vị bán: Túi. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4573471730319",
+        "Mã vạch": "4573471730319",
+        "Kích thước": "14 x 6.8 x 0.3 cm",
+        "Độ tuổi": "8+",
+        "Nhà cung cấp": "CÔNG TY TNHH SHOWA BRAIN NAVI VIỆT NAM  (KÝ GỬI)"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": 8
+      },
+      "source_product_id": "53808684",
+      "source_variant_id": "159256305",
+      "source_url": "https://adcbook.net.vn/hv-11-bo-co-bong-chuyen-haikyu-bo-co-mo-rong-dot-11-hv-11-tran-dau-kinh-dien-showa?variant=159256305",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4573471730319.jpg?v=1753521753190",
+      "source_available": false,
+      "image": "/assets/adcbook/f8ae9b09c3822afef6a2f88f.jpg"
+    },
+    {
+      "id": "5760faf8-e4ef-5489-b35f-a7c780477fae",
+      "name": "Bộ Thẻ Sưu Tập Nhân Vật Goddess Of Victory Nikke thẻ Ánh Kim Vol.2 [Ni-Mc02]",
+      "source_name": "Bộ Thẻ Sưu Tập Nhân Vật Goddess Of Victory Nikke thẻ Ánh Kim Vol.2 [Ni-Mc02]",
+      "product_type": "toy",
+      "price": 129000,
+      "selling_unit": "Túi",
+      "source_selling_unit": "Túi",
+      "brand": "Bandai",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Đồ chơi. Đơn vị bán: Túi. Thương hiệu: Bandai. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4570118228222",
+        "Mã vạch": "4570118228222",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "CÔNG TY TNHH SHOWA BRAIN NAVI VIỆT NAM  (KÝ GỬI)"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": 6
+      },
+      "source_product_id": "53808683",
+      "source_variant_id": "159256304",
+      "source_url": "https://adcbook.net.vn/ni-mc02-bo-the-suu-tap-nhan-vat-goddess-of-victory-nikkethe-anh-kim-vol-2-goi-showa?variant=159256304",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4570118228222.jpg?v=1753522427647",
+      "source_available": false,
+      "image": "/assets/adcbook/2d9a45653c0fb16735bef76a.jpg"
+    },
+    {
+      "id": "c18386b8-2455-5bcf-9cd9-a5a363b9b112",
+      "name": "Thẻ Sưu Tập Nhân Vật Chú Thuật Hồi Chiến Thẻ Snap Card Vol.1 - 1 Gói 3 Thẻ Ngẫu Nhiên [Jk-Sc01]",
+      "source_name": "Thẻ Sưu Tập Nhân Vật Chú Thuật Hồi Chiến Thẻ Snap Card Vol.1 - 1 Gói 3 Thẻ Ngẫu Nhiên [Jk-Sc01]",
+      "product_type": "toy",
+      "price": 120000,
+      "selling_unit": "Túi",
+      "source_selling_unit": "Túi",
+      "brand": "Bandai",
+      "origin": "Nhật Bản",
+      "material": "Giấy",
+      "description": "Đồ chơi. Đơn vị bán: Túi. Thương hiệu: Bandai. Xuất xứ: Nhật Bản. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "4970381665616",
+        "Mã vạch": "4970381665616",
+        "Kích thước": "10 x 6 cm",
+        "Độ tuổi": "9+",
+        "Nhà cung cấp": "CÔNG TY TNHH SHOWA BRAIN NAVI VIỆT NAM  (KÝ GỬI)"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": 9
+      },
+      "source_product_id": "53808682",
+      "source_variant_id": "159256306",
+      "source_url": "https://adcbook.net.vn/jk-sc01-the-suu-tap-nhan-vat-chu-thuat-hoi-chien-the-snap-card-vol-1-1-goi-3-the-showa?variant=159256306",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4970381665616.jpg?v=1753524609497",
+      "source_available": false,
+      "image": "/assets/adcbook/e7a24c068c42b6824a69c78b.jpg"
+    },
+    {
+      "id": "c380fc93-e017-55ad-b502-cabd5a7995d7",
+      "name": "Bộ Cờ Chiến Thuật Dragon Ball Super  Fusion World Bộ Cờ Mở Rộng -Awakened Pulse- Fb01 - 1 Gói 6 Quân Cờ [Dbs-Fb01]",
+      "source_name": "Bộ Cờ Chiến Thuật Dragon Ball Super  Fusion World Bộ Cờ Mở Rộng -Awakened Pulse- Fb01 - 1 Gói 6 Quân Cờ [Dbs-Fb01]",
+      "product_type": "toy",
+      "price": 127000,
+      "selling_unit": "Túi",
+      "source_selling_unit": "Túi",
+      "brand": "Bandai",
+      "origin": "Nhật Bản",
+      "material": "Giấy",
+      "description": "Đồ chơi. Đơn vị bán: Túi. Thương hiệu: Bandai. Xuất xứ: Nhật Bản. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "4570118119292",
+        "Mã vạch": "4570118119292",
+        "Kích thước": "13.5 x 7 x 0.3 cm",
+        "Độ tuổi": "9+",
+        "Nhà cung cấp": "CÔNG TY TNHH SHOWA BRAIN NAVI VIỆT NAM  (KÝ GỬI)"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": 9
+      },
+      "source_product_id": "53807858",
+      "source_variant_id": "159255470",
+      "source_url": "https://adcbook.net.vn/dbs-fb01-bo-co-chien-thuat-dragon-ball-super-fusion-world-bo-co-mo-rong-awakened-pulse-fb01-1-goi-6-quan-co-showa?variant=159255470",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4570118119292.jpg?v=1753524361403",
+      "source_available": false,
+      "image": "/assets/adcbook/b2f90d201305355297656ee7.jpg"
+    },
+    {
+      "id": "7bfd8d11-f923-5368-bfb4-5aa3f9549adc",
+      "name": "Bộ Thẻ Sưu Tập Nhân Vật Demon Slayer Thẻ Ánh Kim Vol.3 [Ds-Mc03]",
+      "source_name": "Bộ Thẻ Sưu Tập Nhân Vật Demon Slayer Thẻ Ánh Kim Vol.3 [Ds-Mc03]",
+      "product_type": "toy",
+      "price": 139000,
+      "selling_unit": "Túi",
+      "source_selling_unit": "Túi",
+      "brand": "",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Đồ chơi. Đơn vị bán: Túi. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4549660853787",
+        "Mã vạch": "4549660853787",
+        "Kích thước": "14 x 7 x 0.2 cm",
+        "Độ tuổi": "15+",
+        "Nhà cung cấp": "CÔNG TY TNHH SHOWA BRAIN NAVI VIỆT NAM  (KÝ GỬI)"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": 15
+      },
+      "source_product_id": "53807857",
+      "source_variant_id": "159255469",
+      "source_url": "https://adcbook.net.vn/ds-mc03-bo-the-suu-tap-nhan-vat-demon-slayer-the-anh-kim-vol-3-showa?variant=159255469",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4549660853787.jpg?v=1753524205557",
+      "source_available": false,
+      "image": "/assets/adcbook/305ab400592ba8891b6151e6.jpg"
+    },
+    {
+      "id": "0df3bbbd-f9ab-5814-956b-946dc7705ea6",
+      "name": "Bộ Cờ Chiến Thuật Dragon Ball Super Bộ Cờ Mở Rộng Zenkai Series Ex Set 06 Perfect Combination [Dbs-B23]",
+      "source_name": "Bộ Cờ Chiến Thuật Dragon Ball Super Bộ Cờ Mở Rộng Zenkai Series Ex Set 06 Perfect Combination [Dbs-B23]",
+      "product_type": "toy",
+      "price": 280000,
+      "selling_unit": "Túi",
+      "source_selling_unit": "Túi",
+      "brand": "Bandai",
+      "origin": "Nhật Bản",
+      "material": "Giấy",
+      "description": "Đồ chơi. Đơn vị bán: Túi. Thương hiệu: Bandai. Xuất xứ: Nhật Bản. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "2172004306209",
+        "Mã vạch": "2172004306209",
+        "Kích thước": "11.5 x 6.5 x 1 cm",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "CÔNG TY TNHH SHOWA BRAIN NAVI VIỆT NAM  (KÝ GỬI)"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": 6
+      },
+      "source_product_id": "53807165",
+      "source_variant_id": "159254758",
+      "source_url": "https://adcbook.net.vn/dbs-b23-bo-co-chien-thuat-dragon-ball-super-bo-co-mo-rong-zenkai-series-ex-set-06-perfect-combination-showa?variant=159254758",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/2172004306209-2.jpg?v=1753524027363",
+      "source_available": false,
+      "image": "/assets/adcbook/2fe77379bf57638b10cd813e.jpg"
+    },
+    {
+      "id": "2b4da4fb-f96a-5df2-94bb-ac37c2e82585",
+      "name": "Bộ Cờ Chiến Thuật Build Divide Bộ Cờ Mở Rộng Phiên Bản Fate / Stay Night (Heaven'S Feel) [Bd-Ft01]",
+      "source_name": "Bộ Cờ Chiến Thuật Build Divide Bộ Cờ Mở Rộng Phiên Bản Fate / Stay Night (Heaven'S Feel) [Bd-Ft01]",
+      "product_type": "toy",
+      "price": 127000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Aniplex",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Đồ chơi. Đơn vị bán: Chiếc. Thương hiệu: Aniplex. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4534530736840",
+        "Mã vạch": "4534530736840",
+        "Kích thước": "14 x 7 x 0.2 cm",
+        "Độ tuổi": "9+",
+        "Nhà cung cấp": "CÔNG TY TNHH SHOWA BRAIN NAVI VIỆT NAM  (KÝ GỬI)"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": 9
+      },
+      "source_product_id": "53807163",
+      "source_variant_id": "159254757",
+      "source_url": "https://adcbook.net.vn/bd-ft01-bo-co-chien-thuat-build-divide-bo-co-mo-rong-phien-ban-fate-stay-night-heaven-s-feel-showa?variant=159254757",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4534530736840.jpg?v=1753523744680",
+      "source_available": false,
+      "image": "/assets/adcbook/cabb840ef219845b93d923e3.jpg"
+    },
+    {
+      "id": "3262bcb2-3997-532f-ac22-925b9303e37f",
+      "name": "Bộ Cờ Chiến Thuât Conan TCG, Takaratomy Gói Mở Rộng Phiên Bản Contact Between East & West [Ct-P02]",
+      "source_name": "Bộ Cờ Chiến Thuât Conan TCG, Takaratomy Gói Mở Rộng Phiên Bản Contact Between East & West [Ct-P02]",
+      "product_type": "toy",
+      "price": 80000,
+      "selling_unit": "Túi",
+      "source_selling_unit": "Túi",
+      "brand": "Takaratomy",
+      "origin": "Nhật Bản",
+      "material": "Giấy",
+      "description": "Đồ chơi. Đơn vị bán: Túi. Thương hiệu: Takaratomy. Xuất xứ: Nhật Bản. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "4904810936961",
+        "Mã vạch": "4904810936961",
+        "Kích thước": "12 x 6 x 0.2 cm",
+        "Độ tuổi": "6+, 10+",
+        "Nhà cung cấp": "CÔNG TY TNHH SHOWA BRAIN NAVI VIỆT NAM  (KÝ GỬI)"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": null
+      },
+      "source_product_id": "53806637",
+      "source_variant_id": "159254227",
+      "source_url": "https://adcbook.net.vn/ct-p02-bo-co-chien-thuat-conan-tcg-takaratomy-goi-mo-rong-phien-ban-contact-between-east-west-showa?variant=159254227",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4904810936961.jpg?v=1753523547947",
+      "source_available": false,
+      "image": "/assets/adcbook/195c3d5b9cefad4a9cd1e5f7.jpg"
+    },
+    {
+      "id": "9bac44a5-206d-50ce-98d2-6de7f4eebfd7",
+      "name": "Hình Dán Nhân Vật Detective Conan Sd Die-Cut Sticker Vol.1 [Dc-Cs01]",
+      "source_name": "Hình Dán Nhân Vật Detective Conan Sd Die-Cut Sticker Vol.1 [Dc-Cs01]",
+      "product_type": "toy",
+      "price": 80000,
+      "selling_unit": "Túi",
+      "source_selling_unit": "Túi",
+      "brand": "Bandai",
+      "origin": "Nhật Bản",
+      "material": "Giấy",
+      "description": "Đồ chơi. Đơn vị bán: Túi. Thương hiệu: Bandai. Xuất xứ: Nhật Bản. Chất liệu: Giấy.",
+      "attributes": {
+        "SKU": "4570118190321",
+        "Mã vạch": "4570118190321",
+        "Kích thước": "15 x 15 x 5 cm",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "CÔNG TY TNHH SHOWA BRAIN NAVI VIỆT NAM  (KÝ GỬI)"
+      },
+      "details": {
+        "type": "Board Game",
+        "minimum_age": 6
+      },
+      "source_product_id": "53804722",
+      "source_variant_id": "159252286",
+      "source_url": "https://adcbook.net.vn/dc-cs01-hinh-dan-nhan-vat-detective-conan-sd-die-cut-sticker-vol-1-goi-showa?variant=159252286",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4570118190321.jpg?v=1753522884283",
+      "source_available": false,
+      "image": "/assets/adcbook/bc3c748c353b5c67c802ff2f.jpg"
+    },
+    {
+      "id": "ac550dfb-a0fe-5671-8d12-06eb071b68c2",
+      "name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Bộ 8 cuốn",
+      "source_name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Bộ 8 cuốn",
+      "product_type": "book",
+      "price": 224000,
+      "selling_unit": "Bộ",
+      "source_selling_unit": "Bộ",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Bộ.",
+      "attributes": {
+        "SKU": "2179902354165",
+        "Mã vạch": "2179902354165",
+        "Kích thước": "20.5 x 20.5 cm",
+        "Độ tuổi": "4+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Đạo đức – Kĩ năng sống",
+        "minimum_age": 4,
+        "publisher": "Nhà xuất bản Giáo dục Việt Nam"
+      },
+      "source_product_id": "87170269",
+      "source_variant_id": "217999008",
+      "source_url": "https://adcbook.net.vn/bo-khi-con-cau-kinh-8-cuon?variant=217999008",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/khi-con-cau-kinh-900x900-8c-413fc090-155f-4043-b0a1-22952551a51f.jpg?v=1785401327537",
+      "source_available": true,
+      "image": "/assets/adcbook/f5ce3c757040f4f4f24b0bee.jpg"
+    },
+    {
+      "id": "6fc5f8f1-f8bc-5a6a-bdfc-cdebae5eddaa",
+      "name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Chẳng biết vì sao",
+      "source_name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Chẳng biết vì sao",
+      "product_type": "book",
+      "price": 29750,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Cuốn.",
+      "attributes": {
+        "SKU": "9786040468512",
+        "Mã vạch": "9786040468512",
+        "Kích thước": "20.5 x 20.5 cm",
+        "Độ tuổi": "4+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Đạo đức – Kĩ năng sống",
+        "minimum_age": 4,
+        "publisher": "Nhà xuất bản Giáo dục Việt Nam"
+      },
+      "source_product_id": "87170269",
+      "source_variant_id": "217999000",
+      "source_url": "https://adcbook.net.vn/bo-khi-con-cau-kinh-8-cuon?variant=217999000",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/khi-con-cau-kinh-900x900-01-24046191-3625-457c-857a-15c3592a4b6c.jpg?v=1785401327537",
+      "source_available": true,
+      "image": "/assets/adcbook/f4bb560fe1c8069bc0320705.jpg"
+    },
+    {
+      "id": "2da76f84-375f-52f2-8619-20895dae76fa",
+      "name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Muốn thức cả đêm",
+      "source_name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Muốn thức cả đêm",
+      "product_type": "book",
+      "price": 29750,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Cuốn.",
+      "attributes": {
+        "SKU": "9786040468536",
+        "Mã vạch": "9786040468536",
+        "Kích thước": "20.5 x 20.5 cm",
+        "Độ tuổi": "4+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Đạo đức – Kĩ năng sống",
+        "minimum_age": 4,
+        "publisher": "Nhà xuất bản Giáo dục Việt Nam"
+      },
+      "source_product_id": "87170269",
+      "source_variant_id": "217999001",
+      "source_url": "https://adcbook.net.vn/bo-khi-con-cau-kinh-8-cuon?variant=217999001",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/khi-con-cau-kinh-900x900-03-cc26bb9e-0e9d-4e1a-b05e-2f97a02e9e5e.jpg?v=1785401327537",
+      "source_available": true,
+      "image": "/assets/adcbook/d182dcc6f6239e5641ba3d05.jpg"
+    },
+    {
+      "id": "74eb4c7d-901c-5ad2-8f0b-0257df5a9064",
+      "name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Không thể ngồi yên",
+      "source_name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Không thể ngồi yên",
+      "product_type": "book",
+      "price": 29750,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Cuốn.",
+      "attributes": {
+        "SKU": "9786040468567",
+        "Mã vạch": "9786040468567",
+        "Kích thước": "20.5 x 20.5 cm",
+        "Độ tuổi": "4+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Đạo đức – Kĩ năng sống",
+        "minimum_age": 4,
+        "publisher": "Nhà xuất bản Giáo dục Việt Nam"
+      },
+      "source_product_id": "87170269",
+      "source_variant_id": "217999002",
+      "source_url": "https://adcbook.net.vn/bo-khi-con-cau-kinh-8-cuon?variant=217999002",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/khi-con-cau-kinh-900x900-06-69228272-dbfa-4fda-97b6-9b7b1e08b480.jpg?v=1785401327537",
+      "source_available": true,
+      "image": "/assets/adcbook/01256b3799e89b432be97183.jpg"
+    },
+    {
+      "id": "0a53ca94-f41c-5a71-9c9e-5ea16c42dea3",
+      "name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Không thích giáng sinh",
+      "source_name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Không thích giáng sinh",
+      "product_type": "book",
+      "price": 29750,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Cuốn.",
+      "attributes": {
+        "SKU": "9786040468543",
+        "Mã vạch": "9786040468543",
+        "Kích thước": "20.5 x 20.5 cm",
+        "Độ tuổi": "4+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Đạo đức – Kĩ năng sống",
+        "minimum_age": 4,
+        "publisher": "Nhà xuất bản Giáo dục Việt Nam"
+      },
+      "source_product_id": "87170269",
+      "source_variant_id": "217999003",
+      "source_url": "https://adcbook.net.vn/bo-khi-con-cau-kinh-8-cuon?variant=217999003",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/khi-con-cau-kinh-900x900-04-aaadaf90-27fe-4628-8598-91450597e90c.jpg?v=1785401327537",
+      "source_available": true,
+      "image": "/assets/adcbook/8e55fbd8a07edb7dc87680d7.jpg"
+    },
+    {
+      "id": "b8cadd5e-abcd-55f9-92da-e66145bdd391",
+      "name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Thử làm mẹ một ngày",
+      "source_name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Thử làm mẹ một ngày",
+      "product_type": "book",
+      "price": 29750,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Cuốn.",
+      "attributes": {
+        "SKU": "9786040468581",
+        "Mã vạch": "9786040468581",
+        "Kích thước": "20.5 x 20.5 cm",
+        "Độ tuổi": "4+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Đạo đức – Kĩ năng sống",
+        "minimum_age": 4,
+        "publisher": "Nhà xuất bản Giáo dục Việt Nam"
+      },
+      "source_product_id": "87170269",
+      "source_variant_id": "217999004",
+      "source_url": "https://adcbook.net.vn/bo-khi-con-cau-kinh-8-cuon?variant=217999004",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/khi-con-cau-kinh-900x900-08-32845f5b-4006-445f-8649-70ed086a0e26.jpg?v=1785401327537",
+      "source_available": true,
+      "image": "/assets/adcbook/ba448443b813673276eff3f3.jpg"
+    },
+    {
+      "id": "5d6b88b3-3f64-5ea7-b590-448189987de0",
+      "name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Không việc gì phải sợ!",
+      "source_name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Không việc gì phải sợ!",
+      "product_type": "book",
+      "price": 29750,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Cuốn.",
+      "attributes": {
+        "SKU": "9786040468550",
+        "Mã vạch": "9786040468550",
+        "Kích thước": "20.5 x 20.5 cm",
+        "Độ tuổi": "4+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Đạo đức – Kĩ năng sống",
+        "minimum_age": 4,
+        "publisher": "Nhà xuất bản Giáo dục Việt Nam"
+      },
+      "source_product_id": "87170269",
+      "source_variant_id": "217999005",
+      "source_url": "https://adcbook.net.vn/bo-khi-con-cau-kinh-8-cuon?variant=217999005",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/khi-con-cau-kinh-900x900-05-7e471bc7-c298-4e9d-a601-cfe72af49f6c.jpg?v=1785401327537",
+      "source_available": true,
+      "image": "/assets/adcbook/90de3cc1186b47907561710e.jpg"
+    },
+    {
+      "id": "fdb6b09d-aee4-557c-8403-3bead37e6c0d",
+      "name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Muốn chơi cả ngày",
+      "source_name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Muốn chơi cả ngày",
+      "product_type": "book",
+      "price": 29750,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Cuốn.",
+      "attributes": {
+        "SKU": "9786040468574",
+        "Mã vạch": "9786040468574",
+        "Kích thước": "20.5 x 20.5 cm",
+        "Độ tuổi": "4+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Đạo đức – Kĩ năng sống",
+        "minimum_age": 4,
+        "publisher": "Nhà xuất bản Giáo dục Việt Nam"
+      },
+      "source_product_id": "87170269",
+      "source_variant_id": "217999006",
+      "source_url": "https://adcbook.net.vn/bo-khi-con-cau-kinh-8-cuon?variant=217999006",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/khi-con-cau-kinh-900x900-07-189e7b2a-9686-48e8-8d93-aa93cda44e8a.jpg?v=1785401327537",
+      "source_available": true,
+      "image": "/assets/adcbook/16d16406e3bbb8e637e04637.jpg"
+    },
+    {
+      "id": "3d21040e-6b39-5e29-8bd5-14b006c5d395",
+      "name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Không thích tiệc tùng!",
+      "source_name": "Bộ Khỉ Con Cáu Kỉnh (8 Cuốn) — Không thích tiệc tùng!",
+      "product_type": "book",
+      "price": 29750,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Cuốn.",
+      "attributes": {
+        "SKU": "9786040468529",
+        "Mã vạch": "9786040468529",
+        "Kích thước": "20.5 x 20.5 cm",
+        "Độ tuổi": "4+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Đạo đức – Kĩ năng sống",
+        "minimum_age": 4,
+        "publisher": "Nhà xuất bản Giáo dục Việt Nam"
+      },
+      "source_product_id": "87170269",
+      "source_variant_id": "217999007",
+      "source_url": "https://adcbook.net.vn/bo-khi-con-cau-kinh-8-cuon?variant=217999007",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/khi-con-cau-kinh-900x900-02-5e37821e-0a0f-40a6-8567-91d88334dc37.jpg?v=1785401327537",
+      "source_available": true,
+      "image": "/assets/adcbook/83b798b0e06f73bc1f7cb253.jpg"
+    },
+    {
+      "id": "717c1217-3495-56a3-aeee-31b5429e1602",
+      "name": "Tò Mò Mở Rộng (Bộ 5 Cuốn)",
+      "source_name": "Tò Mò Mở Rộng (Bộ 5 Cuốn)",
+      "product_type": "book",
+      "price": 277200,
+      "selling_unit": "Bộ",
+      "source_selling_unit": "Bộ",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Bộ.",
+      "attributes": {
+        "SKU": "2179902202442",
+        "Mã vạch": "2179902202442",
+        "Kích thước": "23 x 23 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Phát triển Tư duy - Trí tuệ ADCBookiz",
+        "minimum_age": 3,
+        "publisher": "NXB Giáo Dục Việt Nam"
+      },
+      "source_product_id": "66057618",
+      "source_variant_id": "180927531",
+      "source_url": "https://adcbook.net.vn/to-mo-muon-biet-bo-5-cuon-m?variant=180927531",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/banner-tomo-all-222.jpg?v=1779962380247",
+      "source_available": true,
+      "image": "/assets/adcbook/2d97e4aef38472f7a890cd95.jpg"
+    },
+    {
+      "id": "509582f3-2554-5db5-bb7d-6e010f243acc",
+      "name": "Tò Mò Muốn Biết - Trên Sa Mạc",
+      "source_name": "Tò Mò Muốn Biết - Trên Sa Mạc",
+      "product_type": "book",
+      "price": 56100,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Cuốn.",
+      "attributes": {
+        "SKU": "9786040464217",
+        "Mã vạch": "9786040464217",
+        "Kích thước": "25 x 21 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Phát triển Tư duy - Trí tuệ ADCBookiz",
+        "minimum_age": 3,
+        "publisher": "NXB Giáo Dục Việt Nam"
+      },
+      "source_product_id": "66057262",
+      "source_variant_id": "180927145",
+      "source_url": "https://adcbook.net.vn/to-mo-muon-biet-tren-sa-mac?variant=180927145",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/banner-tren-sa-mac3-552c5419-ac6d-41ee-9f0e-0060f0835b83.png?v=1780469612230",
+      "source_available": true,
+      "image": "/assets/adcbook/ec8c2f7f8a18a9d84a0d2206.png"
+    },
+    {
+      "id": "902c10e4-a8e8-5c11-9a45-e606662947f0",
+      "name": "Tò Mò Muốn Biết - Trên Thảo Nguyên",
+      "source_name": "Tò Mò Muốn Biết - Trên Thảo Nguyên",
+      "product_type": "book",
+      "price": 56100,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Cuốn.",
+      "attributes": {
+        "SKU": "9786040464224",
+        "Mã vạch": "9786040464224",
+        "Kích thước": "25 x 21 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Phát triển Tư duy - Trí tuệ ADCBookiz",
+        "minimum_age": 3,
+        "publisher": "NXB Giáo Dục Việt Nam"
+      },
+      "source_product_id": "66057052",
+      "source_variant_id": "180926915",
+      "source_url": "https://adcbook.net.vn/to-mo-muon-biet-tren-thao-nguyen?variant=180926915",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/banner-tren-thao-nguyen3-dd374533-0af6-4914-befc-e7be0f4b461d.png?v=1780469637430",
+      "source_available": true,
+      "image": "/assets/adcbook/73d8e9fa03c1fec00c03f93f.png"
+    },
+    {
+      "id": "939deee6-da86-508e-be69-21e8af992698",
+      "name": "Tò Mò Muốn Biết - Trong Bóng Đêm",
+      "source_name": "Tò Mò Muốn Biết - Trong Bóng Đêm",
+      "product_type": "book",
+      "price": 56100,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Cuốn.",
+      "attributes": {
+        "SKU": "9786040464248",
+        "Mã vạch": "9786040464248",
+        "Kích thước": "23 x 23 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Phát triển Tư duy - Trí tuệ ADCBookiz",
+        "minimum_age": 3,
+        "publisher": "NXB Giáo Dục Việt Nam"
+      },
+      "source_product_id": "66057051",
+      "source_variant_id": "180926914",
+      "source_url": "https://adcbook.net.vn/to-mo-muon-biet-trong-bong-dem?variant=180926914",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/banner-trong-bong-dem3-4b1c5b79-ecbd-45be-a872-3fae3d135390.png?v=1780469688960",
+      "source_available": true,
+      "image": "/assets/adcbook/6d82837245d2e919788b966d.png"
+    },
+    {
+      "id": "4d3bdfd6-b45a-52d6-8c2c-1752b97bfc05",
+      "name": "Tò Mò Muốn Biết - Trong Gốc Cây",
+      "source_name": "Tò Mò Muốn Biết - Trong Gốc Cây",
+      "product_type": "book",
+      "price": 56100,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Cuốn.",
+      "attributes": {
+        "SKU": "9786040464231",
+        "Mã vạch": "9786040464231",
+        "Kích thước": "23 x 23 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Phát triển Tư duy - Trí tuệ ADCBookiz",
+        "minimum_age": 3,
+        "publisher": "NXB Giáo Dục Việt Nam"
+      },
+      "source_product_id": "66057008",
+      "source_variant_id": "180926764",
+      "source_url": "https://adcbook.net.vn/to-mo-muon-biet-trong-goc-cay?variant=180926764",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/banner-trong-goc-cay3-6747ca74-4316-41cf-b21e-0001955c2d9d.png?v=1780469712643",
+      "source_available": true,
+      "image": "/assets/adcbook/e5a3c818b94f440b779aa107.png"
+    },
+    {
+      "id": "6121c095-4a38-5549-adb7-e8ba5f4f07c7",
+      "name": "Tò Mò Muốn Biết - Trong Rừng Thẳm",
+      "source_name": "Tò Mò Muốn Biết - Trong Rừng Thẳm",
+      "product_type": "book",
+      "price": 56100,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Cuốn.",
+      "attributes": {
+        "SKU": "9786040464200",
+        "Mã vạch": "9786040464200",
+        "Kích thước": "25 x 21 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Phát triển Tư duy - Trí tuệ ADCBookiz",
+        "minimum_age": 3,
+        "publisher": "NXB Giáo Dục Việt Nam"
+      },
+      "source_product_id": "66056964",
+      "source_variant_id": "180926594",
+      "source_url": "https://adcbook.net.vn/to-mo-muon-biet-trong-rung-tham?variant=180926594",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/banner-trong-rung-tham3-6056840c-0ec2-412d-8da8-1144fee3c2d0.png?v=1780469744280",
+      "source_available": true,
+      "image": "/assets/adcbook/20b45de8bf65ca12b539cfae.png"
+    },
+    {
+      "id": "345bbc99-0fb2-5025-a49b-f1da952deeac",
+      "name": "Tò Mò Muốn Biết (Trọn Bộ 10 Cuốn)",
+      "source_name": "Tò Mò Muốn Biết (Trọn Bộ 10 Cuốn)",
+      "product_type": "book",
+      "price": 450000,
+      "selling_unit": "Bộ",
+      "source_selling_unit": "Bộ",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Bộ.",
+      "attributes": {
+        "SKU": "2179902202350",
+        "Mã vạch": "2179902202350",
+        "Kích thước": "23 x 23 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Kiến thức - Khoa học ADCBookiz",
+        "minimum_age": 3,
+        "publisher": "NXB Giáo Dục Việt Nam"
+      },
+      "source_product_id": "66052336",
+      "source_variant_id": "180919302",
+      "source_url": "https://adcbook.net.vn/combo-to-mo-moi-to-mo-cu-10-cuon?variant=180919302",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/0-anh-bia.jpg?v=1789367983603",
+      "source_available": true,
+      "image": "/assets/adcbook/77e4eba456114f8297a14dca.jpg"
+    },
+    {
+      "id": "16856f34-4b36-53c4-8784-c4bac082c717",
+      "name": "Bộ Sách Bé Ngoan (3 Cuốn)",
+      "source_name": "Bộ Sách Bé Ngoan (3 Cuốn)",
+      "product_type": "book",
+      "price": 63000,
+      "selling_unit": "Cuốn",
+      "source_selling_unit": "Cuốn",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Cuốn.",
+      "attributes": {
+        "SKU": "2171303009859",
+        "Mã vạch": "2171303009859",
+        "Kích thước": "20 x 20 cm",
+        "Độ tuổi": "1+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Kỹ năng sống ADCBookiz",
+        "minimum_age": 1,
+        "publisher": "NXB Giáo Dục Việt Nam"
+      },
+      "source_product_id": "65411592",
+      "source_variant_id": "179699285",
+      "source_url": "https://adcbook.net.vn/be-ngoan-3c?variant=179699285",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/be-ngoan-900x900-3c-8a740fac-7456-4e70-900a-a23d8c9a745f.jpg?v=1787125918113",
+      "source_available": false,
+      "image": "/assets/adcbook/a33e4203492cb817298b11e4.jpg"
+    },
+    {
+      "id": "b23bf869-783a-5f6f-bf4d-35b8c6dad830",
+      "name": "Bộ Bé Ngoan Có Biết? (4 Cuốn)",
+      "source_name": "Bộ Bé Ngoan Có Biết? (4 Cuốn)",
+      "product_type": "book",
+      "price": 114240,
+      "selling_unit": "Bộ",
+      "source_selling_unit": "Bộ",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Bộ.",
+      "attributes": {
+        "SKU": "2171303008111",
+        "Mã vạch": "2171303008111",
+        "Kích thước": "18 x 24 cm",
+        "Độ tuổi": "2+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Kỹ năng sống ADCBookiz",
+        "minimum_age": 2,
+        "publisher": "NXB Giáo Dục Việt Nam"
+      },
+      "source_product_id": "65411591",
+      "source_variant_id": "179699284",
+      "source_url": "https://adcbook.net.vn/be-ngoan-co-biet-bo-4-cuon?variant=179699284",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/be-ngoan-co-biet-900x900-4c.jpg?v=1787126279427",
+      "source_available": true,
+      "image": "/assets/adcbook/f60514182fa20d081ab4a990.jpg"
+    },
+    {
+      "id": "d1f5ce42-9ac6-5dbc-ab4e-f5ee45411fc5",
+      "name": "Thủ thỉ cùng con (Bộ 3 cuốn)",
+      "source_name": "Thủ thỉ cùng con (Bộ 3 cuốn)",
+      "product_type": "book",
+      "price": 80640,
+      "selling_unit": "Bộ",
+      "source_selling_unit": "Bộ",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Bộ.",
+      "attributes": {
+        "SKU": "2171303008135",
+        "Mã vạch": "2171303008135",
+        "Kích thước": "20.5 x 20.5 cm",
+        "Độ tuổi": "1+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Phát triển Tư duy - Trí tuệ ADCBookiz",
+        "minimum_age": 1,
+        "publisher": "NXB Giáo Dục Việt Nam"
+      },
+      "source_product_id": "65411543",
+      "source_variant_id": "179699223",
+      "source_url": "https://adcbook.net.vn/thu-thi-cung-con-bo-3-cuon?variant=179699223",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/thu-thi-cung-con-900x900-3c.jpg?v=1787126554347",
+      "source_available": true,
+      "image": "/assets/adcbook/1ae91e53e9b2dbda870e67dd.jpg"
+    },
+    {
+      "id": "15d1c9a8-2a19-50c5-8e48-c76d199ecc28",
+      "name": "Tò Mò Muốn Biết 1 (Bộ 5 cuốn)",
+      "source_name": "Tò Mò Muốn Biết 1 (Bộ 5 cuốn)",
+      "product_type": "book",
+      "price": 277200,
+      "selling_unit": "Bộ",
+      "source_selling_unit": "Bộ",
+      "brand": "",
+      "origin": null,
+      "material": null,
+      "description": "Sách. Đơn vị bán: Bộ.",
+      "attributes": {
+        "SKU": "2171303009514",
+        "Mã vạch": "2171303009514",
+        "Kích thước": "23 x 23 cm",
+        "Độ tuổi": "3+",
+        "Nhà cung cấp": "ADCBookiz"
+      },
+      "details": {
+        "category": "Kiến thức - Khoa học ADCBookiz",
+        "minimum_age": 3,
+        "publisher": "NXB Giáo Dục Việt Nam"
+      },
+      "source_product_id": "65161987",
+      "source_variant_id": "179386834",
+      "source_url": "https://adcbook.net.vn/to-mo-muon-biet-bo-5-cuon?variant=179386834",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/tomo.jpg?v=1782379444573",
+      "source_available": true,
+      "image": "/assets/adcbook/a5186f475f84d7c418fc466b.jpg"
+    },
+    {
+      "id": "26c71289-ee9b-5f61-a8b1-db550b723748",
+      "name": "Đèn bàn Protex PR032L (Pro)",
+      "source_name": "Đèn bàn Protex PR032L (Pro)",
+      "product_type": "electric_device",
+      "price": 860000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Protex",
+      "origin": "Việt Nam",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Protex. Xuất xứ: Việt Nam. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "8936118580320",
+        "Mã vạch": "2172001013940",
+        "Độ tuổi": "6+",
+        "Nhà cung cấp": "Công ty TNHH Protex Electric Việt Nam"
+      },
+      "details": {
+        "minimum_age": 6,
+        "weight": 1000
+      },
+      "source_product_id": "61572875",
+      "source_variant_id": "173166337",
+      "source_url": "https://adcbook.net.vn/den-ban-protex-pr032l-pro?variant=173166337",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/vn-11134207-7qukw-lhpo15aofddxaa.jpg?v=1784102725227",
+      "source_available": false,
+      "image": "/assets/adcbook/58bd38d9f350e4828e4069b5.jpg"
+    },
+    {
+      "id": "d5f91eb0-406e-55c2-8613-0c30707d8e49",
+      "name": "Máy tính Casio FX570MS-2",
+      "source_name": "Máy tính Casio FX570MS-2",
+      "product_type": "electric_device",
+      "price": 455000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4549526607370",
+        "Mã vạch": "4549526607370",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 200
+      },
+      "source_product_id": "46341306",
+      "source_variant_id": "147106765",
+      "source_url": "https://adcbook.net.vn/may-tinh-fx570ms-2-bt?variant=147106765",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/500-crop-fx-570ms-new-1.png?v=1747065474000",
+      "source_available": false,
+      "image": "/assets/adcbook/f3f8944a5a9f266f1658d245.png"
+    },
+    {
+      "id": "333d32d9-a5fa-5144-83d9-c07835ba2f61",
+      "name": "Máy Tính Casio SL-310UC-PK Màu Hồng",
+      "source_name": "Máy Tính Casio SL-310UC-PK Màu Hồng",
+      "product_type": "electric_device",
+      "price": 195000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4549526603761",
+        "Mã vạch": "4549526603761",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 300
+      },
+      "source_product_id": "46341305",
+      "source_variant_id": "147106764",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-sl-310uc-pk-bt?variant=147106764",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/sl-310uc-pk-f-dy-011d-79723b732ea64009ad3899011f730e00.jpg?v=1747065472740",
+      "source_available": false,
+      "image": "/assets/adcbook/8e1cada8df4701cc220a4ffc.jpg"
+    },
+    {
+      "id": "6bd1d0ea-19eb-5519-90ab-738b156e5877",
+      "name": "Máy Tính Casio SL-310UC-BU Màu Xanh",
+      "source_name": "Máy Tính Casio SL-310UC-BU Màu Xanh",
+      "product_type": "electric_device",
+      "price": 195000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4549526603730",
+        "Mã vạch": "4549526603730",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 300
+      },
+      "source_product_id": "46341303",
+      "source_variant_id": "147106762",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-sl-310uc-bu-bt?variant=147106762",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/500-crop-sl-310uc-bu-f-dy-011a.jpg?v=1747065471920",
+      "source_available": false,
+      "image": "/assets/adcbook/2fd109252664e9f640bb8692.jpg"
+    },
+    {
+      "id": "2692e7a6-50ed-5c8c-bb27-a77a494e0f78",
+      "name": "Máy Tính Casio MX12B-PK Màu Hồng",
+      "source_name": "Máy Tính Casio MX12B-PK Màu Hồng",
+      "product_type": "electric_device",
+      "price": 208000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4549526613791",
+        "Mã vạch": "4549526613791",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 300
+      },
+      "source_product_id": "46341302",
+      "source_variant_id": "147106761",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-mx12b-pk-mau-hong-bt?variant=147106761",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/mg-2526.png?v=1747065471600",
+      "source_available": false,
+      "image": "/assets/adcbook/196bfef7e76d0442dab30b45.png"
+    },
+    {
+      "id": "7a6c0ce4-df39-5f54-8b66-0ef5b34bafd7",
+      "name": "Máy Tính Casio MX12B-LB Màu Xanh Dương",
+      "source_name": "Máy Tính Casio MX12B-LB Màu Xanh Dương",
+      "product_type": "electric_device",
+      "price": 208000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4549526613784",
+        "Mã vạch": "4549526613784",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 300
+      },
+      "source_product_id": "46341301",
+      "source_variant_id": "147106760",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-mx12b-lb-mau-xanh-bt?variant=147106760",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/510-mg-2523.png?v=1747065470580",
+      "source_available": false,
+      "image": "/assets/adcbook/9d8f614f56dcdff23215b77c.png"
+    },
+    {
+      "id": "692c4e69-e2d9-50c8-9215-9de0712617a7",
+      "name": "Máy Tính Casio MX12B-GN Màu Xanh Lá",
+      "source_name": "Máy Tính Casio MX12B-GN Màu Xanh Lá",
+      "product_type": "electric_device",
+      "price": 208000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4549526613807",
+        "Mã vạch": "4549526613807",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 300
+      },
+      "source_product_id": "46341300",
+      "source_variant_id": "147106759",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-mx12b-gn-mau-xanh-la-bt?variant=147106759",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/510-mg-2529.png?v=1747065469593",
+      "source_available": false,
+      "image": "/assets/adcbook/fa24327ff7704e0db0b6f2e8.png"
+    },
+    {
+      "id": "ec480d0c-fdbe-5495-aa84-10dbfdd06e0c",
+      "name": "Máy Tính Casio MX-120B",
+      "source_name": "Máy Tính Casio MX-120B",
+      "product_type": "electric_device",
+      "price": 260000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4971850032229",
+        "Mã vạch": "4971850032229",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 300
+      },
+      "source_product_id": "46341299",
+      "source_variant_id": "147106758",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-mx-120b-bt?variant=147106758",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/510-mx-120b.jpg?v=1747065468577",
+      "source_available": false,
+      "image": "/assets/adcbook/d529d68be56c4f351c5e8417.jpg"
+    },
+    {
+      "id": "bd1f17e1-0b7a-5e3c-966b-662aa4bc8aea",
+      "name": "Máy Tính Casio MS-20UC-GN Màu Xanh Lá",
+      "source_name": "Máy Tính Casio MS-20UC-GN Màu Xanh Lá",
+      "product_type": "electric_device",
+      "price": 326000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4549526603686",
+        "Mã vạch": "4549526603686",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 300
+      },
+      "source_product_id": "46341298",
+      "source_variant_id": "147106757",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-ms-20uc-gn-bt?variant=147106757",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4549526603686.jpg?v=1747065468010",
+      "source_available": false,
+      "image": "/assets/adcbook/630639f64467c7112728dbd3.jpg"
+    },
+    {
+      "id": "850f1b4c-7e96-59bc-97bb-190584614660",
+      "name": "Máy Tính Casio JS-40B",
+      "source_name": "Máy Tính Casio JS-40B",
+      "product_type": "electric_device",
+      "price": 1045000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "nhựa và kim loại",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: nhựa và kim loại.",
+      "attributes": {
+        "SKU": "4971850094128",
+        "Mã vạch": "4971850094128",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 300
+      },
+      "source_product_id": "46341297",
+      "source_variant_id": "147106756",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-js-40b-bt?variant=147106756",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4971850094128.jpg?v=1747065467290",
+      "source_available": false,
+      "image": "/assets/adcbook/0b25e20ebcc4bf438f1a181f.jpg"
+    },
+    {
+      "id": "067afb2e-ab59-5429-b345-535f42d2b477",
+      "name": "Máy tính Casio JS-20B",
+      "source_name": "Máy tính Casio JS-20B",
+      "product_type": "electric_device",
+      "price": 990000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4549526611575",
+        "Mã vạch": "4549526611575",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 300
+      },
+      "source_product_id": "46341296",
+      "source_variant_id": "147106755",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-js-20b-bt?variant=147106755",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/29752-m-y-t-nh-casio-js-20b.jpg?v=1747065465907",
+      "source_available": false,
+      "image": "/assets/adcbook/8e080daadda0b8a7dc43ee3d.jpg"
+    },
+    {
+      "id": "ec34c61d-a638-589e-a7d2-5d8e9e913be1",
+      "name": "Máy Tính Casio J-120F",
+      "source_name": "Máy Tính Casio J-120F",
+      "product_type": "electric_device",
+      "price": 415000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "2172002114059",
+        "Mã vạch": "2172002114059",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 300
+      },
+      "source_product_id": "46341295",
+      "source_variant_id": "147106754",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-j-120f-bt?variant=147106754",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/image-230314.jpg?v=1747065464937",
+      "source_available": false,
+      "image": "/assets/adcbook/e5976778d547d272647e9ef4.jpg"
+    },
+    {
+      "id": "a3af5da5-458e-5977-a56e-33c83b1cd946",
+      "name": "Máy Tính Casio HL-815L",
+      "source_name": "Máy Tính Casio HL-815L",
+      "product_type": "electric_device",
+      "price": 115000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4971850091387",
+        "Mã vạch": "4971850091387",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 300
+      },
+      "source_product_id": "46341294",
+      "source_variant_id": "147106753",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-hl-815l-bk-w-l-bk-bt?variant=147106753",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/29750-m-y-t-nh-casio-hl-815l.jpg?v=1747065464133",
+      "source_available": false,
+      "image": "/assets/adcbook/f0b4876b488f0fddef9fb3c9.jpg"
+    },
+    {
+      "id": "9fc764ac-4e1f-5755-b631-14493ab045e7",
+      "name": "Máy Tính Casio GR-12C-PK Màu Hồng",
+      "source_name": "Máy Tính Casio GR-12C-PK Màu Hồng",
+      "product_type": "electric_device",
+      "price": 491000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4549526612992",
+        "Mã vạch": "4549526612992",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 300
+      },
+      "source_product_id": "46341293",
+      "source_variant_id": "147106752",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-gr-12c-pk-bt?variant=147106752",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4549526612992.jpg?v=1747065463303",
+      "source_available": false,
+      "image": "/assets/adcbook/3f11026b49072bae42a09b04.jpg"
+    },
+    {
+      "id": "1eeb54c2-3aa2-5d04-b384-5ead036a93b5",
+      "name": "Máy tính Casio GR-12C-LB Màu Xanh Ngọc",
+      "source_name": "Máy tính Casio GR-12C-LB Màu Xanh Ngọc",
+      "product_type": "electric_device",
+      "price": 500000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4549526612985",
+        "Mã vạch": "4549526612985",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 500
+      },
+      "source_product_id": "46341292",
+      "source_variant_id": "147106751",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-gr-12c-lb-bt?variant=147106751",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/500-crop-gr12c-xanh-1.jpg?v=1747065462740",
+      "source_available": false,
+      "image": "/assets/adcbook/f2cc5460e41444a1b5795ea6.jpg"
+    },
+    {
+      "id": "627a9744-4a77-5d49-ba5e-31f730a12cde",
+      "name": "Máy Tính Casio FX-570VN Plus New",
+      "source_name": "Máy Tính Casio FX-570VN Plus New",
+      "product_type": "electric_device",
+      "price": 570000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": "Chiếc",
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4549526608810",
+        "Mã vạch": "4549526608810",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 200
+      },
+      "source_product_id": "46341289",
+      "source_variant_id": "147106748",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-fx-570vn-plus-new-bt?variant=147106748",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/122357cf8088c8dd3d118476701ff1f2-871b2b3830404d519316f01ac7b2bee9.jpg?v=1747065460490",
+      "source_available": false,
+      "image": "/assets/adcbook/17fedf8ccd230ddb21de6d0c.jpg"
+    },
+    {
+      "id": "16638abd-f3b3-52f0-9a81-63f1818f048e",
+      "name": "Máy Tính Casio FX500MS-2",
+      "source_name": "Máy Tính Casio FX500MS-2",
+      "product_type": "electric_device",
+      "price": 360000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4549526611278",
+        "Mã vạch": "4549526611278",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 200
+      },
+      "source_product_id": "46341288",
+      "source_variant_id": "147106747",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-fx500ms-2-new-bt?variant=147106747",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4549526611278.jpg?v=1747065459720",
+      "source_available": false,
+      "image": "/assets/adcbook/90653ea682d75fc5dab6e99d.jpg"
+    },
+    {
+      "id": "b9134017-11a5-518a-9785-d7da36894690",
+      "name": "Máy Tính Casio DX12B-BK",
+      "source_name": "Máy Tính Casio DX12B-BK",
+      "product_type": "electric_device",
+      "price": 370000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4971850032236",
+        "Mã vạch": "4971850032236",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 300
+      },
+      "source_product_id": "46341287",
+      "source_variant_id": "147106746",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-dx12b-bk-bt?variant=147106746",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4971850032236-1.jpg?v=1747065458970",
+      "source_available": false,
+      "image": "/assets/adcbook/3b7146bdbfeb53b7da9fb53e.jpg"
+    },
+    {
+      "id": "2e1794d9-2047-5820-8252-5d7770b94c6d",
+      "name": "Máy Tính Casio AX-12B",
+      "source_name": "Máy Tính Casio AX-12B",
+      "product_type": "electric_device",
+      "price": 355000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4971850032151",
+        "Mã vạch": "4971850032151",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 300
+      },
+      "source_product_id": "46341286",
+      "source_variant_id": "147106745",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-ax-12b-bt?variant=147106745",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4971850032151-1.jpg?v=1747065458390",
+      "source_available": false,
+      "image": "/assets/adcbook/71481cd2b0ade17b6e48a196.jpg"
+    },
+    {
+      "id": "9b585ebb-0706-5023-830c-b1ffa22b0225",
+      "name": "Máy Tính Casio AX-120B",
+      "source_name": "Máy Tính Casio AX-120B",
+      "product_type": "electric_device",
+      "price": 382000,
+      "selling_unit": "Chiếc",
+      "source_selling_unit": null,
+      "brand": "Casio",
+      "origin": "Nhật Bản",
+      "material": "Nhựa",
+      "description": "Thiết bị điện. Đơn vị bán: Chiếc. Thương hiệu: Casio. Xuất xứ: Nhật Bản. Chất liệu: Nhựa.",
+      "attributes": {
+        "SKU": "4971850032168",
+        "Mã vạch": "4971850032168",
+        "Độ tuổi": "13+",
+        "Nhà cung cấp": "Casio"
+      },
+      "details": {
+        "minimum_age": 13,
+        "weight": 300
+      },
+      "source_product_id": "46341285",
+      "source_variant_id": "147106744",
+      "source_url": "https://adcbook.net.vn/may-tinh-casio-ax-120b-bt?variant=147106744",
+      "source_image_url": "https://bizweb.dktcdn.net/100/567/082/products/4971850032168.jpg?v=1747065457493",
+      "source_available": false,
+      "image": "/assets/adcbook/a787a03d0f18f9d84f316c3b.jpg"
+    }
+  ]
+}

@@ -1,786 +1,2142 @@
 {
-  "UC-diagram.vpp": {
-    "diagrams": [
-      [
-        "UseCaseDiagram",
-        "Use Case Diagram1"
-      ]
-    ],
-    "elements": [
-      [
-        "Actor",
-        "Customer"
-      ],
-      [
-        "Actor",
-        "Administrator"
-      ],
-      [
-        "Actor",
-        "Warehouse Staff"
-      ],
-      [
-        "Actor",
-        "Manager"
-      ],
-      [
-        "Actor",
-        "Shipping Provider"
-      ],
-      [
-        "Actor",
-        "Payment Provider"
-      ],
-      [
-        "Actor",
-        "Supplier"
-      ],
-      [
-        "Actor",
-        "Sales Staff"
-      ],
-      [
-        "UseCase",
-        "Search Products"
-      ],
-      [
-        "UseCase",
-        "Submit Review"
-      ],
-      [
-        "UseCase",
-        "Manage Shopping Cart"
-      ],
-      [
-        "UseCase",
-        "Manage Catalogue"
-      ],
-      [
-        "UseCase",
-        "Process Payment"
-      ],
-      [
-        "UseCase",
-        "Place Order"
-      ],
-      [
-        "UseCase",
-        "Manage Customers"
-      ],
-      [
-        "UseCase",
-        "Manage Promotions"
-      ],
-      [
-        "UseCase",
-        "Manage Inventory"
-      ],
-      [
-        "UseCase",
-        "Generate Reports"
-      ],
-      [
-        "UseCase",
-        "Manage delivery"
-      ],
-      [
-        "UseCase",
-        "Manage Product Supply"
-      ],
-      [
-        "UseCase",
-        "Manage Orders"
-      ],
-      [
-        "UseCase",
-        "Manage Customer Service"
-      ],
-      [
-        "UseCase",
-        "Manage Personal Orders"
-      ],
-      [
-        "UseCase",
-        "Manage Order Fulfilment"
-      ],
-      [
-        "UseCase",
-        "Manage Account"
-      ],
-      [
-        "UseCase",
-        "Voice Search"
-      ],
-      [
-        "UseCase",
-        "Keyword Search"
-      ],
-      [
-        "UseCase",
-        "Image Search"
-      ],
-      [
-        "UseCase",
-        "Browse Products"
-      ],
-      [
-        "UseCase",
-        "View Product Details"
-      ]
-    ]
-  },
-  "entity-class-diagram.vpp": {
-    "diagrams": [
-      [
-        "ClassDiagram",
-        "Class Diagram1"
-      ]
-    ],
-    "elements": [
-      [
-        "Class",
-        "Customer"
-      ],
-      [
-        "Class",
-        "Category"
-      ],
-      [
-        "Class",
-        "SearchQuery"
-      ],
-      [
-        "Class",
-        "Product"
-      ],
-      [
-        "Class",
-        "Cart"
-      ],
-      [
-        "Class",
-        "CartItem"
-      ],
-      [
-        "Class",
-        "ProductImage"
-      ],
-      [
-        "Class",
-        "SearchResult"
-      ],
-      [
-        "Class",
-        "Review"
-      ],
-      [
-        "Class",
-        "Payment"
-      ],
-      [
-        "Class",
-        "SearchFilter"
-      ],
-      [
-        "Class",
-        "OrderItem"
-      ],
-      [
-        "Class",
-        "Order"
-      ],
-      [
-        "Class",
-        "SearchModality"
-      ]
-    ]
-  },
-  "entity-class-diagram-design-phase.vpp": {
-    "diagrams": [
-      [
-        "InteractionDiagram",
-        "Multimodal Product Search - Sequence Diagram"
-      ],
-      [
-        "ERDiagram",
-        "Multimodal Product Search Physical Data Model"
-      ],
-      [
-        "ClassDiagram",
-        "Entity Class Diagram"
-      ],
-      [
-        "ClassDiagram",
-        "Entity Class Diagram - Multimodal Search"
-      ],
-      [
-        "InteractionDiagram",
-        "Multimodal Product Search Sequence Diagram"
-      ],
-      [
-        "InteractionDiagram",
-        "Analysis Sequence Diagram"
-      ],
-      [
-        "ComponentDiagram",
-        "Three-Layer Component Architecture"
-      ],
-      [
-        "ComponentDiagram",
-        "Multimodal Product Search System - Component Diagram"
-      ],
-      [
-        "ComponentDiagram",
-        "CartAndOrder"
-      ],
-      [
-        "ClassDiagram",
-        "Multimodal Product Search Class Diagram"
-      ],
-      [
-        "ERDiagram",
-        "multimodal-product-search-pdm-mysql"
-      ]
-    ],
-    "elements": [
-      [
-        "Class",
-        "SearchModality"
-      ],
-      [
-        "Class",
-        "MediaType"
-      ],
-      [
-        "Class",
-        "FilterType"
-      ],
-      [
-        "Class",
-        "CartStatus"
-      ],
-      [
-        "Class",
-        "OrderStatus"
-      ],
-      [
-        "Class",
-        "PaymentStatus"
-      ],
-      [
-        "Class",
-        "PaymentMethod"
-      ],
-      [
-        "Class",
-        "Category"
-      ],
-      [
-        "Class",
-        "Product"
-      ],
-      [
-        "Class",
-        "ProductImage"
-      ],
-      [
-        "Class",
-        "Customer"
-      ],
-      [
-        "Class",
-        "Cart"
-      ],
-      [
-        "Class",
-        "CartItem"
-      ],
-      [
-        "Class",
-        "Order"
-      ],
-      [
-        "Class",
-        "OrderItem"
-      ],
-      [
-        "Class",
-        "Payment"
-      ],
-      [
-        "Class",
-        "Review"
-      ],
-      [
-        "Class",
-        "SearchQuery"
-      ],
-      [
-        "Class",
-        "SearchFilter"
-      ],
-      [
-        "Class",
-        "QueryMedia"
-      ],
-      [
-        "Class",
-        "SearchResult"
-      ],
-      [
-        "Class",
-        "SearchPage"
-      ],
-      [
-        "Class",
-        "SearchController"
-      ],
-      [
-        "Class",
-        "SearchResultView"
-      ],
-      [
-        "Class",
-        "SearchOrchestrator"
-      ],
-      [
-        "Class",
-        "QueryService"
-      ],
-      [
-        "Class",
-        "SpeechToText"
-      ],
-      [
-        "Class",
-        "ImageEncoder"
-      ],
-      [
-        "Class",
-        "SearchService"
-      ],
-      [
-        "Class",
-        "RankingService"
-      ],
-      [
-        "Class",
-        "ProductRepository"
-      ],
-      [
-        "Class",
-        "KeywordIndex"
-      ],
-      [
-        "Class",
-        "VectorIndex"
-      ],
-      [
-        "Class",
-        "ProductSize"
-      ],
-      [
-        "Class",
-        "ProductSizeRepository"
-      ],
-      [
-        "Component",
-        "ProductDetailPage"
-      ],
-      [
-        "Component",
-        "CartPage"
-      ],
-      [
-        "Component",
-        "SearchPage"
-      ],
-      [
-        "Component",
-        "VoiceInput"
-      ],
-      [
-        "Component",
-        "ImageUpload"
-      ],
-      [
-        "Component",
-        "SearchResultView"
-      ],
-      [
-        "Component",
-        "CartController"
-      ],
-      [
-        "Component",
-        "OrderController"
-      ],
-      [
-        "Component",
-        "SearchController"
-      ],
-      [
-        "Component",
-        "CartService"
-      ],
-      [
-        "Component",
-        "OrderService"
-      ],
-      [
-        "Component",
-        "InventoryService"
-      ],
-      [
-        "Component",
-        "PaymentService"
-      ],
-      [
-        "Component",
-        "SearchOrchestrator"
-      ],
-      [
-        "Component",
-        "SearchService"
-      ],
-      [
-        "Component",
-        "RankingService"
-      ],
-      [
-        "Component",
-        "QueryService"
-      ],
-      [
-        "Component",
-        "ImageEncoder"
-      ],
-      [
-        "Component",
-        "SpeechToText"
-      ],
-      [
-        "Component",
-        "CartRepository"
-      ],
-      [
-        "Component",
-        "OrderRepository"
-      ],
-      [
-        "Component",
-        "ProductRepository"
-      ],
-      [
-        "Component",
-        "PaymentRepository"
-      ],
-      [
-        "Component",
-        "KeywordIndex"
-      ],
-      [
-        "Component",
-        "VectorIndex"
-      ],
-      [
-        "Component",
-        "ProductDatabase"
-      ],
-      [
-        "Component",
-        "OrderDatabase"
-      ],
-      [
-        "Component",
-        "ImageStorage"
-      ],
-      [
-        "Component",
-        "Payment Gateway"
-      ],
-      [
-        "Component",
-        "Shipping Provider"
-      ],
-      [
-        "Component",
-        "Image Embedding Model"
-      ],
-      [
-        "Component",
-        "Speech Recognition Model"
-      ],
-      [
-        "Component",
-        "SearchPage"
-      ],
-      [
-        "Component",
-        "ImageUpload"
-      ],
-      [
-        "Component",
-        "VoiceInput"
-      ],
-      [
-        "Component",
-        "SearchController"
-      ],
-      [
-        "Component",
-        "SearchOrchestrator"
-      ],
-      [
-        "Component",
-        "QueryService"
-      ],
-      [
-        "Component",
-        "SearchService"
-      ],
-      [
-        "Component",
-        "KeywordIndex"
-      ],
-      [
-        "Component",
-        "VectorIndex"
-      ],
-      [
-        "Component",
-        "SearchResultView"
-      ],
-      [
-        "Component",
-        "ImageEncoder"
-      ],
-      [
-        "Component",
-        "SpeechToText"
-      ],
-      [
-        "Component",
-        "ProductDetailPage"
-      ],
-      [
-        "Component",
-        "CartPage"
-      ],
-      [
-        "Component",
-        "CartController"
-      ],
-      [
-        "Component",
-        "OrderController"
-      ],
-      [
-        "Component",
-        "CartService"
-      ],
-      [
-        "Component",
-        "OrderService"
-      ],
-      [
-        "Component",
-        "CartRepository"
-      ],
-      [
-        "Component",
-        "OrderRepository"
-      ],
-      [
-        "Component",
-        "InventoryService"
-      ],
-      [
-        "Component",
-        "PaymentService"
-      ],
-      [
-        "DBTable",
-        "customer"
-      ],
-      [
-        "DBTable",
-        "category"
-      ],
-      [
-        "DBTable",
-        "Entity"
-      ],
-      [
-        "DBTable",
-        "product"
-      ],
-      [
-        "DBTable",
-        "product_image"
-      ],
-      [
-        "DBTable",
-        "cart"
-      ],
-      [
-        "DBTable",
-        "cart_item"
-      ],
-      [
-        "DBTable",
-        "customer_order"
-      ],
-      [
-        "DBTable",
-        "order_item"
-      ],
-      [
-        "DBTable",
-        "payment"
-      ],
-      [
-        "DBTable",
-        "review"
-      ],
-      [
-        "DBTable",
-        "search_query"
-      ],
-      [
-        "DBTable",
-        "search_filter"
-      ],
-      [
-        "DBTable",
-        "query_media"
-      ],
-      [
-        "DBTable",
-        "search_result"
-      ],
-      [
-        "DBTable",
-        "Category"
-      ]
-    ]
-  },
   "3-layer-diagram.vpp": {
-    "diagrams": [
-      [
-        "ComponentDiagram",
-        "Component Diagram1"
-      ]
-    ],
+    "sha256": "eb4bd9b10625092378c3d5ad0682615886e5eb2093f1dec5cea1f3bf7d5b58d4",
     "elements": [
-      [
-        "Component",
-        "CustomerUI"
-      ],
-      [
-        "Component",
-        "Admin&StaffUI"
-      ],
-      [
-        "Component",
-        "AccountController"
-      ],
-      [
-        "Component",
-        "OrderController"
-      ],
-      [
-        "Component",
-        "CartController"
-      ],
-      [
-        "Component",
-        "ProductController"
-      ],
-      [
-        "Component",
-        "SearchController"
-      ],
-      [
-        "Component",
-        "AdministrationController"
-      ],
-      [
-        "Component",
-        "AccountService"
-      ],
-      [
-        "Component",
-        "OrderService"
-      ],
-      [
-        "Component",
-        "CartService"
-      ],
-      [
-        "Component",
-        "SearchOrchestrator"
-      ],
-      [
-        "Component",
-        "Review&PromotionService"
-      ],
-      [
-        "Component",
-        "ReportingService"
-      ],
-      [
-        "Component",
-        "PaymentService"
-      ],
-      [
-        "Component",
-        "FulfillmentService"
-      ],
-      [
-        "Component",
-        "ShippingService"
-      ],
-      [
-        "Component",
-        "InventoryService"
-      ],
-      [
-        "Component",
-        "CataloụgeService"
-      ],
-      [
-        "Component",
-        "KeywordIndex"
-      ],
-      [
-        "Component",
-        "VectorIndex"
-      ],
-      [
-        "Component",
-        "SpeechRecognitionAdapter"
-      ],
-      [
-        "Component",
-        "ImageEmbeddingAdapter"
-      ],
-      [
-        "Component",
-        "PaymentGatewayAdapter"
-      ],
-      [
-        "Component",
-        "Database"
-      ],
-      [
-        "Component",
-        "ImangeStorage"
-      ],
-      [
-        "Component",
-        "ShippingProviderAdapter"
-      ]
+      {
+        "name": "Presentation Layer",
+        "type": "Package",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "CustomerUI",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Admin&StaffUI",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "AccountController",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "OrderController",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "CartController",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ProductController",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchController",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "AdministrationController",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Application Layer",
+        "type": "Package",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "AccountService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "OrderService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "CartService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchOrchestrator",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ReviewService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ReportingService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "PaymentService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "FulfillmentService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ShippingService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "InventoryService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "CatalogService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Data And Infrastructure Layer",
+        "type": "Package",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "KeywordIndex",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "VectorIndex",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SpeechRecognitionAdapter",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ImageEmbeddingAdapter",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "PaymentGatewayAdapter",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Database",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ImageStorage",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ShippingProviderAdapter",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      }
+    ]
+  },
+  "design-phase-entity-class-diagram.vpp": {
+    "sha256": "ce5ea754b5cf57ec5d97dcab2ff259d9d0f47bb0868433b9e53865e4777c0877",
+    "elements": [
+      {
+        "name": "Customer",
+        "type": "Class",
+        "attributes": [
+          "customerId",
+          "name",
+          "email",
+          "password",
+          "active"
+        ],
+        "columns": [],
+        "operations": [
+          "Customer",
+          "updateProfile",
+          "changePassword",
+          "setActive",
+          "verifyPassword"
+        ]
+      },
+      {
+        "name": "SearchQuery",
+        "type": "Class",
+        "attributes": [
+          "queryId",
+          "modality",
+          "rawText",
+          "normalizedText",
+          "language",
+          "createdAt"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Product",
+        "type": "Class",
+        "attributes": [
+          "productId",
+          "name",
+          "description",
+          "brand",
+          "averageRating",
+          "status",
+          "stockQuantity",
+          "sellingUnit",
+          "price",
+          "origin",
+          "material",
+          "createdAt",
+          "updatedAt"
+        ],
+        "columns": [],
+        "operations": [
+          "Product",
+          "changePrice",
+          "changeStatus",
+          "isAvailable",
+          "updateDetails"
+        ]
+      },
+      {
+        "name": "Cart",
+        "type": "Class",
+        "attributes": [
+          "cartId",
+          "status",
+          "createdAt"
+        ],
+        "columns": [],
+        "operations": [
+          "Cart",
+          "addItem",
+          "updateItemQuantity",
+          "removeItem",
+          "calculateSubtotal"
+        ]
+      },
+      {
+        "name": "CartItem",
+        "type": "Class",
+        "attributes": [
+          "cartItemId",
+          "quantity",
+          "unitPrice"
+        ],
+        "columns": [],
+        "operations": [
+          "changeQuantity",
+          "calculateSubtotal",
+          "CartItem"
+        ]
+      },
+      {
+        "name": "ProductImage",
+        "type": "Class",
+        "attributes": [
+          "imageId",
+          "imageUrl",
+          "isPrimary",
+          "imageEmbedding"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchResult",
+        "type": "Class",
+        "attributes": [
+          "resultId",
+          "rank"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Review",
+        "type": "Class",
+        "attributes": [
+          "reviewId",
+          "rating",
+          "comment",
+          "createdAt"
+        ],
+        "columns": [],
+        "operations": [
+          "Review"
+        ]
+      },
+      {
+        "name": "Payment",
+        "type": "Class",
+        "attributes": [
+          "paymentId",
+          "method",
+          "amount",
+          "status",
+          "transactionCode"
+        ],
+        "columns": [],
+        "operations": [
+          "Payment",
+          "changeStatus"
+        ]
+      },
+      {
+        "name": "SearchFilter",
+        "type": "Class",
+        "attributes": [
+          "filterId",
+          "filterType",
+          "filterValue"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "OrderItem",
+        "type": "Class",
+        "attributes": [
+          "orderItemId",
+          "quantity",
+          "unitPrice"
+        ],
+        "columns": [],
+        "operations": [
+          "calculateSubtotal",
+          "OrderItem"
+        ]
+      },
+      {
+        "name": "Order",
+        "type": "Class",
+        "attributes": [
+          "orderId",
+          "orderDate",
+          "status",
+          "totalAmount"
+        ],
+        "columns": [],
+        "operations": [
+          "getOrder",
+          "getOrders",
+          "cancel"
+        ]
+      },
+      {
+        "name": "SearchModality",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Pen",
+        "type": "Class",
+        "attributes": [
+          "color",
+          "type"
+        ],
+        "columns": [],
+        "operations": [
+          "setSellingUnit",
+          "setColor",
+          "setType"
+        ]
+      },
+      {
+        "name": "Notebook",
+        "type": "Class",
+        "attributes": [
+          "pageNum",
+          "size",
+          "type"
+        ],
+        "columns": [],
+        "operations": [
+          "setPageNum",
+          "setSize",
+          "setType"
+        ]
+      },
+      {
+        "name": "Bag",
+        "type": "Class",
+        "attributes": [
+          "size",
+          "pattern"
+        ],
+        "columns": [],
+        "operations": [
+          "setSize",
+          "setPattern"
+        ]
+      },
+      {
+        "name": "Toy",
+        "type": "Class",
+        "attributes": [
+          "type",
+          "minimumAge"
+        ],
+        "columns": [],
+        "operations": [
+          "setType",
+          "setMinimumAge"
+        ]
+      },
+      {
+        "name": "Book",
+        "type": "Class",
+        "attributes": [
+          "category",
+          "minimumAge",
+          "publisher"
+        ],
+        "columns": [],
+        "operations": [
+          "setCategory",
+          "setMinimumAge",
+          "setPublisher"
+        ]
+      },
+      {
+        "name": "ElectricDevice",
+        "type": "Class",
+        "attributes": [
+          "minimumAge",
+          "weight"
+        ],
+        "columns": [],
+        "operations": [
+          "setMinimumAge",
+          "setWeight"
+        ]
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "FilterType",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "PaymentStatus",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "CartStatus",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Class2",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "PaymentMethod",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      }
+    ]
+  },
+  "design-phase-entity-relationship-diagram.vpp": {
+    "sha256": "8bc7ef5cf49539fc09b00feb3ab4b803a2e1628bf132947c91a0498fbf8180af",
+    "elements": [
+      {
+        "name": "SearchModality",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "MediaType",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "FilterType",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "CartStatus",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "OrderStatus",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "PaymentStatus",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "PaymentMethod",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Category",
+        "type": "Class",
+        "attributes": [
+          "categoryId",
+          "name",
+          "description"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Product",
+        "type": "Class",
+        "attributes": [
+          "productId",
+          "name",
+          "description",
+          "brand",
+          "material",
+          "gender",
+          "price",
+          "salesCount",
+          "averageRating",
+          "published",
+          "updatedAt"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ProductImage",
+        "type": "Class",
+        "attributes": [
+          "imageId",
+          "imageUrl",
+          "isPrimary",
+          "encoderVersion",
+          "vectorReference"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Customer",
+        "type": "Class",
+        "attributes": [
+          "customerId",
+          "fullName",
+          "email",
+          "phone",
+          "createdAt"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Cart",
+        "type": "Class",
+        "attributes": [
+          "cartId",
+          "status",
+          "createdAt",
+          "updatedAt"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "CartItem",
+        "type": "Class",
+        "attributes": [
+          "cartItemId",
+          "quantity",
+          "unitPrice"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Order",
+        "type": "Class",
+        "attributes": [
+          "orderId",
+          "orderDate",
+          "status",
+          "shippingAddress",
+          "subtotal",
+          "shippingFee",
+          "totalAmount"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "OrderItem",
+        "type": "Class",
+        "attributes": [
+          "orderItemId",
+          "quantity",
+          "unitPrice"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Payment",
+        "type": "Class",
+        "attributes": [
+          "paymentId",
+          "method",
+          "amount",
+          "status",
+          "transactionCode",
+          "idempotencyKey",
+          "createdAt"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Review",
+        "type": "Class",
+        "attributes": [
+          "reviewId",
+          "rating",
+          "comment",
+          "createdAt"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "",
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "",
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "",
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "",
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchQuery",
+        "type": "Class",
+        "attributes": [
+          "queryId",
+          "modality",
+          "rawText",
+          "normalizedText",
+          "language",
+          "encoderVersion",
+          "createdAt"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchFilter",
+        "type": "Class",
+        "attributes": [
+          "filterId",
+          "filterType",
+          "filterValue",
+          "isExplicit",
+          "isHard",
+          "wasRelaxed",
+          "relaxationOrder"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "",
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "QueryMedia",
+        "type": "Class",
+        "attributes": [
+          "mediaId",
+          "mediaType",
+          "storageReference",
+          "createdAt",
+          "expiresAt"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "",
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchResult",
+        "type": "Class",
+        "attributes": [
+          "resultId",
+          "rank",
+          "relevanceScore",
+          "preferenceScore",
+          "finalScore",
+          "explanation"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "",
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "product",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "product_id",
+          "name",
+          "description",
+          "brand",
+          "average_rating",
+          "status",
+          "",
+          "created_at",
+          "updated_at",
+          "stockQuantity",
+          "sellingUnit",
+          "price",
+          "origin",
+          "material"
+        ],
+        "operations": []
+      },
+      {
+        "name": "product_image",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "image_id",
+          "product_id",
+          "image_url",
+          "storage_reference",
+          "is_primary",
+          "",
+          "encoder_version",
+          "vector_reference",
+          "created_at"
+        ],
+        "operations": []
+      },
+      {
+        "name": "cart",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "cart_id",
+          "customer_id",
+          "status",
+          "",
+          "created_at",
+          "updated_at"
+        ],
+        "operations": []
+      },
+      {
+        "name": "cart_item",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "cart_item_id",
+          "cart_id",
+          "product_id",
+          "quantity",
+          "unit_price",
+          "created_at",
+          "updated_at"
+        ],
+        "operations": []
+      },
+      {
+        "name": "customer_order",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "order_id",
+          "customer_id",
+          "order_date",
+          "status",
+          "",
+          "subtotal",
+          "shipping_fee",
+          "shipping_address",
+          "total_amount",
+          "created_at",
+          "updated_at"
+        ],
+        "operations": []
+      },
+      {
+        "name": "order_item",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "order_item_id",
+          "order_id",
+          "product_id",
+          "quantity",
+          "unit_price",
+          "product_name_snapshot",
+          "created_at"
+        ],
+        "operations": []
+      },
+      {
+        "name": "payment",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "payment_id",
+          "order_id",
+          "method",
+          "",
+          "amount",
+          "status",
+          "",
+          "transaction_code",
+          "idempotency_key",
+          "failure_reason",
+          "created_at",
+          "updated_at"
+        ],
+        "operations": []
+      },
+      {
+        "name": "review",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "review_id",
+          "customer_id",
+          "rating",
+          "product_id",
+          "comment",
+          "created_at",
+          "updated_at"
+        ],
+        "operations": []
+      },
+      {
+        "name": "search_query",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "query_id",
+          "modality",
+          "",
+          "raw_text",
+          "normalized_text",
+          "language",
+          "encoder_version",
+          "created_at",
+          "customer_id"
+        ],
+        "operations": []
+      },
+      {
+        "name": "search_filter",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "filter_id",
+          "query_id",
+          "filter_type",
+          "",
+          "filter_value",
+          "is_explicit",
+          "",
+          "is_hard",
+          "",
+          "was_relaxed",
+          "",
+          "relaxation_order",
+          "created_at"
+        ],
+        "operations": []
+      },
+      {
+        "name": "query_media",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "media_id",
+          "query_id",
+          "media_type",
+          "",
+          "storage_reference",
+          "mime_type",
+          "file_size_bytes",
+          "created_at",
+          "expires_at"
+        ],
+        "operations": []
+      },
+      {
+        "name": "search_result",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "result_id",
+          "query_id",
+          "product_id",
+          "rank_position",
+          "relevance_score",
+          "preference_score",
+          "final_score",
+          "explanation",
+          "created_at"
+        ],
+        "operations": []
+      },
+      {
+        "name": "ProductDetailPage",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "CartPage",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchPage",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "VoiceInput",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ImageUpload",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchResultView",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "CartController",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "OrderController",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchController",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "CartService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "OrderService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "InventoryService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "PaymentService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchOrchestrator",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "RankingService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "QueryService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ImageEncoder",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SpeechToText",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "CartRepository",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "OrderRepository",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ProductRepository",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "PaymentRepository",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "KeywordIndex",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "VectorIndex",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ProductDatabase",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "OrderDatabase",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ImageStorage",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Payment Gateway",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Shipping Provider",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Image Embedding Model",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Speech Recognition Model",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchPage",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": [
+          "submitText",
+          "submitVoice",
+          "submitImage"
+        ]
+      },
+      {
+        "name": "SearchController",
+        "type": "Class",
+        "attributes": [
+          "orchestrator"
+        ],
+        "columns": [],
+        "operations": [
+          "search",
+          "getProductDetail"
+        ]
+      },
+      {
+        "name": "SearchResultView",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": [
+          "displayProducts",
+          "displayTranscript",
+          "displayFilters",
+          "displayRelaxationNotice",
+          "displayError"
+        ]
+      },
+      {
+        "name": "SearchOrchestrator",
+        "type": "Class",
+        "attributes": [
+          "queryService",
+          "searchService",
+          "rankingService",
+          "speechToText",
+          "imageEncoder"
+        ],
+        "columns": [],
+        "operations": [
+          "execute"
+        ]
+      },
+      {
+        "name": "QueryService",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": [
+          "fromText",
+          "fromImage",
+          "fromTranscript",
+          "relaxNextFilter"
+        ]
+      },
+      {
+        "name": "SpeechToText",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": [
+          "transcribe"
+        ]
+      },
+      {
+        "name": "ImageEncoder",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": [
+          "validate",
+          "encode",
+          "getVersion"
+        ]
+      },
+      {
+        "name": "SearchService",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": [
+          "retrieve",
+          "applyHardFilters",
+          "merge",
+          "filterByAvailableSizes"
+        ]
+      },
+      {
+        "name": "RankingService",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": [
+          "rank",
+          "calculateScore"
+        ]
+      },
+      {
+        "name": "ProductRepository",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": [
+          "findPublished",
+          "findById",
+          "findCategoryDescendants"
+        ]
+      },
+      {
+        "name": "KeywordIndex",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": [
+          "search"
+        ]
+      },
+      {
+        "name": "VectorIndex",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": [
+          "nearest",
+          "getEncoderVersion"
+        ]
+      },
+      {
+        "name": "PRESENTATION LAYER",
+        "type": "Package",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "APPLICATION AND INTELLIGENCE LAYER",
+        "type": "Package",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "DATA AND INFRASTRUCTURE LAYER",
+        "type": "Package",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "EXTERNAL SYSTEMS",
+        "type": "Package",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchPage",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ImageUpload",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "VoiceInput",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchController",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchOrchestrator",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "QueryService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "KeywordIndex",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "VectorIndex",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SearchResultView",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "PRESENTATION LAYER",
+        "type": "Package",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "APPLICATION AND INTELLIGENCE LAYER",
+        "type": "Package",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "DATA AND INFRASTRUCTURE LAYER",
+        "type": "Package",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ImageEncoder",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "SpeechToText",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Package",
+        "type": "Package",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Package2",
+        "type": "Package",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "Package3",
+        "type": "Package",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ProductDetailPage",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "CartPage",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "CartController",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "OrderController",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "CartService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "OrderService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "CartRepository",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "OrderRepository",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "InventoryService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "PaymentService",
+        "type": "Component",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": null,
+        "type": "Dependency",
+        "attributes": [],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ProductSize",
+        "type": "Class",
+        "attributes": [
+          "productSizeId",
+          "size",
+          "color",
+          "sku",
+          "stockQuantity"
+        ],
+        "columns": [],
+        "operations": []
+      },
+      {
+        "name": "ProductSizeRepository",
+        "type": "Class",
+        "attributes": [],
+        "columns": [],
+        "operations": [
+          "findAvailableProductIds",
+          "findAvailableSizes",
+          "findAvailableColors"
+        ]
+      },
+      {
+        "name": "pen",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "product_id",
+          "color",
+          "type"
+        ],
+        "operations": []
+      },
+      {
+        "name": "notebook",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "product_id",
+          "page_num",
+          "size",
+          "type"
+        ],
+        "operations": []
+      },
+      {
+        "name": "toy",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "product_id",
+          "type",
+          "minimum_age"
+        ],
+        "operations": []
+      },
+      {
+        "name": "book",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "product_id",
+          "category",
+          "minimum_age",
+          "publisher"
+        ],
+        "operations": []
+      },
+      {
+        "name": "bag",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "product_id",
+          "size",
+          "pattern"
+        ],
+        "operations": []
+      },
+      {
+        "name": "electric_device",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "product_id",
+          "minimum_age",
+          "weight"
+        ],
+        "operations": []
+      },
+      {
+        "name": "Customer",
+        "type": "DBTable",
+        "attributes": [],
+        "columns": [
+          "customer_id",
+          "full_name",
+          "email",
+          "password_hash",
+          "active",
+          ""
+        ],
+        "operations": []
+      }
     ]
   }
 }
