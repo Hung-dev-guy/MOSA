@@ -21,6 +21,7 @@ import test_reports_reviews
 import test_identity
 import test_discovery
 import test_design_alignment
+import test_admin_products
 
 
 def test_parameter_translation_preserves_literals():
@@ -44,7 +45,7 @@ def pg_app(tmp_path):
             admin.execute(sql.SQL('DROP SCHEMA {} CASCADE').format(sql.Identifier(schema)))
 
 
-CASES = [function for module in (test_cart, test_orders, test_operations, test_reports_reviews, test_identity, test_discovery)
+CASES = [function for module in (test_cart, test_orders, test_operations, test_reports_reviews, test_identity, test_discovery, test_admin_products)
          for name, function in vars(module).items()
          if name.startswith('test_') and callable(function)]
 

@@ -26,6 +26,12 @@ def edit_product(pid):
     return respond(catalog_service.edit_product(pid, data=body(), user=g.user))
 
 
+@bp.delete('/api/staff/products/<pid>')
+@protected('admin')
+def delete_product(pid):
+    return respond(catalog_service.delete_product(pid, user=g.user))
+
+
 @bp.patch('/api/staff/customers/<uid>')
 @protected('admin')
 def customer_status(uid):

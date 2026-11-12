@@ -14,7 +14,7 @@ function Action({children,onClick}){return <TaskForm submit={children} className
 export default function Staff(){
   const {session,notify}=useStore();const role=session.user?.role;const tabs=navByRole[role]||[];
   const [tab,setTab]=useState(tabs[0]||'products');const {data,error,reload}=useLoad('/staff/overview');
-  const save=async(path,body,method='POST')=>{await api('/staff'+path,{method,body});notify('Đã lưu thay đổi.');reload();};
+  const save=async(path,body,method='POST')=>{await api('/staff'+path,{method,body});notify(method==='DELETE'?'Đã xoá sản phẩm.':'Đã lưu thay đổi.');reload();};
   if(!tabs.length)return <div className="page"><h1>Khu vực dành cho nhân viên</h1><p>Đăng nhập tài khoản có quyền để tiếp tục.</p><Link to="/login">Đăng nhập</Link></div>;
   return <div className="page staff-page"><div className="section-heading"><div><span className="section-kicker">MOSA WORKSPACE</span><h1>Quản lý cửa hàng</h1><p className="subtle">{session.user.name} · {role}</p></div><button onClick={reload}>Làm mới dữ liệu</button></div><div className="staff-tabs" role="tablist">{tabs.map(t=><button role="tab" aria-selected={tab===t} className={tab===t?'selected':''} key={t} onClick={()=>setTab(t)}>{labels[t]}</button>)}</div><ErrorBox error={error}/>{!data?<p>Đang tải dữ liệu vận hành…</p>:<>
     {tab==='products'&&<Products data={data} save={save}/>}
@@ -30,9 +30,12 @@ export default function Staff(){
 
 function Products({data,save}){
   const {productTypes}=useStore();
-  const [selected,setSelected]=useState(null),[kind,setKind]=useState('pen');const p=selected||{};
+  const [selected,setSelected]=useState(null),[kind,setKind]=useState('pen'),[query,setQuery]=useState('');const p=selected||{};
   const fields=productTypes.find(t=>t.id===kind)?.fields||[];
   const typeNames=Object.fromEntries(productTypes.map(t=>[t.id,t.name]));
+  const normalize=value=>String(value).toLowerCase().replaceAll('đ','d').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+  const words=normalize(query).trim().split(/\s+/).filter(Boolean);
+  const products=data.products.filter(item=>words.every(word=>normalize(item.id+' '+item.name+' '+item.brand).includes(word)));
   return <><section className="panel"><div className="section-heading"><h2>{selected?'Sửa sản phẩm #'+p.id:'Tạo sản phẩm'}</h2>{selected&&<button onClick={()=>{setSelected(null);setKind('pen');}}>Tạo mới</button>}</div>
     <TaskForm key={p.id||'new'} className="editor-grid" submit={selected?'Cập nhật sản phẩm':'Tạo sản phẩm'} onSubmit={async(f,form)=>{
       const d=Object.fromEntries(f);d.price=Number(d.price);d.published=f.get('published')==='on';d.product_type=kind;d.attributes=p.attributes||{};
@@ -51,7 +54,14 @@ function Products({data,save}){
       <Field label="Mô tả"><textarea name="description" defaultValue={p.description} maxLength="3000"/></Field>
       <label className="checkbox"><input name="published" type="checkbox" defaultChecked={!!p.published}/> Xuất bản trên cửa hàng</label>
       <p className="subtle">Mỗi cấu hình bán riêng có mã, giá và tồn kho riêng. Tồn kho thay đổi bằng nhập/điều chỉnh kho.</p>
-    </TaskForm></section><section className="panel"><h2>Danh sách sản phẩm ({data.products.length})</h2><Table headers={['Sản phẩm','Loại','Giá','Đơn vị','Khả dụng','Xuất bản','Thao tác']}>{data.products.map(p=><tr key={p.id}><td>#{p.id} {p.name}</td><td>{typeNames[p.product_type]||'Cần phân loại'}</td><td>{money(p.price)}</td><td>{p.selling_unit}</td><td>{p.available}</td><td>{!p.product_type?'Cần phân loại':p.published?'Đang bán':'Lưu trữ'}</td><td><button onClick={()=>{setSelected(p);setKind(p.product_type);window.scrollTo(0,0);}}>Chỉnh sửa</button></td></tr>)}</Table></section></>;
+    </TaskForm></section><section className="panel"><h2>Danh sách sản phẩm ({products.length}/{data.products.length})</h2>
+      <Field label="Tìm sản phẩm theo tên, mã hoặc thương hiệu"><input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Ví dụ: but gel, Thiên Long hoặc mã sản phẩm"/></Field>
+      <p className="subtle">Chỉ xoá được sản phẩm chưa có lịch sử nghiệp vụ. Sản phẩm đã có đơn hàng hoặc lịch sử kho có thể ngừng bán trong phần chỉnh sửa.</p>
+      <Table headers={['Sản phẩm','Loại','Giá','Đơn vị','Khả dụng','Xuất bản','Thao tác']}>{products.map(p=><tr key={p.id}><td>#{p.id} {p.name}</td><td>{typeNames[p.product_type]||'Cần phân loại'}</td><td>{money(p.price)}</td><td>{p.selling_unit}</td><td>{p.available}</td><td>{!p.product_type?'Cần phân loại':p.published?'Đang bán':'Lưu trữ'}</td><td><button onClick={()=>{setSelected(p);setKind(p.product_type);window.scrollTo(0,0);}}>Chỉnh sửa</button><Action onClick={async()=>{
+        if(!window.confirm('Xoá vĩnh viễn sản phẩm “'+p.name+'”? Sản phẩm cũng sẽ được bỏ khỏi các giỏ hàng.'))return;
+        await save('/products/'+p.id,undefined,'DELETE');
+        if(selected?.id===p.id){setSelected(null);setKind('pen');}
+      }}>Xoá sản phẩm</Action></td></tr>)}{!products.length&&<tr><td colSpan={7}>Không tìm thấy sản phẩm phù hợp.</td></tr>}</Table></section></>;
 }
 
 

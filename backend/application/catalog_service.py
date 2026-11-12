@@ -8,6 +8,7 @@ from backend.shared.validation import boolean
 from backend.shared.validation import integer
 from backend.shared.validation import require
 from backend.shared.validation import text
+from backend.shared.validation import identifier
 import json
 
 
@@ -100,4 +101,21 @@ def create_product(*, data, user):
 
 def edit_product(pid, *, data, user):
     return save_product(pid, data=data, user=user)
+
+
+def delete_product(pid, *, user):
+    identifier(pid, 'Sản phẩm')
+    db = get_db()
+    db.execute('BEGIN IMMEDIATE')
+    require(one('SELECT id FROM products WHERE id=?', (pid,)), 'Không tìm thấy sản phẩm.', 404)
+    # Preserve purchase, inventory, support and review history.
+    for table in ('order_items', 'inventory_reservations', 'inventory_movements', 'replenishments', 'service_cases', 'reviews'):
+        require(not one('SELECT 1 FROM ' + table + ' WHERE product_id=?', (pid,)),
+                'Sản phẩm đã có đơn hàng hoặc lịch sử nghiệp vụ. Hãy bỏ chọn “Xuất bản trên cửa hàng” để ngừng bán.', 409)
+    for table in ('cart_items', 'search_result', 'product_image', 'catalogue_sources', *PRODUCT_FIELDS):
+        db.execute('DELETE FROM ' + table + ' WHERE product_id=?', (pid,))
+    db.execute('DELETE FROM products WHERE id=?', (pid,))
+    audit(user['id'], 'catalogue.delete', pid)
+    db.commit()
+    return {'ok': True, 'id': pid}
 
